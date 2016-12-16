@@ -11,4 +11,79 @@ body {
   @include font-smoothing(on);
   margin: 0;
   font: $base-text-size / 1 $base-font-family;
+   background-color: black;
+   background-image: url('http://www.intrawallpaper.com/static/images/3d-nature-hd-free-wallpaper-backgrounds.jpg');
+}
+
+h2 {
+  text-align: center;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+}
+
+ul {
+  display: flex;
+  position: absolute;
+  justify-content: space-between;
+  top: 100px;
+  align-items: center;
+  align-items: center;
+  position: center;
+  text-align: center;
+}
+
+li {
+  position: relative;
+  width: 250px;
+  justify-content: space-between;
+  padding: 10px;
+  bottom: 55px;
+  text-align: center;
+  align-content: flex-start;
+  list-style-type: none;
+  // background-color: rgb(221, 176, 221);
+  font-family: 'Aref Ruqaa', serif;
+}
+
+section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+header {
+  margin-top: 90px;
+  text-align: center;
+  align-items: center;
+  align-content: center;
+
+    blockquote {
+      color: white;
+  }
+}
+
+footer {
+  color: white;
+  text-align: center;
+  margin-top: 40px;
+}
+
+article {
+  background-color: gray;
+  border-radius: 10px;
+  align-items: center;
+  align-content: center;
+  header p{
+    color: white;
+    background-image: url('https://tse4.mm.bing.net/th?id=OIP.Md07dfde541552ff8bbcb9026519c60cdo0&w=227&h=164&c=7&rs=1&qlt=90&o=4&pid=1.1');
+    padding: 10px;
+  }
+    p {
+    color: white;
+  }
+}
+
+main {
+  background-size: cover;
+  background-image: url('http://www.intrawallpaper.com/static/images/3d-nature-hd-free-wallpaper-backgrounds.jpg');
 }
