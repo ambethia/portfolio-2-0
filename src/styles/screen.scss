@@ -11,38 +11,40 @@ body {
   @include font-smoothing(on);
   margin: 0;
   font: $base-text-size / 1 $base-font-family;
-   background-color: black;
-   background-image: url('http://www.intrawallpaper.com/static/images/3d-nature-hd-free-wallpaper-backgrounds.jpg');
+  // background-color: black;
+  // background-image: url('http://www.intrawallpaper.com/static/images/3d-nature-hd-free-wallpaper-backgrounds.jpg');
 }
 
 h2 {
   text-align: center;
   color: white;
   font-family: 'Montserrat', sans-serif;
+
 }
+
 
 ul {
   display: flex;
-  position: absolute;
   justify-content: space-between;
-  top: 100px;
+  top: -20px;
   align-items: center;
-  align-items: center;
-  position: center;
+  position: fixed;
   text-align: center;
+  background-color: #fff;
+  width:100%;
 }
 
 li {
   position: relative;
-  width: 250px;
+  width: 300px;
   justify-content: space-between;
   padding: 10px;
-  bottom: 55px;
+  //bottom: 55px;
   text-align: center;
   align-content: flex-start;
   list-style-type: none;
   // background-color: rgb(221, 176, 221);
-  font-family: 'Aref Ruqaa', serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
 section {
@@ -52,7 +54,6 @@ section {
 }
 
 header {
-  margin-top: 90px;
   text-align: center;
   align-items: center;
   align-content: center;
@@ -60,10 +61,14 @@ header {
     blockquote {
       color: white;
   }
+      img{
+        border-radius: 100%;
+        margin-top: 70px;
+      }
 }
 
 footer {
-  color: white;
+  color: black;
   text-align: center;
   margin-top: 40px;
 }
@@ -84,6 +89,20 @@ article {
 }
 
 main {
+  background-color: black;
   background-size: cover;
-  background-image: url('http://www.intrawallpaper.com/static/images/3d-nature-hd-free-wallpaper-backgrounds.jpg');
+  // background-image: url('http://www.intrawallpaper.com/static/images/3d-nature-hd-free-wallpaper-backgrounds.jpg');
+}
+
+section.pagedown {
+  display: flex;
+  background-color: rgb(85, 59, 78);
+}
+
+container {
+  background-color: transparent;
+  margin: 100px;
+  margin-bottom: 50px;
+  position:relative;
+  padding:0 0 0 55px;
 }
