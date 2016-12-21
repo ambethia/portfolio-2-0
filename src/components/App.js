@@ -15,7 +15,7 @@ class App extends Component {
 
   componentDidMount () {
     const URLGithub = 'https://api.github.com/users/chriskramer2020'
-    fetch(URLGithub).then(res => res.json()).then((data) => {
+    window.fetch(URLGithub).then(res => res.json()).then((data) => {
       this.setState({
         name: data.name,
         location: data.location,
@@ -31,8 +31,8 @@ class App extends Component {
       <main>
         {/* <h2>Portfolio 2.0</h2> */}
         <header>
-          <img src='https://help.github.com/assets/images/help/profile/identicon.png'alt='headpic' height='150' width='200' />
-          <blockquote>Hi! I'm Chris a Front End Developer! </blockquote>
+          <img src={this.state.avatar} alt='headpic' height='150' width='200' />
+          <blockquote><p>Hi! I'm {this.state.name}</p><p>{this.state.bio}</p></blockquote>
         </header>
         <video src='https://vimeo.com/22439234' autoPlay poster='https://vimeo.com/22439234.jpg'>
         Sorry, your browser doesn't support embedded videos, but dont worry, you can <a href='videofile.webm'>download it</a>
@@ -89,7 +89,7 @@ class App extends Component {
         </container>
       </section>
       <footer>
-        Made With &hearts; in St. Pete
+        Made With &hearts; in {this.state.location}
       </footer>
     </div>
   }
