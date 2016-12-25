@@ -28,66 +28,48 @@ class App extends Component {
 
   render () {
     return <div>
-      <main>
-        {/* <h2>Portfolio 2.0</h2> */}
-        <header>
-          <img src={this.state.avatar} alt='headpic' height='150' width='200' />
-          <blockquote><p>Hi! I'm {this.state.name}</p><p>{this.state.bio}</p></blockquote>
-        </header>
-        <video src='https://vimeo.com/22439234' autoPlay poster='https://vimeo.com/22439234.jpg'>
-        Sorry, your browser doesn't support embedded videos, but dont worry, you can <a href='videofile.webm'>download it</a>
-  and watch it with your favorite video player!
-      </video>
+      <main className='content'>
         <nav>
           <ul>
-            <li>Kramer</li>
+            <li className='kramer'><a href='#'>Kramer</a></li>
             <li><a href='#'>Home</a></li>
             <li><a href='#'>News</a></li>
             <li><a href='#'>Contact</a></li>
             <li><a href='#'>About</a></li>
           </ul>
         </nav>
-        <section className='firstpage'>
-          <img src='https://tse1.mm.bing.net/th?&id=OIP.Mb1aa5b517fa2cd9de90b907765e2e332o0&w=300&h=300&c=0&pid=1.9&rs=0&p=0&r=0'alt='example1' height='150' width='200' />
-          <img src='https://tse2.mm.bing.net/th?id=OIP.Me5608aefc1d1d194afbb2e09514ea34fH0&pid=15.1'alt='example2' height='150' width='200' />
-          <img src='http://www.cygnus-x1.net/links/rush/images/albums/permanentwaves-cover.jpg'alt='example3' height='150' width='200' />
-          <img src='http://theindiegirlsguideto.files.wordpress.com/2009/02/foals-antidotes-cover.jpg'alt='example4' height='150' width='200' />
-          <img src='https://tse1.mm.bing.net/th?&id=OIP.Mbafe326bc14d6ef2fe5b23e81057b123o0&w=300&h=300&c=0&pid=1.9&rs=0&p=0&r=0'alt='example5' height='150' width='200' />
-          <img src='https://tse1.mm.bing.net/th?id=OIP.Ma6703147e6d840eafeab57820eb7e15eo0&w=192&h=184&c=7&rs=1&qlt=90&o=4&pid=1.1'alt='example6' height='150' width='200' />
-        </section>
-        <article>
-          <header className='a'>
-            <p>
-            Life is crazy!
-          </p>
-          </header>
-          <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        </p>
+        <article className='box'>
+          <img src='http://images.urbanoutfitters.com/is/image/UrbanOutfitters/161215_bogo_usgw_ET?scl=1&qlt=100' alt='box' height='286px' width='1184px' />
         </article>
-        <article className='ipsum'>
-          <header className='b'>
-            <p>
-            Life is crazy!
-          </p>
-          </header>
-          <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        </p>
+        <article className='discount'>
+          <img src='http://images.urbanoutfitters.com/is/image/UrbanOutfitters/161219_hpgw_us_1?scl=1&qlt=92' alt='discounts' height='286px' width='1184px' />
         </article>
+        <div className='model'>
+          <img src='http://images.urbanoutfitters.com/is/image/UrbanOutfitters/161219_hpgw_us_2?scl=1&qlt=92' alt='model' height='717px' width='590px' />
+          <img src='http://images.urbanoutfitters.com/is/image/UrbanOutfitters/161219_hpgw_us_3?scl=1&qlt=92' alt='model' height='717px' width='590px' />
+        </div>
+        <div className='gift'>
+          <img src='http://images.urbanoutfitters.com/is/image/UrbanOutfitters/161219_hpgw_us_4?scl=1&qlt=92' alt='gift' height='536px' width='1180px' />
+        </div>
+        <div className='apartment'>
+          <img src='http://images.urbanoutfitters.com/is/image/UrbanOutfitters/161220_MT_hp_d_ET?scl=1&qlt=92' alt='apartment' height='717px' width='590px' />
+          <img src='http://images.urbanoutfitters.com/is/image/UrbanOutfitters/161219_hpgw_us_5?scl=1&qlt=92' alt='tech' height='717px' width='590px' />
+        </div>
+        <div className='others'>
+          <img src='http://images.urbanoutfitters.com/is/image/UrbanOutfitters/161219_hpgw_us_7?scl=1&qlt=92' alt='beauty' height='561px' width='386px' />
+          <img src='http://images.urbanoutfitters.com/is/image/UrbanOutfitters/161219_hpgw_us_8_v1?scl=1&qlt=92' alt='intimates' height='561px' width='386px' />
+          <img src='http://images.urbanoutfitters.com/is/image/UrbanOutfitters/161219_hpgw_us_9?scl=1&qlt=92' alt='blog' height='561px' width='386px' />
+        </div>
+        <div className='rewards'>
+          <img src='http://images.urbanoutfitters.com/is/image/UrbanOutfitters/161219_hpgw_us_10?scl=1&qlt=92' alt='rewards' height='153px' width='1184px' />
+        </div>
+        <div className='community'>
+          <img src='http://images.urbanoutfitters.com/is/image/UrbanOutfitters/160912_uocomm_hp_us?scl=1&qlt=92' alt='community' height='75px' width='1184px' />
+        </div>
+        <div className='footerimg'>
+          <img src='http://images.urbanoutfitters.com/is/image/UrbanOutfitters/161219_hpgw_us_ig?scl=1&qlt=92' alt='footerimg' height='597px' width='1184px' />
+        </div>
       </main>
-      <section className='pagedown'>
-        <container>
-          <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        </p>
-        </container>
-        <container>
-          <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        </p>
-        </container>
-      </section>
       <footer>
         Made With &hearts; in {this.state.location}
       </footer>

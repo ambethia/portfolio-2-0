@@ -3,6 +3,10 @@
 $base-text-size: 16px;
 $base-font-family: sans-serif;
 
+main {
+  align-items: center;
+}
+
 html {
   text-size-adjust: 100%;
 }
@@ -17,11 +21,10 @@ body {
 
 h2 {
   text-align: center;
-  color: white;
+  color: black;
   font-family: 'Montserrat', sans-serif;
 
 }
-
 
 ul {
   display: flex;
@@ -45,64 +48,105 @@ li {
   list-style-type: none;
   // background-color: rgb(221, 176, 221);
   font-family: 'Montserrat', sans-serif;
+  text-align: left;
 }
 
-section {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-
-header {
-  text-align: center;
-  align-items: center;
-  align-content: center;
-
-    blockquote {
-      color: white;
-  }
-      img{
-        border-radius: 100%;
-        margin-top: 70px;
-      }
+li.kramer {
+  text-align: left;
 }
 
 footer {
   color: black;
   text-align: center;
-  margin-top: 40px;
+  margin-top: 0px;
+  bottom: -25px;
+  position: relative;
+  font-family: 'Montserrat', sans-serif;
 }
 
 article {
-  background-color: gray;
-  border-radius: 10px;
+  margin: 50px;
   align-items: center;
-  align-content: center;
-  header p{
-    color: white;
-    background-image: url('https://tse4.mm.bing.net/th?id=OIP.Md07dfde541552ff8bbcb9026519c60cdo0&w=227&h=164&c=7&rs=1&qlt=90&o=4&pid=1.1');
-    padding: 10px;
-  }
-    p {
-    color: white;
-  }
+  justify-content: center;
+  position: relative;
 }
 
-main {
-  background-color: black;
-  background-size: cover;
-  // background-image: url('http://www.intrawallpaper.com/static/images/3d-nature-hd-free-wallpaper-backgrounds.jpg');
-}
-
-section.pagedown {
+.model {
+  position: relative;
+  margin: 50px;
+  display: inline-block;
+  vertical-align: middle;
   display: flex;
-  background-color: rgb(85, 59, 78);
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
 }
 
-container {
-  background-color: transparent;
-  margin: 100px;
-  margin-bottom: 50px;
-  position:relative;
-  padding:0 0 0 55px;
+.gift {
+  position: relative;
+  margin: 50px;
+  display: inline-block;
+  vertical-align: middle;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.apartment {
+  position: relative;
+  margin: 50px;
+  display: inline-block;
+  vertical-align: middle;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.others {
+  position: relative;
+  margin: 50px;
+  display: inline-block;
+  vertical-align: middle;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.rewards {
+  position: relative;
+  margin: 50px;
+  display: inline-block;
+  vertical-align: middle;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.community {
+  position: relative;
+  margin: 50px;
+  display: inline-block;
+  vertical-align: middle;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+  top: 60px;
+}
+
+.footerimg {
+  position: relative;
+  margin: 50px;
+  display: inline-block;
+  vertical-align: middle;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+  top: 60px;
 }
