@@ -1,0 +1,17 @@
+.subnav {
+  margin-bottom: 200px;
+
+  ul.secondnav {
+    display: flex;
+    padding: 50px;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 80%;
+    left: 50px;
+    color: #aaa;
+    font-size: 11px;
+    top: 25px;
+    list-style-type: none;
+  }
+}
