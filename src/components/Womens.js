@@ -284,6 +284,7 @@ class Womens extends Component {
           <div className='column1'>
             <ul className='help'>
               <b>Help</b>
+              <br />
               <li className='signup'>Order Status</li>
               <li>Orders & Payments</li>
               <li>Shipping</li>
@@ -294,6 +295,7 @@ class Womens extends Component {
               <div className='column2'>
                 <ul className='quick'>
                   <b>Quick Links</b>
+                  <br />
                   <li className='signup'>In-Store Pickup</li>
                   <li>Brands</li>
                   <li>Careers</li>
@@ -306,7 +308,8 @@ class Womens extends Component {
             </ul>
             <div className='offers'>
               <ul className='offers'>
-                <b className='moveup'>Get Special Offers if you sign up here!</b>
+                <b id='u'>Get Special Offers if you sign up here!</b>
+                <br />
                 <li className='signups'>Twitter</li>
                 <li>Facebook</li>
                 <li>Youtube</li>
@@ -317,12 +320,26 @@ class Womens extends Component {
             </div>
           </div>
         </div>
+        <ul className='rew'>
+          <b id='uo'>Rewards</b>
+          <br />
+          <p>Click Here. Join Now.</p>
+        </ul>
+        <ul className='find'>
+          <b id='ak'>Find A Store</b>
+          <br />
+          <p>Store Locator</p>
+          <p>UO Spaces</p>
+        </ul>
         <ul className='apps'>
           <li>App Store</li>
+          <br />
           <li>Google Play</li>
+          <br />
           <li>Amazon</li>
+          <br />
+          Made With &hearts; in St Pete
         </ul>
-        Made With &hearts; in St Pete
       </footer>
     </div>
   }

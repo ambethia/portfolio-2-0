@@ -3,23 +3,155 @@ import React, { Component } from 'react'
 
 class Mens extends Component {
 
+  constructor () {
+    super()
+    this.state = {
+      visibleCategory: null
+    }
+  }
+
+  showCategory (category) {
+    this.setState({ visibleCategory: category })
+  }
+
+  hideCategory (category) {
+    this.setState({ visibleCategory: null })
+  }
+
   render () {
-    return <div id='mens'>
-      <nav className='subnavbar'>
-        <ul className='secondnav'>
-          <li>Collections</li>
-          <li>New</li>
-          <li>Graphic Tees</li>
-          <li>Tops</li>
-          <li>Jackets+Coats</li>
-          <li>Bottoms</li>
-          <li>Shoes</li>
-          <li>Accessories</li>
-          <li>Sock+Underwear</li>
-          <li>Vintage</li>
-          <li>Grooming</li>
-          <li>Brands</li>
-          <li>Sale</li>
+    return <div className='mens'>
+      <nav className='menssubnavbar'>
+        <ul className='menssecondnav'>
+          <li onMouseOver={() => this.showCategory('Collections')} onMouseOut={() => this.hideCategory()}>
+            <a className='ay'>Collections</a>
+            <ul className={this.state.visibleCategory === 'Collections' ? 'visible' : 'hidden'}>
+              <li className='funk'>Valentine's Day Shop</li>
+              <li className='funk'>UO: Exclusives</li>
+              <li className='funk'>LookBook: #UO:Love Stories</li>
+              <li className='funk'>LookBook: The Checklist</li>
+              <li className='funk'>View all LookBooks</li>
+              <li className='funk'>Gift Cards</li>
+            </ul>
+          </li>
+          <li onMouseOver={() => this.showCategory('New')} onMouseOut={() => this.hideCategory()}>
+            <a className='ay'>New</a>
+            <ul className={this.state.visibleCategory === 'New' ? 'visible' : 'hidden'}>
+              <li className='funk'>Jackets + Coats</li>
+              <li className='funk'>Graphics</li>
+              <li className='funk'>Tops</li>
+              <li className='funk'>Bottoms</li>
+              <li className='funk'>Shoes</li>
+              <li className='funk'>Accessories</li>
+              <li className='funk'>Grooming</li>
+            </ul>
+          </li>
+          <li onMouseOver={() => this.showCategory('Graphic Tees')} onMouseOut={() => this.hideCategory()}>
+            <a className='ay'>Graphic Tees</a>
+            <ul className={this.state.visibleCategory === 'Graphic Tees' ? 'visible' : 'hidden'}>
+              <li className='funk'>Brand + Logos</li>
+              <li className='funk'>Music</li>
+              <li className='funk'>Sport + Athletic</li>
+              <li className='funk'>Pop Culture</li>
+              <li className='funk'>Art + Design</li>
+            </ul>
+          </li>
+          <li onMouseOver={() => this.showCategory('Tops')} onMouseOut={() => this.hideCategory()}>
+            <a className='ay'>Tops</a>
+            <ul className={this.state.visibleCategory === 'Tops' ? 'visible' : 'hidden'}>
+              <li className='funk'>Hoodies + Sweatshirts</li>
+              <li className='funk'>Tees</li>
+              <li className='funk'>Shirts</li>
+              <li className='funk'>Sweaters</li>
+              <li className='funk'>Graphic Tees</li>
+            </ul>
+          </li>
+          <li onMouseOver={() => this.showCategory('Jackets')} onMouseOut={() => this.hideCategory()}>
+            <a className='ay'>Jackets</a>
+            <ul className={this.state.visibleCategory === 'Jackets' ? 'visible' : 'hidden'}>
+              <li className='funk'>Bomber</li>
+              <li className='funk'>Denim + Trucker</li>
+              <li className='funk'>Windbreaker</li>
+              <li className='funk'>Leather + Suede</li>
+              <li className='funk'>Coats</li>
+            </ul>
+          </li>
+          <li onMouseOver={() => this.showCategory('Bottoms')} onMouseOut={() => this.hideCategory()}>
+            <a className='ay'>Bottoms</a>
+            <ul className={this.state.visibleCategory === 'Bottoms' ? 'visible' : 'hidden'}>
+              <li className='funk'>Pants</li>
+              <li className='funk'>Jeans</li>
+              <li className='funk'>Overalls + Coveralls</li>
+              <li className='funk'>Athletic</li>
+              <li className='funk'>Shorts</li>
+            </ul>
+          </li>
+          <li onMouseOver={() => this.showCategory('Shoes')} onMouseOut={() => this.hideCategory()}>
+            <a className='ay'>Shoes</a>
+            <ul className={this.state.visibleCategory === 'Shoes' ? 'visible' : 'hidden'}>
+              <li className='funk'>Sneakers</li>
+              <li className='funk'>Boots</li>
+              <li className='funk'>Dress Shoes</li>
+              <li className='funk'>Slippers + Sandals</li>
+            </ul>
+          </li>
+          <li onMouseOver={() => this.showCategory('Accessories')} onMouseOut={() => this.hideCategory()}>
+            <a className='ay'>Accessories</a>
+            <ul className={this.state.visibleCategory === 'Accessories' ? 'visible' : 'hidden'}>
+              <li className='funk'>Hats + Beanies</li>
+              <li className='funk'>Bags + Wallets</li>
+              <li className='funk'>Pins + Patches</li>
+              <li className='funk'>Sunglasses + Readers</li>
+              <li className='funk'>Watches + Jewelery</li>
+              <li className='funk'>Bandanas</li>
+              <li className='funk'>Belts</li>
+            </ul>
+          </li>
+          <li onMouseOver={() => this.showCategory('Sock + Underwear')} onMouseOut={() => this.hideCategory()}>
+            <a className='ay'>Socks + Underwear</a>
+            <ul className={this.state.visibleCategory === 'Sock + Underwear' ? 'visible' : 'hidden'}>
+              <li className='funk'>Socks</li>
+              <li className='funk'>Underwear</li>
+            </ul>
+          </li>
+          <li onMouseOver={() => this.showCategory('Grooming')} onMouseOut={() => this.hideCategory()}>
+            <a className='ay'>Grooming</a>
+            <ul className={this.state.visibleCategory === 'Grooming' ? 'visible' : 'hidden'}>
+              <li className='funk'>Beard + Shave</li>
+              <li className='funk'>Hair</li>
+              <li className='funk'>Skin</li>
+              <li className='funk'>Cologone</li>
+            </ul>
+          </li>
+          <li onMouseOver={() => this.showCategory('Brands')} onMouseOut={() => this.hideCategory()}>
+            <a className='ay'>Brands</a>
+            <ul className={this.state.visibleCategory === 'Brands' ? 'visible' : 'hidden'}>
+              <li className='funk'>adidas</li>
+              <li className='funk'>Alpha Industries</li>
+              <li className='funk'>Stussy</li>
+              <li className='funk'>Patagonia</li>
+              <li className='funk'>Calvin Klein</li>
+              <li className='funk'>BDG</li>
+              <li className='funk'>Reebok</li>
+              <li className='funk'>FILA</li>
+              <li className='funk'>UrbanOutfitters</li>
+              <li className='funk'>Brands A-Z</li>
+            </ul>
+          </li>
+          <li onMouseOver={() => this.showCategory('Sale')} onMouseOut={() => this.hideCategory()}>
+            <a className='ay'>Sale</a>
+            <ul className={this.state.visibleCategory === 'Sale' ? 'visible' : 'hidden'}>
+              <li className='funk'>Just Added</li>
+              <li className='funk'>Graphic Tees</li>
+              <li className='funk'>Tees + Tanks</li>
+              <li className='funk'>Shirts</li>
+              <li className='funk'>Sweaters + Sweatshirts</li>
+              <li className='funk'>Coats + Jackets</li>
+              <li className='funk'>Jeans + Pants</li>
+              <li className='funk'>Shoes</li>
+              <li className='funk'>Hats + Beanies</li>
+              <li className='funk'>Accessories</li>
+            </ul>
+          </li>
         </ul>
       </nav>
       <main className='menslayout'>

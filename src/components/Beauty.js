@@ -2,24 +2,165 @@ import React, { Component } from 'react'
 
 class Beauty extends Component {
 
+  constructor () {
+    super()
+    this.state = {
+      visibleCategory: null
+    }
+  }
+
+  showCategory (category) {
+    this.setState({ visibleCategory: category })
+  }
+
+  hideCategory (category) {
+    this.setState({ visibleCategory: null })
+  }
+
   render () {
     return <div className='beauty'>
       <nav className='subnavbar'>
-        <ul className='secondnav'>
-          <li>Collections</li>
-          <li>New</li>
-          <li>Makeup</li>
-          <li>Skin Care</li>
-          <li>Bath + Body</li>
-          <li>Hair</li>
-          <li>Nails</li>
-          <li>Fragrance</li>
-          <li>Wellness</li>
-          <li>Accessories</li>
-          <li>Mens Grooming</li>
-          <li>Gift Sets</li>
-          <li>Brands</li>
-          <li>Sale</li>
+        <ul className='beautysecondnav'>
+          <li onMouseOver={() => this.showCategory('Collections')} onMouseOut={() => this.hideCategory()}>
+            <a className='ay'>Collections</a>
+            <ul className={this.state.visibleCategory === 'Collections' ? 'visible' : 'hidden'}>
+              <li className='funk'>Valentines Day Shop</li>
+              <li className='funk'>For The Record Music Newsletter</li>
+              <li className='funk'>UO Exclusives</li>
+              <li className='funk'>LookBook</li>
+              <li className='funk'>View All LookBook</li>
+            </ul>
+          </li>
+          <li onMouseOver={() => this.showCategory('New')} onMouseOut={() => this.hideCategory()}>
+            <a className='ay'>New</a>
+            <ul className={this.state.visibleCategory === 'New' ? 'visible' : 'hidden'}>
+              <li className='funk'>Valentines Day Shop</li>
+              <li className='funk'>For The Record Music Newsletter</li>
+              <li className='funk'>UO Exclusives</li>
+              <li className='funk'>LookBook</li>
+              <li className='funk'>View All LookBook</li>
+            </ul>
+          </li>
+          <li onMouseOver={() => this.showCategory('Makeup')} onMouseOut={() => this.hideCategory()}>
+            <a className='ay'>Makeup</a>
+            <ul className={this.state.visibleCategory === 'Makeup' ? 'visible' : 'hidden'}>
+              <li className='funk'>Valentines Day Shop</li>
+              <li className='funk'>For The Record Music Newsletter</li>
+              <li className='funk'>UO Exclusives</li>
+              <li className='funk'>LookBook</li>
+              <li className='funk'>View All LookBook</li>
+            </ul>
+          </li>
+          <li onMouseOver={() => this.showCategory('Skin Care')} onMouseOut={() => this.hideCategory()}>
+            <a className='ay'>Skin Care</a>
+            <ul className={this.state.visibleCategory === 'Skin Care' ? 'visible' : 'hidden'}>
+              <li className='funk'>Valentines Day Shop</li>
+              <li className='funk'>For The Record Music Newsletter</li>
+              <li className='funk'>UO Exclusives</li>
+              <li className='funk'>LookBook</li>
+              <li className='funk'>View All LookBook</li>
+            </ul>
+          </li>
+          <li onMouseOver={() => this.showCategory('Bath + Body')} onMouseOut={() => this.hideCategory()}>
+            <a className='ay'>Bath + Body</a>
+            <ul className={this.state.visibleCategory === 'Bath + Body' ? 'visible' : 'hidden'}>
+              <li className='funk'>Valentines Day Shop</li>
+              <li className='funk'>For The Record Music Newsletter</li>
+              <li className='funk'>UO Exclusives</li>
+              <li className='funk'>LookBook</li>
+              <li className='funk'>View All LookBook</li>
+            </ul>
+          </li>
+          <li onMouseOver={() => this.showCategory('Hair')} onMouseOut={() => this.hideCategory()}>
+            <a className='ay'>Hair</a>
+            <ul className={this.state.visibleCategory === 'Hair' ? 'visible' : 'hidden'}>
+              <li className='funk'>Valentines Day Shop</li>
+              <li className='funk'>For The Record Music Newsletter</li>
+              <li className='funk'>UO Exclusives</li>
+              <li className='funk'>LookBook</li>
+              <li className='funk'>View All LookBook</li>
+            </ul>
+          </li>
+          <li onMouseOver={() => this.showCategory('Nails')} onMouseOut={() => this.hideCategory()}>
+            <a className='ay'>Nails</a>
+            <ul className={this.state.visibleCategory === 'Nails' ? 'visible' : 'hidden'}>
+              <li className='funk'>Valentines Day Shop</li>
+              <li className='funk'>For The Record Music Newsletter</li>
+              <li className='funk'>UO Exclusives</li>
+              <li className='funk'>LookBook</li>
+              <li className='funk'>View All LookBook</li>
+            </ul>
+          </li>
+          <li onMouseOver={() => this.showCategory('Fragrance')} onMouseOut={() => this.hideCategory()}>
+            <a className='ay'>Fragrance</a>
+            <ul className={this.state.visibleCategory === 'Fragrance' ? 'visible' : 'hidden'}>
+              <li className='funk'>Valentines Day Shop</li>
+              <li className='funk'>For The Record Music Newsletter</li>
+              <li className='funk'>UO Exclusives</li>
+              <li className='funk'>LookBook</li>
+              <li className='funk'>View All LookBook</li>
+            </ul>
+          </li>
+          <li onMouseOver={() => this.showCategory('Wellness')} onMouseOut={() => this.hideCategory()}>
+            <a className='ay'>Wellness</a>
+            <ul className={this.state.visibleCategory === 'Wellness' ? 'visible' : 'hidden'}>
+              <li className='funk'>Valentines Day Shop</li>
+              <li className='funk'>For The Record Music Newsletter</li>
+              <li className='funk'>UO Exclusives</li>
+              <li className='funk'>LookBook</li>
+              <li className='funk'>View All LookBook</li>
+            </ul>
+          </li>
+          <li onMouseOver={() => this.showCategory('Accessories')} onMouseOut={() => this.hideCategory()}>
+            <a className='ay'>Accessories</a>
+            <ul className={this.state.visibleCategory === 'Accessories' ? 'visible' : 'hidden'}>
+              <li className='funk'>Valentines Day Shop</li>
+              <li className='funk'>For The Record Music Newsletter</li>
+              <li className='funk'>UO Exclusives</li>
+              <li className='funk'>LookBook</li>
+              <li className='funk'>View All LookBook</li>
+            </ul>
+          </li>
+          <li onMouseOver={() => this.showCategory('Mens Grooming')} onMouseOut={() => this.hideCategory()}>
+            <a className='ay'>Mens Grooming</a>
+            <ul className={this.state.visibleCategory === 'Mens Grooming' ? 'visible' : 'hidden'}>
+              <li className='funk'>Valentines Day Shop</li>
+              <li className='funk'>For The Record Music Newsletter</li>
+              <li className='funk'>UO Exclusives</li>
+              <li className='funk'>LookBook</li>
+              <li className='funk'>View All LookBook</li>
+            </ul>
+          </li>
+          <li onMouseOver={() => this.showCategory('Gift Sets')} onMouseOut={() => this.hideCategory()}>
+            <a className='ay'>Gift Sets</a>
+            <ul className={this.state.visibleCategory === 'Gift Sets' ? 'visible' : 'hidden'}>
+              <li className='funk'>Valentines Day Shop</li>
+              <li className='funk'>For The Record Music Newsletter</li>
+              <li className='funk'>UO Exclusives</li>
+              <li className='funk'>LookBook</li>
+              <li className='funk'>View All LookBook</li>
+            </ul>
+          </li>
+          <li onMouseOver={() => this.showCategory('Brands')} onMouseOut={() => this.hideCategory()}>
+            <a className='ay'>Brands</a>
+            <ul className={this.state.visibleCategory === 'Brands' ? 'visible' : 'hidden'}>
+              <li className='funk'>Valentines Day Shop</li>
+              <li className='funk'>For The Record Music Newsletter</li>
+              <li className='funk'>UO Exclusives</li>
+              <li className='funk'>LookBook</li>
+              <li className='funk'>View All LookBook</li>
+            </ul>
+          </li>
+          <li onMouseOver={() => this.showCategory('Sale')} onMouseOut={() => this.hideCategory()}>
+            <a className='ay'>Sale</a>
+            <ul className={this.state.visibleCategory === 'Sale' ? 'visible' : 'hidden'}>
+              <li className='funk'>Valentines Day Shop</li>
+              <li className='funk'>For The Record Music Newsletter</li>
+              <li className='funk'>UO Exclusives</li>
+              <li className='funk'>LookBook</li>
+              <li className='funk'>View All LookBook</li>
+            </ul>
+          </li>
         </ul>
       </nav>
       <main className='apartmentlayout'>

@@ -2,66 +2,181 @@ import React, { Component } from 'react'
 
 class Blog extends Component {
 
+  constructor () {
+    super()
+    this.state = {
+      visibleCategory: null
+    }
+  }
+
+  showCategory (category) {
+    this.setState({ visibleCategory: category })
+  }
+
+  hideCategory (category) {
+    this.setState({ visibleCategory: null })
+  }
+
   render () {
     return <div id='Apartment'>
       <nav className='subnavbar'>
-        <ul className='secondnav'>
-          <li>Collections</li>
-          <li>New</li>
-          <li>Bedding</li>
-          <li>Furniture</li>
-          <li>Lighting</li>
-          <li>Storage</li>
-          <li>Art + Decor</li>
-          <li>Kitchen + Bar</li>
-          <li>Bath</li>
-          <li>Books + Stationery</li>
-          <li>Party + Fun</li>
-          <li>Sale</li>
+        <ul className='blogsecondnav'>
+          <li onMouseOver={() => this.showCategory('Collections')} onMouseOut={() => this.hideCategory()}>
+            <a className='ay'>Collections</a>
+            <ul className={this.state.visibleCategory === 'Collections' ? 'visible' : 'hidden'}>
+              <li className='funk'>Valentines Day Shop</li>
+              <li className='funk'>For The Record Music Newsletter</li>
+              <li className='funk'>UO Exclusives</li>
+              <li className='funk'>LookBook</li>
+              <li className='funk'>View All LookBook</li>
+            </ul>
+          </li>
+          <li onMouseOver={() => this.showCategory('New')} onMouseOut={() => this.hideCategory()}>
+            <a className='ay'>New</a>
+            <ul className={this.state.visibleCategory === 'New' ? 'visible' : 'hidden'}>
+              <li className='funk'>Valentines Day Shop</li>
+              <li className='funk'>For The Record Music Newsletter</li>
+              <li className='funk'>UO Exclusives</li>
+              <li className='funk'>LookBook</li>
+              <li className='funk'>View All LookBook</li>
+            </ul>
+          </li>
+          <li onMouseOver={() => this.showCategory('Bedding')} onMouseOut={() => this.hideCategory()}>
+            <a className='ay'>Bedding</a>
+            <ul className={this.state.visibleCategory === 'Bedding' ? 'visible' : 'hidden'}>
+              <li className='funk'>Valentines Day Shop</li>
+              <li className='funk'>For The Record Music Newsletter</li>
+              <li className='funk'>UO Exclusives</li>
+              <li className='funk'>LookBook</li>
+              <li className='funk'>View All LookBook</li>
+            </ul>
+          </li>
+          <li onMouseOver={() => this.showCategory('Furniture')} onMouseOut={() => this.hideCategory()}>
+            <a className='ay'>Furniture</a>
+            <ul className={this.state.visibleCategory === 'Furniture' ? 'visible' : 'hidden'}>
+              <li className='funk'>Valentines Day Shop</li>
+              <li className='funk'>For The Record Music Newsletter</li>
+              <li className='funk'>UO Exclusives</li>
+              <li className='funk'>LookBook</li>
+              <li className='funk'>View All LookBook</li>
+            </ul>
+          </li>
+          <li onMouseOver={() => this.showCategory('Lighting')} onMouseOut={() => this.hideCategory()}>
+            <a className='ay'>Lighting</a>
+            <ul className={this.state.visibleCategory === 'Lighting' ? 'visible' : 'hidden'}>
+              <li className='funk'>Valentines Day Shop</li>
+              <li className='funk'>For The Record Music Newsletter</li>
+              <li className='funk'>UO Exclusives</li>
+              <li className='funk'>LookBook</li>
+              <li className='funk'>View All LookBook</li>
+            </ul>
+          </li>
+          <li onMouseOver={() => this.showCategory('Storage')} onMouseOut={() => this.hideCategory()}>
+            <a className='ay'>Storage</a>
+            <ul className={this.state.visibleCategory === 'Storage' ? 'visible' : 'hidden'}>
+              <li className='funk'>Valentines Day Shop</li>
+              <li className='funk'>For The Record Music Newsletter</li>
+              <li className='funk'>UO Exclusives</li>
+              <li className='funk'>LookBook</li>
+              <li className='funk'>View All LookBook</li>
+            </ul>
+          </li>
+          <li onMouseOver={() => this.showCategory('Art + Decor')} onMouseOut={() => this.hideCategory()}>
+            <a className='ay'>Art + Decor</a>
+            <ul className={this.state.visibleCategory === 'Art + Decor' ? 'visible' : 'hidden'}>
+              <li className='funk'>Valentines Day Shop</li>
+              <li className='funk'>For The Record Music Newsletter</li>
+              <li className='funk'>UO Exclusives</li>
+              <li className='funk'>LookBook</li>
+              <li className='funk'>View All LookBook</li>
+            </ul>
+          </li>
+          <li onMouseOver={() => this.showCategory('Kitchen + Bar')} onMouseOut={() => this.hideCategory()}>
+            <a className='ay'>Collections</a>
+            <ul className={this.state.visibleCategory === 'Kitchen + Bar' ? 'visible' : 'hidden'}>
+              <li className='funk'>Valentines Day Shop</li>
+              <li className='funk'>For The Record Music Newsletter</li>
+              <li className='funk'>UO Exclusives</li>
+              <li className='funk'>LookBook</li>
+              <li className='funk'>View All LookBook</li>
+            </ul>
+          </li>
+          <li onMouseOver={() => this.showCategory('Bath')} onMouseOut={() => this.hideCategory()}>
+            <a className='ay'>Bath</a>
+            <ul className={this.state.visibleCategory === 'Bath' ? 'visible' : 'hidden'}>
+              <li className='funk'>Valentines Day Shop</li>
+              <li className='funk'>For The Record Music Newsletter</li>
+              <li className='funk'>UO Exclusives</li>
+              <li className='funk'>LookBook</li>
+              <li className='funk'>View All LookBook</li>
+            </ul>
+          </li>
+          <li onMouseOver={() => this.showCategory('Books + Stationery')} onMouseOut={() => this.hideCategory()}>
+            <a className='ay'>Books + Stationery</a>
+            <ul className={this.state.visibleCategory === 'Books + Stationery' ? 'visible' : 'hidden'}>
+              <li className='funk'>Valentines Day Shop</li>
+              <li className='funk'>For The Record Music Newsletter</li>
+              <li className='funk'>UO Exclusives</li>
+              <li className='funk'>LookBook</li>
+              <li className='funk'>View All LookBook</li>
+            </ul>
+          </li>
+          <li onMouseOver={() => this.showCategory('Part + Fun')} onMouseOut={() => this.hideCategory()}>
+            <a className='ay'>Party + Fun</a>
+            <ul className={this.state.visibleCategory === 'Party + Fun' ? 'visible' : 'hidden'}>
+              <li className='funk'>Valentines Day Shop</li>
+              <li className='funk'>For The Record Music Newsletter</li>
+              <li className='funk'>UO Exclusives</li>
+              <li className='funk'>LookBook</li>
+              <li className='funk'>View All LookBook</li>
+            </ul>
+          </li>
+          <li onMouseOver={() => this.showCategory('Sale')} onMouseOut={() => this.hideCategory()}>
+            <a className='ay'>Sale</a>
+            <ul className={this.state.visibleCategory === 'Sale' ? 'visible' : 'hidden'}>
+              <li className='funk'>Valentines Day Shop</li>
+              <li className='funk'>For The Record Music Newsletter</li>
+              <li className='funk'>UO Exclusives</li>
+              <li className='funk'>LookBook</li>
+              <li className='funk'>View All LookBook</li>
+            </ul>
+          </li>
         </ul>
       </nav>
       <main className='apartmentlayout'>
         <div id='apartmentimg1'>
-          <img src='http://images.urbanoutfitters.com/is/image/UrbanOutfitters/170116_HomeSale_us_agw_A?scl=1&qlt=92' alt='updatedutility' height='187px' width='1200px' />
+          <img src='http://blog.urbanoutfitters.com/files/heroScreen%20Shot%202017-01-17%20at%2012.13.32%20PM.jpg' alt='updatedutility' height='534px' width='800px' />
         </div>
         <div id='apartmentimg2'>
-          <img src='http://images.urbanoutfitters.com/is/image/UrbanOutfitters/170116_agw_us_1?scl=1&qlt=92' alt='thejumpsuit' height='624px' width='590px' />
+          <img src='http://blog.urbanoutfitters.com/files/TWO%20ONE%20600-5.jpg' alt='thejumpsuit' height='320px' width='270px' />
+          <img src='http://blog.urbanoutfitters.com/files/lead_tavish-timothy-00102.jpg' alt='thejumpsuit' height='320px' width='270px' />
+          <img src='http://blog.urbanoutfitters.com/files/heroUO%20dollar%20stairs%20final.jpg' alt='thejumpsuit' height='320px' width='270px' />
         </div>
         <div id='apartmentimg3'>
-          <img src='http://images.urbanoutfitters.com/is/image/UrbanOutfitters/170116_agw_us_2?scl=1&qlt=92' alt='sweater' height='535px' width='386px' />
+          <img src='http://blog.urbanoutfitters.com/files/heroTSLATES_UO_SV_40.jpg' alt='thejumpsuit' height='179px' width='320px' />
+          <img src='http://blog.urbanoutfitters.com/files/UO-beauty-67.jpg' alt='thejumpsuit' height='179px' width='320px' />
+          <img src='http://blog.urbanoutfitters.com/files/bowies-v3-rgb_1600_c.jpg' alt='thejumpsuit' height='179px' width='320px' />
         </div>
         <div id='apartmentimg4'>
-          <img src='http://images.urbanoutfitters.com/is/image/UrbanOutfitters/170116_agw_us_3?scl=1&qlt=92' alt='logo' height='535px' width='386px' />
+          <img src='http://blog.urbanoutfitters.com/files/087A3410.jpg' alt='thejumpsuit' height='179px' width='320px' />
+          <img src='http://blog.urbanoutfitters.com/files/hero_DSC3121.jpg' alt='thejumpsuit' height='179px' width='320px' />
+          <img src='http://blog.urbanoutfitters.com/files/01_WK4_FRAGRANT_13929.jpg' alt='thejumpsuit' height='179px' width='320px' />
         </div>
         <div id='apartmentimg5'>
-          <img src='http://images.urbanoutfitters.com/is/image/UrbanOutfitters/170116_agw_us_4?scl=1&qlt=92' alt='teamgraphics' height='535px' width='386px' />
+          <img src='http://blog.urbanoutfitters.com/files/heroScreen%20Shot%202017-01-17%20at%2011.43.08%20AM.jpg' alt='thejumpsuit' height='179px' width='320px' />
+          <img src='http://blog.urbanoutfitters.com/files/heroScreen-Shot-2017-01-17-at-11.56.21-AM.jpg' alt='thejumpsuit' height='179px' width='320px' />
+          <img src='http://blog.urbanoutfitters.com/files/mm_jan_5.jpg' alt='thejumpsuit' height='179px' width='320px' />
         </div>
         <div id='apartmnetimg6'>
-          <img src='http://images.urbanoutfitters.com/is/image/UrbanOutfitters/170116_agw_us_5?scl=1&qlt=92' alt='shopbyfit' height='535px' width='386px' />
+          <img src='http://blog.urbanoutfitters.com/files/heroScreen%20Shot%202017-01-17%20at%2012.13.32%20PM.jpeg' alt='thejumpsuit' height='179px' width='320px' />
+          <img src='http://blog.urbanoutfitters.com/files/hero%20Screen%20Shot%202017-01-17%20at%2011.33.08%20AM.jpg' alt='thejumpsuit' height='179px' width='320px' />
+          <img src='http://blog.urbanoutfitters.com/files/heroScreen-Shot-2017-01-17-at-12.25.08-PM.jpg' alt='thejumpsuit' height='179px' width='320px' />
         </div>
         <div id='apartmnetimg7'>
-          <img src='http://images.urbanoutfitters.com/is/image/UrbanOutfitters/170116_agw_us_9?scl=1&qlt=92' alt='vdayshop' height='187px' width='1200px' />
+          <img src='http://blog.urbanoutfitters.com/files/Screen%20Shot%202017-01-20%20at%208.45.34%20AM.jpeg' alt='thejumpsuit' height='179px' width='320px' />
+          <img src='http://blog.urbanoutfitters.com/files/gassycontortionist%205.jpeg' alt='thejumpsuit' height='179px' width='320px' />
+          <img src='http://blog.urbanoutfitters.com/files/Screen%20Shot%202017-01-20%20at%206.25.47%20PM.jpg' alt='thejumpsuit' height='179px' width='320px' />
         </div>
-        <section id='apartmentarrivalswrapper'>
-          <div id='apartmentnewarrival1'>
-            <img src='http://images.urbanoutfitters.com/is/image/UrbanOutfitters/42040741_020_b' alt='newarrival1' height='279px' width='179px' />
-          </div>
-          <div id='apartmentnewarrival2'>
-            <img src='http://images.urbanoutfitters.com/is/image/UrbanOutfitters/41975905_010_b' alt='newarrival2' height='279px' width='179px' />
-          </div>
-          <div id='apartmentnewarrival3'>
-            <img src='http://images.urbanoutfitters.com/is/image/UrbanOutfitters/41138116_095_b' alt='newarrival3' height='279px' width='179px' />
-          </div>
-          <div id='apartmentnewarrival4'>
-            <img src='http://images.urbanoutfitters.com/is/image/UrbanOutfitters/40859233_027_b' alt='newarrival4' height='279px' width='179px' />
-          </div>
-          <div id='apartmentnewarrival5'>
-            <img src='http://images.urbanoutfitters.com/is/image/UrbanOutfitters/40719783_010_b' alt='newarrival5' height='279px' width='179px' />
-          </div>
-          <div id='apartmentnewarrival6'>
-            <img src='http://images.urbanoutfitters.com/is/image/UrbanOutfitters/40418600_022_b' alt='newarrival6' height='279px' width='179px' />
-          </div>
-        </section>
         <section id='apartmentstories'>
           <div id='apartmentstoriesrow'>
             <article id='apartmentstoriesitems'>

@@ -2,16 +2,85 @@ import React, { Component } from 'react'
 
 class Sale extends Component {
 
+  constructor () {
+    super()
+    this.state = {
+      visibleCategory: null
+    }
+  }
+
+  showCategory (category) {
+    this.setState({ visibleCategory: category })
+  }
+
+  hideCategory (category) {
+    this.setState({ visibleCategory: null })
+  }
+
   render () {
     return <div id='sale'>
       <nav className='subnavbar'>
-        <ul className='secondnav'>
-          <li>Womens Sale</li>
-          <li>Mens Sale</li>
-          <li>Apartment Sale</li>
-          <li>Music + Tech Sale</li>
-          <li>Beauty Sale</li>
-          <li>Intimate Sale</li>
+        <ul className='salesecondnav'>
+          <li onMouseOver={() => this.showCategory('Womens Sale')} onMouseOut={() => this.hideCategory()}>
+            <a className='ay'>Womens Sale</a>
+            <ul className={this.state.visibleCategory === 'Womens Sale' ? 'visible' : 'hidden'}>
+              <li className='funk'>Valentines Day Shop</li>
+              <li className='funk'>For The Record Music Newsletter</li>
+              <li className='funk'>UO Exclusives</li>
+              <li className='funk'>LookBook</li>
+              <li className='funk'>View All LookBook</li>
+            </ul>
+          </li>
+          <li onMouseOver={() => this.showCategory('Mens Sale')} onMouseOut={() => this.hideCategory()}>
+            <a className='ay'>Collections</a>
+            <ul className={this.state.visibleCategory === 'Mens Sale' ? 'visible' : 'hidden'}>
+              <li className='funk'>Valentines Day Shop</li>
+              <li className='funk'>For The Record Music Newsletter</li>
+              <li className='funk'>UO Exclusives</li>
+              <li className='funk'>LookBook</li>
+              <li className='funk'>View All LookBook</li>
+            </ul>
+          </li>
+          <li onMouseOver={() => this.showCategory('Apartment Sale')} onMouseOut={() => this.hideCategory()}>
+            <a className='ay'>Apartment Sale</a>
+            <ul className={this.state.visibleCategory === 'Apartment Sale' ? 'visible' : 'hidden'}>
+              <li className='funk'>Valentines Day Shop</li>
+              <li className='funk'>For The Record Music Newsletter</li>
+              <li className='funk'>UO Exclusives</li>
+              <li className='funk'>LookBook</li>
+              <li className='funk'>View All LookBook</li>
+            </ul>
+          </li>
+          <li onMouseOver={() => this.showCategory('Music + Tech Sale')} onMouseOut={() => this.hideCategory()}>
+            <a className='ay'>Music + Tech Sale</a>
+            <ul className={this.state.visibleCategory === 'Music + Tech Sale' ? 'visible' : 'hidden'}>
+              <li className='funk'>Valentines Day Shop</li>
+              <li className='funk'>For The Record Music Newsletter</li>
+              <li className='funk'>UO Exclusives</li>
+              <li className='funk'>LookBook</li>
+              <li className='funk'>View All LookBook</li>
+            </ul>
+          </li>
+          <li onMouseOver={() => this.showCategory('Beauty Sale')} onMouseOut={() => this.hideCategory()}>
+            <a className='ay'>Beauty Sale</a>
+            <ul className={this.state.visibleCategory === 'Beauty Sale' ? 'visible' : 'hidden'}>
+              <li className='funk'>Valentines Day Shop</li>
+              <li className='funk'>For The Record Music Newsletter</li>
+              <li className='funk'>UO Exclusives</li>
+              <li className='funk'>LookBook</li>
+              <li className='funk'>View All LookBook</li>
+            </ul>
+          </li>
+          <li onMouseOver={() => this.showCategory('Intimate Sale')} onMouseOut={() => this.hideCategory()}>
+            <a className='ay'>Intimate Sale</a>
+            <ul className={this.state.visibleCategory === 'Intimate Sale' ? 'visible' : 'hidden'}>
+              <li className='funk'>Valentines Day Shop</li>
+              <li className='funk'>For The Record Music Newsletter</li>
+              <li className='funk'>UO Exclusives</li>
+              <li className='funk'>LookBook</li>
+              <li className='funk'>View All LookBook</li>
+            </ul>
+          </li>
         </ul>
       </nav>
       <main className='apartmentlayout'>
