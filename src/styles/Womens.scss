@@ -1,7 +1,9 @@
-.subnav {
-  margin-bottom: 200px;
+@import 'utility';
 
-  ul.secondnav {
+.subnav {
+  margin-bottom: 100px;
+
+  ul.womenssecondnav {
     display: flex;
     padding: 50px;
     justify-content: space-between;

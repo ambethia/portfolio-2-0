@@ -157,20 +157,16 @@ class Mens extends Component {
       <main className='menslayout'>
         <div id='mensimg1'>
           <img src='http://images.urbanoutfitters.com/is/image/UrbanOutfitters/170116_mgw_us_1?scl=1&qlt=92' alt='shoe' height='686px' width='590px' />
-        </div>
-        <div id='mensimg2'>
           <img src='http://images.urbanoutfitters.com/is/image/UrbanOutfitters/170116_mgw_us_2?scl=1&qlt=92' alt='jackets' height='686px' width='590px' />
         </div>
-        <div id='mensimg3'>
+        <div id='mensimg2'>
           <img src='http://images.urbanoutfitters.com/is/image/UrbanOutfitters/170116_mgw_us_3?scl=1&qlt=92' alt='sweater' height='535px' width='386px' />
-        </div>
-        <div id='mensimg4'>
           <img src='http://images.urbanoutfitters.com/is/image/UrbanOutfitters/170116_mgw_us_4?scl=1&qlt=92' alt='logo' height='535px' width='386px' />
         </div>
-        <div id='mensimg5'>
+        <div id='mensimg3'>
           <img src='http://images.urbanoutfitters.com/is/image/UrbanOutfitters/170116_mgw_us_5?scl=1&qlt=92' alt='teamgraphics' height='535px' width='386px' />
         </div>
-        <div id='mensimg6'>
+        <div id='mensimg4'>
           <img src='http://images.urbanoutfitters.com/is/image/UrbanOutfitters/170116_mgw_us_6?scl=1&qlt=92' alt='shopbyfit' height='535px' width='386px' />
           <img src='http://images.urbanoutfitters.com/is/image/UrbanOutfitters/170116_mgw_us_7?scl=1&qlt=92' alt='shopbyfit2' height='535px' width='386px' />
         </div>
@@ -256,45 +252,74 @@ class Mens extends Component {
           <div className='column1'>
             <ul className='help'>
               <b>Help</b>
-              <li className='signup'>Order Status</li>
-              <li>Orders & Payments</li>
-              <li>Shipping</li>
-              <li>Returns & Exchanges</li>
-              <li>FAQ</li>
-              <li>Gift Cards</li>
-              <li>Contact Us</li>
+              <br />
+              <li className='signups1'>Order Status</li>
+              <li className='signups'>Orders & Payments</li>
+              <li className='signups'>Shipping</li>
+              <li className='signups'>Returns & Exchanges</li>
+              <li className='signups'>FAQ</li>
+              <li className='signups'>Gift Cards</li>
+              <li className='signups'>Contact Us</li>
               <div className='column2'>
                 <ul className='quick'>
-                  <b>Quick Links</b>
-                  <li className='signup'>In-Store Pickup</li>
-                  <li>Brands</li>
-                  <li>Careers</li>
-                  <li>Shop SA</li>
-                  <li>Shop Europe</li>
-                  <li>Shop Canada</li>
-                  <li>Facebook</li>
+                  <b id='q'>Quick Links</b>
+                  <br />
+                  <li className='signups1'>In-Store Pickup</li>
+                  <li className='signups'>Brands</li>
+                  <li className='signups'>Careers</li>
+                  <li className='signups'>Shop SA</li>
+                  <li className='signups'>Shop Europe</li>
+                  <li className='signups'>Shop Canada</li>
+                  <li className='signups'>Facebook</li>
                 </ul>
               </div>
             </ul>
             <div className='offers'>
               <ul className='offers'>
-                <b className='moveup'>Get Special Offers if you sign up here!</b>
-                <li className='signups'>Twitter</li>
-                <li>Facebook</li>
-                <li>Youtube</li>
-                <li>Spotify</li>
-                <li>Soundcloud</li>
-                <li>LinkedIn</li>
+                <b id='u'>Get Special Offers if you sign up here!</b>
+                <br />
+                <li className='signups1'>Twitter</li>
+                <li className='signups'>Facebook</li>
+                <li className='signups'>Youtube</li>
+                <li className='signups'>Spotify</li>
+                <li className='signups'>Soundcloud</li>
+                <li className='signups'>LinkedIn</li>
               </ul>
             </div>
           </div>
         </div>
-        <ul className='apps'>
-          <li>App Store</li>
-          <li>Google Play</li>
-          <li>Amazon</li>
+        <ul className='rew'>
+          <b id='uo'>Rewards</b>
+          <br />
+          <p>Click Here. Join Now.</p>
+          <article className='b2'>
+            <ul className='b5'>
+              <form action='email'>
+                <li className='b4'>Email: <input type='text' name='/' /><br /></li>
+                <li className='b4'><input type='submit' value='Submit' /><br /></li>
+                <li className='b4'><p className='b1'>By entering your email address, <br /> you agree to receive Kramer's offers,<br /> promotions, and other commercial messages. <br /> You may unsubscribe at any time.</p></li>
+              </form>
+            </ul>
+          </article>
         </ul>
-        Made With &hearts; in St Pete
+        <ul className='find'>
+          <b id='ak'>Find A Store</b>
+          <br />
+          <p>Store Locator</p>
+          <p>UO Spaces</p>
+        </ul>
+        <ul className='volunteer'>
+          <b className='b7'>Volunteer</b>
+          <p className='b6'>Click Here.</p>
+        </ul>
+        <ul className='apps'>
+          <li className='b3'><img src='http://www.urbanoutfitters.com/urban/images/apple-app-store.jpg' height='27px' width='90px' /></li>
+          <br />
+          <li className='b3'><img src='http://www.urbanoutfitters.com/urban/images/google-app-store.png' height='27px' width='90px' /> </li>
+          <br />
+          <li className='b3'><img src='http://www.urbanoutfitters.com/urban/images/amazon-app-store.png' height='27px' width='90px' /> </li>
+          <br />
+        </ul>
       </footer>
     </div>
   }

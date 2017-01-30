@@ -1,6 +1,10 @@
 @import 'utility';
 @import 'mens';
 @import 'womens';
+@import 'sale';
+@import 'beauty';
+@import 'blog';
+@import 'musictech';
 
 $base-text-size: 16px;
 $base-font-family: sans-serif;
@@ -105,7 +109,6 @@ li {
   align-content: center;
   left: -40px;
   margin-top: 15px;
-
   position: relative;
 }
 
@@ -120,9 +123,11 @@ nav.womenssubnavbar {
   flex: 1;
   position: relative;
   margin-bottom: 50px;
+  top: -50px;
   right: 25px;
   display: flex;
   justify-content: space-between;
+  justify-content: space-around;
   .hidden {
     display: none;
   }
@@ -136,6 +141,7 @@ nav.womenssubnavbar {
   margin: 0px;
   align-items: center;
   justify-content: center;
+  justify-content: space-between;
   text-align: center;
   top: 20px;
     p {
@@ -151,14 +157,15 @@ nav.womenssubnavbar {
 .discount {
   margin: 0px;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   text-align: center;
   top: 20px;
 }
 
 .model {
   display: inline-block;
-  vertical-align: middle;
+  align-items: space-between;
+  flex: 1;
   display: flex;
   flex-direction: row-reverse;
   justify-content: space-between;
@@ -203,6 +210,7 @@ nav.womenssubnavbar {
   vertical-align: middle;
   display: flex;
   flex-direction: row-reverse;
+  justify-content: space-around;
   justify-content: space-between;
   align-items: center;
 }
@@ -210,6 +218,7 @@ nav.womenssubnavbar {
 .community {
   margin: 50px;
   margin-top: 10px;
+  justify-content: space-around;
   display: inline-block;
   vertical-align: middle;
   display: flex;
@@ -341,13 +350,22 @@ b#u {
   }
 }
 
+.connect {
+  display: inline-flex;
+  flex-direction: row;
+  flex: 1;
+  position: relative;
+  list-style-type: none;
+  right: 15px;
+}
+
 .find {
   font-size: 10px;
-  bottom: 345px;
+  bottom: 410px;
   color: gray;
   list-style-type: none;
   position: relative;
-  padding-bottom: 8px;
+  // padding-bottom: 8px;
   #ak {
     border-bottom: 1px solid #ddd;
 
@@ -361,7 +379,7 @@ b#u {
   flex: 1;
   display: flex;
   position: relative;
-  bottom: 500px;
+  bottom: 825px;
   align-items: center;
 }
 
