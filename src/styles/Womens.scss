@@ -17,3 +17,101 @@
     list-style-type: none;
   }
 }
+
+.womenslayout {
+  margin: 50px;
+}
+
+.womensimg1 {
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  margin-bottom: 25px;
+  justify-content: space-between;
+
+}
+
+.womensimg2 {
+  flex: 1;
+  flex-direction: row;
+  margin-bottom: 25px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.womensimg3 {
+  flex: 1;
+  margin-bottom: 25px;
+  flex-direction: row;
+  display: flex;
+  justify-content: space-between;
+}
+
+.womensimg5 {
+  flex: 1;
+  margin-bottom: 25px;
+  flex-direction: row;
+  display: flex;
+}
+
+.womensnewarrival1 {
+  justify-content: space-between;
+  flex-direction: row;
+  display: flex;
+  flex: 1;
+  margin-bottom: 25px;
+    img {
+      justify-content: space-between;
+      flex-direction: row;
+    }
+}
+
+.womensstoriesitems {
+  justify-content: space-between;
+  flex-direction: row;
+  display: flex;
+  flex: 1;
+  margin-bottom: 25px;
+}
+
+.womenstrendingone {
+  list-style-type: none;
+  margin-bottom: 25px;
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.womenstrendingtwo {
+  list-style-type: none;
+  margin-bottom: 25px;
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.blogitem1 {
+  margin-bottom: 25px;
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.yourcommunity {
+  margin-bottom: 25px;
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.yourcommunitytwo {
+  margin-bottom: 25px;
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  justify-content: space-between;
+}

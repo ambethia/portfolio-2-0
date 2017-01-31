@@ -1,16 +1,125 @@
 @import 'utility';
-.mens {
 
+.mens {
 }
 
 .menslayout {
+  justify-content: space-between;
+  margin: 50px;
 
 }
 
-.mensimg1 {
-
+#mensimg1 {
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  margin-bottom: 25px;
+  justify-content: space-between;
 }
 
-.mensimg2 {
-  
+#mensimg2 {
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  margin-bottom: 25px;
+  justify-content: space-between;
+}
+
+#mensimg3 {
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  margin-bottom: 25px;
+  justify-content: space-between;
+}
+
+#mensimg4 {
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  margin-bottom: 25px;
+  justify-content: space-between;
+}
+
+#mensimg5 {
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  margin-bottom: 25px;
+  justify-content: space-between;
+}
+
+#newarrival1 {
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  margin-bottom: 25px;
+  justify-content: space-between;
+}
+
+#morestories {
+  justify-content: space-between;
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  margin-bottom: 25px;
+  #morestoriesrow {
+    justify-content: space-between;
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    margin-bottom: 25px;
+    #morestoriesitems {
+      justify-content: space-between;
+      display: flex;
+      flex: 1;
+      flex-direction: row;
+      margin-bottom: 25px;
+    }
+  }
+}
+
+#trends {
+  list-style-type: none;
+  justify-content: space-between;
+  flex-direction: row;
+  flex: 1;
+  display: flex;
+  margin-bottom: 25px;
+  #trendone {
+    list-style-type: none;
+    justify-content: space-between;
+    list-style-type: none;
+    flex-direction: row;
+    flex: 1;
+    #trendingone {
+      list-style-type: none;
+      justify-content: space-between;
+      display: flex;
+      margin-bottom: 25px;
+      flex-direction: row;
+      flex: 1;
+    }
+  }
+}
+
+#trendingtwo {
+  list-style-type: none;
+  justify-content: space-between;
+  flex-direction: row;
+  flex: 1;
+  display: flex;
+  margin-bottom: 25px;
+}
+
+#blogitem1 {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 25px;
+  justify-content: space-between;
+}
+
+#yourcommunity {
+  margin-bottom: 25px;
 }

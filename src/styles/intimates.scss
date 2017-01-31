@@ -48,9 +48,10 @@
 
 #apartmentimg7 {
   display: flex;
+  margin-top: 35px;
   flex: 1;
   flex-direction: row;
-  padding-bottom: 35px;
+  margin-bottom: 25px;
   justify-content: space-between;
 }
 
@@ -58,7 +59,7 @@
   display: flex;
   flex: 1;
   flex-direction: row;
-  margin-bottom: 25px;
+  margin-bottom: 35px;
   justify-content: space-between;
 }
 
@@ -82,14 +83,6 @@
       margin-bottom: 25px;
     }
   }
-}
-
-#newdiscoveries {
-  flex: 1;
-  display: flex;
-  flex-direction: row;
-  margin-bottom: 25px;
-  justify-content: space-around;
 }
 
 #trends {
@@ -116,20 +109,20 @@
   }
 }
 
-#apartmenttrendingtwo {
+#apartmenttwo {
   list-style-type: none;
-  justify-content: space-around;
+  justify-content: space-between;
   flex-direction: row;
   flex: 1;
   display: flex;
-  margin-bottom: 35px;
+  margin-bottom: 25px;
 }
 
 #blogitem1 {
   flex: 1;
   display: flex;
   flex-direction: row;
-  margin-bottom: 35px;
+  margin-bottom: 25px;
   justify-content: space-between;
 }
 

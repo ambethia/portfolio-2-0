@@ -156,45 +156,29 @@ class Mens extends Component {
       </nav>
       <main className='menslayout'>
         <div id='mensimg1'>
-          <img src='http://images.urbanoutfitters.com/is/image/UrbanOutfitters/170116_mgw_us_1?scl=1&qlt=92' alt='shoe' height='686px' width='590px' />
-          <img src='http://images.urbanoutfitters.com/is/image/UrbanOutfitters/170116_mgw_us_2?scl=1&qlt=92' alt='jackets' height='686px' width='590px' />
+          <img src='http://images.urbanoutfitters.com/is/image/UrbanOutfitters/170116_mgw_us_1?scl=1&qlt=92' alt='shoe' height='686px' width='565px' />
+          <img src='http://images.urbanoutfitters.com/is/image/UrbanOutfitters/170116_mgw_us_2?scl=1&qlt=92' alt='jackets' height='686px' width='565px' />
         </div>
         <div id='mensimg2'>
-          <img src='http://images.urbanoutfitters.com/is/image/UrbanOutfitters/170116_mgw_us_3?scl=1&qlt=92' alt='sweater' height='535px' width='386px' />
-          <img src='http://images.urbanoutfitters.com/is/image/UrbanOutfitters/170116_mgw_us_4?scl=1&qlt=92' alt='logo' height='535px' width='386px' />
-        </div>
-        <div id='mensimg3'>
-          <img src='http://images.urbanoutfitters.com/is/image/UrbanOutfitters/170116_mgw_us_5?scl=1&qlt=92' alt='teamgraphics' height='535px' width='386px' />
-        </div>
-        <div id='mensimg4'>
-          <img src='http://images.urbanoutfitters.com/is/image/UrbanOutfitters/170116_mgw_us_6?scl=1&qlt=92' alt='shopbyfit' height='535px' width='386px' />
-          <img src='http://images.urbanoutfitters.com/is/image/UrbanOutfitters/170116_mgw_us_7?scl=1&qlt=92' alt='shopbyfit2' height='535px' width='386px' />
+          <img src='http://images.urbanoutfitters.com/is/image/UrbanOutfitters/170116_mgw_us_3?scl=1&qlt=92' alt='sweater' height='535px' width='380px' />
+          <img src='http://images.urbanoutfitters.com/is/image/UrbanOutfitters/170116_mgw_us_4?scl=1&qlt=92' alt='logo' height='535px' width='380px' />
+          <img src='http://images.urbanoutfitters.com/is/image/UrbanOutfitters/170116_mgw_us_5?scl=1&qlt=92' alt='teamgraphics' height='535px' width='380px' />
         </div>
         <section id='newarrivalswrapper'>
           <div id='newarrival1'>
             <img src='http://images.urbanoutfitters.com/is/image/UrbanOutfitters/41139395_092_b' alt='newarrival1' height='279px' width='179px' />
-          </div>
-          <div id='newarrival2'>
             <img src='http://images.urbanoutfitters.com/is/image/UrbanOutfitters/41891920_010_b' alt='newarrival2' height='279px' width='179px' />
-          </div>
-          <div id='newarrival3'>
             <img src='http://images.urbanoutfitters.com/is/image/UrbanOutfitters/40315293_016_b' alt='newarrival3' height='279px' width='179px' />
-          </div>
-          <div id='newarrival4'>
             <img src='http://images.urbanoutfitters.com/is/image/UrbanOutfitters/40722191_106_b' alt='newarrival4' height='279px' width='179px' />
-          </div>
-          <div id='newarrival5'>
             <img src='http://images.urbanoutfitters.com/is/image/UrbanOutfitters/41377227_072_b' alt='newarrival5' height='279px' width='179px' />
-          </div>
-          <div id='newarrival6'>
             <img src='http://images.urbanoutfitters.com/is/image/UrbanOutfitters/41460627_060_b' alt='newarrival6' height='279px' width='179px' />
           </div>
         </section>
         <section id='morestories'>
           <div id='morestoriesrow'>
             <article id='morestoriesitems'>
-              <img src='http://images.urbanoutfitters.com/is/image/UrbanOutfitters/170116_mgw_us_8?scl=1&qlt=92' alt='item1' height='686px' width='590px' />
-              <img src='http://images.urbanoutfitters.com/is/image/UrbanOutfitters/170116_mgw_us_9?scl=1&qlt=92' alt='item2' height='686px' width='590px' />
+              <img src='http://images.urbanoutfitters.com/is/image/UrbanOutfitters/170116_mgw_us_8?scl=1&qlt=92' alt='item1' height='686px' width='565px' />
+              <img src='http://images.urbanoutfitters.com/is/image/UrbanOutfitters/170116_mgw_us_9?scl=1&qlt=92' alt='item2' height='686px' width='565px' />
             </article>
           </div>
         </section>
@@ -226,19 +210,15 @@ class Mens extends Component {
           <div id='blogwrapper'>
             <div id='blogitem1'>
               <img src='http://images.urbanoutfitters.com/is/image/UrbanOutfitters/170116_mgw_us_b_1?scl=1&qlt=92' alt='blogitem1' height='240px' width='360px' />
-            </div>
-            <div id='blogitem2'>
               <img src='http://images.urbanoutfitters.com/is/image/UrbanOutfitters/170116_mgw_us_b_2?scl=1&qlt=92' alt='blogitem2' height='240px' width='360px' />
-            </div>
-            <div id='blogitem3'>
               <img src='http://images.urbanoutfitters.com/is/image/UrbanOutfitters/170116_mgw_us_b_3?scl=1&qlt=92' alt='blogitem3' height='240px' width='360px' />
             </div>
             <article id='daos'>
               <div id='yourcommunity'>
-                <img src='http://images.urbanoutfitters.com/is/image/UrbanOutfitters/160912_uocomm_m_us?scl=1&qlt=92' alt='community' height='75px' width='1200px' />
+                <img src='http://images.urbanoutfitters.com/is/image/UrbanOutfitters/160912_uocomm_m_us?scl=1&qlt=92' alt='community' height='75px' width='1180px' />
               </div>
               <div id='communitytwo'>
-                <img src='http://images.urbanoutfitters.com/is/image/UrbanOutfitters/170116_mgw_us_ig?scl=1&qlt=92' alt='num2' height='598px' width='1200px' />
+                <img src='http://images.urbanoutfitters.com/is/image/UrbanOutfitters/170116_mgw_us_ig?scl=1&qlt=92' alt='num2' height='598px' width='1180px' />
               </div>
             </article>
           </div>

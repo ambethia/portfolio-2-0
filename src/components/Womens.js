@@ -201,24 +201,24 @@ class Womens extends Component {
         </ul>
       </nav>
       <main className='womenslayout'>
-        <div id='womensimg1'>
-          <img src='http://images.urbanoutfitters.com/is/image/UrbanOutfitters/170123_wgw_us_1?scl=1&qlt=92' alt='updatedutility' height='686px' width='590px' />
-          <img src='http://images.urbanoutfitters.com/is/image/UrbanOutfitters/170123_wgw_us_2?scl=1&qlt=92' alt='updatedutility' height='686px' width='590px' />
+        <div className='womensimg1'>
+          <img src='http://images.urbanoutfitters.com/is/image/UrbanOutfitters/170123_wgw_us_1?scl=1&qlt=92' alt='updatedutility' height='686px' width='565px' />
+          <img src='http://images.urbanoutfitters.com/is/image/UrbanOutfitters/170123_wgw_us_2?scl=1&qlt=92' alt='updatedutility' height='686px' width='565px' />
         </div>
-        <div id='womensimg2'>
-          <img src='http://images.urbanoutfitters.com/is/image/UrbanOutfitters/170123_wgw_us_3?scl=1&qlt=92' alt='thejumpsuit' height='535px' width='386px' />
-          <img src='http://images.urbanoutfitters.com/is/image/UrbanOutfitters/170123_wgw_us_4?scl=1&qlt=92' alt='thejumpsuit' height='535px' width='386px' />
-          <img src='http://images.urbanoutfitters.com/is/image/UrbanOutfitters/170123_wgw_us_5?scl=1&qlt=92' alt='thejumpsuit' height='535px' width='386px' />
+        <div className='womensimg2'>
+          <img src='http://images.urbanoutfitters.com/is/image/UrbanOutfitters/170123_wgw_us_3?scl=1&qlt=92' alt='thejumpsuit' height='535px' width='380px' />
+          <img src='http://images.urbanoutfitters.com/is/image/UrbanOutfitters/170123_wgw_us_4?scl=1&qlt=92' alt='thejumpsuit' height='535px' width='380px' />
+          <img src='http://images.urbanoutfitters.com/is/image/UrbanOutfitters/170123_wgw_us_5?scl=1&qlt=92' alt='thejumpsuit' height='535px' width='380px' />
         </div>
-        <div id='womensimg3'>
-          <img src='http://images.urbanoutfitters.com/is/image/UrbanOutfitters/170123_wgw_us_6?scl=1&qlt=92' alt='sweater' height='717px' width='590px' />
-          <img src='http://images.urbanoutfitters.com/is/image/UrbanOutfitters/170123_wgw_us_7?scl=1&qlt=92' alt='sweater' height='717px' width='590px' />
+        <div className='womensimg3'>
+          <img src='http://images.urbanoutfitters.com/is/image/UrbanOutfitters/170123_wgw_us_6?scl=1&qlt=92' alt='sweater' height='717px' width='565px' />
+          <img src='http://images.urbanoutfitters.com/is/image/UrbanOutfitters/170123_wgw_us_7?scl=1&qlt=92' alt='sweater' height='717px' width='565px' />
         </div>
-        <div id='womensimg5'>
-          <img src='http://images.urbanoutfitters.com/is/image/UrbanOutfitters/170123_wgw_us_8?scl=1&qlt=92' alt='vdayshop' height='218px' width='1200px' />
+        <div className='womensimg5'>
+          <img src='http://images.urbanoutfitters.com/is/image/UrbanOutfitters/170123_wgw_us_8?scl=1&qlt=92' alt='vdayshop' height='218px' width='1180px' />
         </div>
-        <section id='womensnewarrivalswrapper'>
-          <div id='womensnewarrival1'>
+        <section className='womensnewarrivalswrapper'>
+          <div className='womensnewarrival1'>
             <img src='http://images.urbanoutfitters.com/is/image/UrbanOutfitters/41072794_003_b' alt='newarrival1' height='279px' width='179px' />
             <img src='http://images.urbanoutfitters.com/is/image/UrbanOutfitters/41256975_030_b' alt='newarrival2' height='279px' width='179px' />
             <img src='http://images.urbanoutfitters.com/is/image/UrbanOutfitters/41210246_049_b' alt='newarrival3' height='279px' width='179px' />
@@ -226,17 +226,17 @@ class Womens extends Component {
             <img src='http://images.urbanoutfitters.com/is/image/UrbanOutfitters/41034919_015_b' alt='newarrival6' height='279px' width='179px' />
           </div>
         </section>
-        <section id='womensstories'>
-          <div id='womensstoriesrow'>
-            <article id='womensstoriesitems'>
-              <img src='http://images.urbanoutfitters.com/is/image/UrbanOutfitters/170123_wgw_us_9?scl=1&qlt=92' alt='item1' height='717px' width='590px' />
-              <img src='http://images.urbanoutfitters.com/is/image/UrbanOutfitters/170123_wgw_us_10?scl=1&qlt=92' alt='item2' height='717px' width='590px' />
+        <section className='womensstories'>
+          <div className='womensstoriesrow'>
+            <article className='womensstoriesitems'>
+              <img src='http://images.urbanoutfitters.com/is/image/UrbanOutfitters/170123_wgw_us_9?scl=1&qlt=92' alt='item1' height='717px' width='565px' />
+              <img src='http://images.urbanoutfitters.com/is/image/UrbanOutfitters/170123_wgw_us_10?scl=1&qlt=92' alt='item2' height='717px' width='565px' />
             </article>
           </div>
         </section>
-        <section id='womenstrends'>
-          <div id='womenstrendone'>
-            <ul id='womenstrendingone'>
+        <section className='womenstrends'>
+          <div className='womenstrendone'>
+            <ul className='womenstrendingone'>
               <li>Champion + OU</li>
               <li>Shop By Fit</li>
               <li>LookBook:The Checklist</li>
@@ -246,9 +246,9 @@ class Womens extends Component {
             </ul>
           </div>
         </section>
-        <section id='womensbrands'>
-          <div id='womenstrendtwo'>
-            <ul id='womenstrendingtwo'>
+        <section className='womensbrands'>
+          <div className='womenstrendtwo'>
+            <ul className='womenstrendingtwo'>
               <li>adidas</li>
               <li>Calvin Klein</li>
               <li>Herschel Supply Co</li>
@@ -258,19 +258,19 @@ class Womens extends Component {
             </ul>
           </div>
         </section>
-        <section id='fromtheblog'>
-          <div id='blogwrapper'>
-            <div id='blogitem1'>
+        <section className='fromtheblog'>
+          <div className='blogwrapper'>
+            <div className='blogitem1'>
               <img src='http://images.urbanoutfitters.com/is/image/UrbanOutfitters/170123_wgw_us_b_1?scl=1&qlt=92' alt='blogitem1' height='240px' width='360px' />
               <img src='http://images.urbanoutfitters.com/is/image/UrbanOutfitters/170123_wgw_us_b_2?scl=1&qlt=92' alt='blogitem2' height='240px' width='360px' />
               <img src='http://images.urbanoutfitters.com/is/image/UrbanOutfitters/170123_wgw_us_b_3?scl=1&qlt=92' alt='blogitem3' height='240px' width='360px' />
             </div>
-            <article id='daos'>
-              <div id='yourcommunity'>
-                <img src='http://images.urbanoutfitters.com/is/image/UrbanOutfitters/160912_uocomm_m_us?scl=1&qlt=92' alt='community' height='75px' width='1200px' />
+            <article className='daos'>
+              <div className='yourcommunity'>
+                <img src='http://images.urbanoutfitters.com/is/image/UrbanOutfitters/160912_uocomm_m_us?scl=1&qlt=92' alt='community' height='75px' width='1180px' />
               </div>
-              <div id='communitytwo'>
-                <img src='http://images.urbanoutfitters.com/is/image/UrbanOutfitters/170123_wgw_us_ig?scl=1&qlt=92' alt='num2' height='598px' width='1200px' />
+              <div className='communitytwo'>
+                <img src='http://images.urbanoutfitters.com/is/image/UrbanOutfitters/170123_wgw_us_ig?scl=1&qlt=92' alt='num2' height='598px' width='1180px' />
               </div>
             </article>
           </div>

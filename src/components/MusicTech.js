@@ -123,54 +123,37 @@ class MusicTech extends Component {
           </li>
         </ul>
       </nav>
-      <main className='apartmentlayout'>
+      <main id='apartmentlayout'>
         <div id='apartmentimg1'>
-          <img src='http://images.urbanoutfitters.com/is/image/UrbanOutfitters/170116_mugw_us_1?scl=1&qlt=92' alt='prynt' height='717px' width='590px' />
-        </div>
-        <div id='apartmentimg2'>
-          <img src='http://images.urbanoutfitters.com/is/image/UrbanOutfitters/170116_mugw_us_2?scl=1&qlt=92' alt='img2' height='624px' width='590px' />
+          <img src='http://images.urbanoutfitters.com/is/image/UrbanOutfitters/170130_mugw_us_1?scl=1&qlt=92' alt='prynt' height='717px' width='565px' />
+          <img src='http://images.urbanoutfitters.com/is/image/UrbanOutfitters/170130_mugw_us_2?scl=1&qlt=92' alt='img2' height='717px' width='565px' />
         </div>
         <div id='apartmentimg3'>
-          <img src='http://images.urbanoutfitters.com/is/image/UrbanOutfitters/170116_mugw_us_3?scl=1&qlt=92' alt='img3' height='536px' width='1200px' />
+          <img src='http://images.urbanoutfitters.com/is/image/UrbanOutfitters/170130_mugw_us_3?scl=1&qlt=92' alt='music' height='536px' width='1180px' />
         </div>
         <div id='apartmentimg4'>
-          <img src='http://images.urbanoutfitters.com/is/image/UrbanOutfitters/170116_mugw_us_4?scl=1&qlt=92' alt='logo' height='535px' width='386px' />
+          <img src='http://images.urbanoutfitters.com/is/image/UrbanOutfitters/170130_mugw_us_4?scl=1&qlt=92' alt='vdayshop' height='210px' width='1180px' />
         </div>
         <div id='apartmentimg5'>
-          <img src='http://images.urbanoutfitters.com/is/image/UrbanOutfitters/170116_mugw_us_5?scl=1&qlt=92' alt='teamgraphics' height='535px' width='386px' />
-        </div>
-        <div id='apartmnetimg6'>
-          <img src='http://images.urbanoutfitters.com/is/image/UrbanOutfitters/170116_mugw_us_6?scl=1&qlt=92' alt='shopbyfit' height='535px' width='386px' />
-        </div>
-        <div id='apartmnetimg7'>
-          <img src='http://images.urbanoutfitters.com/is/image/UrbanOutfitters/170116_mugw_us_7?scl=1&qlt=92' alt='vdayshop' height='686px' width='590px' />
-          <img src='http://images.urbanoutfitters.com/is/image/UrbanOutfitters/170116_mugw_us_8?scl=1&qlt=92' alt='slowjams' height='686px' width='590px' />
+          <img src='http://images.urbanoutfitters.com/is/image/UrbanOutfitters/170130_mugw_us_5?scl=1&qlt=92' alt='shopbyfit' height='535px' width='370px' />
+          <img src='http://images.urbanoutfitters.com/is/image/UrbanOutfitters/170116_mugw_us_5?scl=1&qlt=92' alt='teamgraphics' height='535px' width='370px' />
+          <img src='http://images.urbanoutfitters.com/is/image/UrbanOutfitters/170116_mugw_us_6?scl=1&qlt=92' alt='shopbyfit' height='535px' width='370px' />
         </div>
         <section id='apartmentarrivalswrapper'>
           <div id='apartmentnewarrival1'>
             <img src='http://images.urbanoutfitters.com/is/image/UrbanOutfitters/41424243_001_b' alt='newarrival1' height='279px' width='186px' />
-          </div>
-          <div id='apartmentnewarrival2'>
             <img src='http://images.urbanoutfitters.com/is/image/UrbanOutfitters/41482233_066_b' alt='newarrival1' height='279px' width='186px' />
-          </div>
-          <div id='apartmentnewarrival3'>
             <img src='http://images.urbanoutfitters.com/is/image/UrbanOutfitters/41395021_066_b' alt='newarrival1' height='279px' width='186px' />
-          </div>
-          <div id='apartmentnewarrival4'>
             <img src='http://images.urbanoutfitters.com/is/image/UrbanOutfitters/41310004_066_b' alt='newarrival1' height='279px' width='186px' />
-          </div>
-          <div id='apartmentnewarrival5'>
             <img src='http://images.urbanoutfitters.com/is/image/UrbanOutfitters/40859688_066_b' alt='newarrival1' height='279px' width='186px' />
-          </div>
-          <div id='apartmentnewarrival6'>
             <img src='http://images.urbanoutfitters.com/is/image/UrbanOutfitters/42088401_001_b' alt='newarrival6' height='279px' width='186px' />
           </div>
         </section>
         <section id='apartmentstories'>
           <div id='apartmentstoriesrow'>
             <article id='apartmentstoriesitems'>
-              <img src='http://images.urbanoutfitters.com/is/image/UrbanOutfitters/170116_mugw_us_9?scl=1&qlt=92' alt='item1' height='686px' width='590px' />
-              <img src='http://images.urbanoutfitters.com/is/image/UrbanOutfitters/170116_mugw_us_10?scl=1&qlt=92' alt='item2' height='686px' width='590px' />
+              <img src='http://images.urbanoutfitters.com/is/image/UrbanOutfitters/170116_mugw_us_9?scl=1&qlt=92' alt='item1' height='686px' width='565px' />
+              <img src='http://images.urbanoutfitters.com/is/image/UrbanOutfitters/170116_mugw_us_10?scl=1&qlt=92' alt='item2' height='686px' width='565px' />
             </article>
           </div>
         </section>
@@ -195,12 +178,8 @@ class MusicTech extends Component {
         <section id='fromtheblog'>
           <div id='blogwrapper'>
             <div id='blogitem1'>
-              <img src='http://images.urbanoutfitters.com/is/image/UrbanOutfitters/170116_mugw_us_b_1?scl=1&qlt=92' alt='blogitem1' height='240px' width='360px' />
-            </div>
-            <div id='blogitem2'>
               <img src='http://images.urbanoutfitters.com/is/image/UrbanOutfitters/170116_mugw_us_b_2?scl=1&qlt=92' alt='blogitem2' height='240px' width='360px' />
-            </div>
-            <div id='blogitem3'>
+              <img src='http://images.urbanoutfitters.com/is/image/UrbanOutfitters/170116_mugw_us_b_1?scl=1&qlt=92' alt='blogitem1' height='240px' width='360px' />
               <img src='http://images.urbanoutfitters.com/is/image/UrbanOutfitters/170116_mugw_us_b_3?scl=1&qlt=92' alt='blogitem3' height='240px' width='360px' />
             </div>
             <article id='daos'>

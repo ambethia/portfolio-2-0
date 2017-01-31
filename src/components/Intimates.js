@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { Link } from 'react-router'
 
 class Intimates extends Component {
 
@@ -143,48 +144,40 @@ class Intimates extends Component {
           </li>
         </ul>
       </nav>
-      <main className='apartmentlayout'>
+      <main id='apartmentlayout'>
         <div id='apartmentimg1'>
-          <img src='http://images.urbanoutfitters.com/is/image/UrbanOutfitters/170123_igw_us_1?scl=1&qlt=92' alt='updatedutility' height='717px' width='590px' />
-          <img src='http://images.urbanoutfitters.com/is/image/UrbanOutfitters/170123_igw_us_2?scl=1&qlt=92' alt='thejumpsuit' height='717px' width='590px' />
+          <Link to='./soinlove' >
+            <img src='http://images.urbanoutfitters.com/is/image/UrbanOutfitters/170123_igw_us_1?scl=1&qlt=92' alt='updatedutility' height='686px' width='565px' />
+          </Link>
+          <img src='http://images.urbanoutfitters.com/is/image/UrbanOutfitters/170123_igw_us_2?scl=1&qlt=92' alt='thejumpsuit' height='686px' width='565px' />
         </div>
         <div id='apartmentimg3'>
-          <img src='http://images.urbanoutfitters.com/is/image/UrbanOutfitters/170123_igw_us_3?scl=1&qlt=92' alt='sweater' height='535px' width='386px' />
-          <img src='http://images.urbanoutfitters.com/is/image/UrbanOutfitters/170123_igw_us_4?scl=1&qlt=92' alt='logo' height='535px' width='386px' />
-          <img src='http://images.urbanoutfitters.com/is/image/UrbanOutfitters/170123_igw_us_5?scl=1&qlt=92' alt='logo' height='535px' width='386px' />
+          <img src='http://images.urbanoutfitters.com/is/image/UrbanOutfitters/170123_igw_us_3?scl=1&qlt=92' alt='sweater' height='535px' width='380px' />
+          <img src='http://images.urbanoutfitters.com/is/image/UrbanOutfitters/170123_igw_us_4?scl=1&qlt=92' alt='logo' height='535px' width='380px' />
+          <img src='http://images.urbanoutfitters.com/is/image/UrbanOutfitters/170123_igw_us_5?scl=1&qlt=92' alt='logo' height='535px' width='380px' />
         </div>
         <div id='apartmentimg5'>
-          <img src='http://images.urbanoutfitters.com/is/image/UrbanOutfitters/170123_igw_us_6?scl=1&qlt=92' alt='teamgraphics' height='717px' width='590px' />
-          <img src='http://images.urbanoutfitters.com/is/image/UrbanOutfitters/170123_igw_us_7?scl=1&qlt=92' alt='teamgraphics' height='717px' width='590px' />
+          <img src='http://images.urbanoutfitters.com/is/image/UrbanOutfitters/170123_igw_us_6?scl=1&qlt=92' alt='teamgraphics' height='686px' width='565px' />
+          <img src='http://images.urbanoutfitters.com/is/image/UrbanOutfitters/170123_igw_us_7?scl=1&qlt=92' alt='teamgraphics' height='686px' width='565px' />
         </div>
-        <div id='apartmnetimg7'>
-          <img src='http://images.urbanoutfitters.com/is/image/UrbanOutfitters/170123_igw_us_8?scl=1&qlt=92' alt='vdayshop' height='187px' width='1200px' />
+        <div id='apartmentimg7'>
+          <img src='http://images.urbanoutfitters.com/is/image/UrbanOutfitters/170123_igw_us_8?scl=1&qlt=92' alt='vdayshop' height='187px' width='1165px' />
         </div>
         <section id='apartmentarrivalswrapper'>
           <div id='apartmentnewarrival1'>
             <img src='http://images.urbanoutfitters.com/is/image/UrbanOutfitters/41686981_001_b' alt='newarrival1' height='279px' width='179px' />
-          </div>
-          <div id='apartmentnewarrival2'>
             <img src='http://images.urbanoutfitters.com/is/image/UrbanOutfitters/41414285_083_b' alt='newarrival2' height='279px' width='179px' />
-          </div>
-          <div id='apartmentnewarrival3'>
             <img src='http://images.urbanoutfitters.com/is/image/UrbanOutfitters/41327545_083_b' alt='newarrival3' height='279px' width='179px' />
-          </div>
-          <div id='apartmentnewarrival4'>
             <img src='http://images.urbanoutfitters.com/is/image/UrbanOutfitters/41239484_001_b' alt='newarrival4' height='279px' width='179px' />
-          </div>
-          <div id='apartmentnewarrival5'>
             <img src='http://images.urbanoutfitters.com/is/image/UrbanOutfitters/41239203_001_b' alt='newarrival5' height='279px' width='179px' />
-          </div>
-          <div id='apartmentnewarrival6'>
             <img src='http://images.urbanoutfitters.com/is/image/UrbanOutfitters/40987067_001_b' alt='newarrival6' height='279px' width='179px' />
           </div>
         </section>
         <section id='apartmentstories'>
           <div id='apartmentstoriesrow'>
             <article id='apartmentstoriesitems'>
-              <img src='http://images.urbanoutfitters.com/is/image/UrbanOutfitters/170123_igw_us_9?scl=1&qlt=92' alt='item1' height='686px' width='590px' />
-              <img src='http://images.urbanoutfitters.com/is/image/UrbanOutfitters/170123_igw_us_10?scl=1&qlt=92' alt='item2' height='686px' width='590px' />
+              <img src='http://images.urbanoutfitters.com/is/image/UrbanOutfitters/170123_igw_us_9?scl=1&qlt=92' alt='item1' height='686px' width='565px' />
+              <img src='http://images.urbanoutfitters.com/is/image/UrbanOutfitters/170123_igw_us_10?scl=1&qlt=92' alt='item2' height='686px' width='565px' />
             </article>
           </div>
         </section>
@@ -192,11 +185,7 @@ class Intimates extends Component {
           <div id='blogwrapper'>
             <div id='blogitem1'>
               <img src='http://images.urbanoutfitters.com/is/image/UrbanOutfitters/170123_igw_us_b_1?scl=1&qlt=92' alt='blogitem1' height='240px' width='360px' />
-            </div>
-            <div id='blogitem2'>
               <img src='http://images.urbanoutfitters.com/is/image/UrbanOutfitters/170123_igw_us_b_2?scl=1&qlt=92' alt='blogitem2' height='240px' width='360px' />
-            </div>
-            <div id='blogitem3'>
               <img src='http://images.urbanoutfitters.com/is/image/UrbanOutfitters/170123_igw_us_b_3?scl=1&qlt=92' alt='blogitem3' height='240px' width='360px' />
             </div>
             <article id='daos'>
