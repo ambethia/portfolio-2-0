@@ -146,15 +146,23 @@ class Intimates extends Component {
       </nav>
       <main id='apartmentlayout'>
         <div id='apartmentimg1'>
-          <Link to='./soinlove' >
+          <Link to='/love' >
             <img src='http://images.urbanoutfitters.com/is/image/UrbanOutfitters/170123_igw_us_1?scl=1&qlt=92' alt='updatedutility' height='686px' width='565px' />
           </Link>
-          <img src='http://images.urbanoutfitters.com/is/image/UrbanOutfitters/170123_igw_us_2?scl=1&qlt=92' alt='thejumpsuit' height='686px' width='565px' />
+          <Link to='/love' >
+            <img src='http://images.urbanoutfitters.com/is/image/UrbanOutfitters/170123_igw_us_2?scl=1&qlt=92' alt='thejumpsuit' height='686px' width='565px' />
+          </Link>
         </div>
         <div id='apartmentimg3'>
-          <img src='http://images.urbanoutfitters.com/is/image/UrbanOutfitters/170123_igw_us_3?scl=1&qlt=92' alt='sweater' height='535px' width='380px' />
-          <img src='http://images.urbanoutfitters.com/is/image/UrbanOutfitters/170123_igw_us_4?scl=1&qlt=92' alt='logo' height='535px' width='380px' />
-          <img src='http://images.urbanoutfitters.com/is/image/UrbanOutfitters/170123_igw_us_5?scl=1&qlt=92' alt='logo' height='535px' width='380px' />
+          <Link to='/womensbodysuits' >
+            <img src='http://images.urbanoutfitters.com/is/image/UrbanOutfitters/170123_igw_us_3?scl=1&qlt=92' alt='sweater' height='535px' width='380px' />
+          </Link>
+          <Link to='/blog' >
+            <img src='http://images.urbanoutfitters.com/is/image/UrbanOutfitters/170123_igw_us_4?scl=1&qlt=92' alt='logo' height='535px' width='380px' />
+          </Link>
+          <Link to='/sale' >
+            <img src='http://images.urbanoutfitters.com/is/image/UrbanOutfitters/170123_igw_us_5?scl=1&qlt=92' alt='logo' height='535px' width='380px' />
+          </Link>
         </div>
         <div id='apartmentimg5'>
           <img src='http://images.urbanoutfitters.com/is/image/UrbanOutfitters/170123_igw_us_6?scl=1&qlt=92' alt='teamgraphics' height='686px' width='565px' />

@@ -136,10 +136,6 @@ class Home extends Component {
           <p>Store Locator</p>
           <p>UO Spaces</p>
         </ul>
-        <ul className='volunteer'>
-          <b className='b7'>Volunteer</b>
-          <p className='b6'>Click Here.</p>
-        </ul>
         <ul className='apps'>
           <li className='b3'><img src='http://www.urbanoutfitters.com/urban/images/apple-app-store.jpg' height='27px' width='90px' /></li>
           <br />

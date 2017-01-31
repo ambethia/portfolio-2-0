@@ -11,6 +11,11 @@ import MusicTech from './MusicTech'
 import Beauty from './Beauty'
 import Intimates from './Intimates'
 import Blog from './Blog'
+import love from './love'
+import exclusiveswimsuits from './exclusiveswimsuits'
+import womensbodysuits from './womensbodysuits'
+import womensproductpage from './womensproductpage'
+import mensproductpage from './mensproductpage'
 
 class App extends Component {
 
@@ -51,6 +56,11 @@ class App extends Component {
         <Route path='/Beauty' component={Beauty} />
         <Route path='/Intimates' component={Intimates} />
         <Route path='/Blog' component={Blog} />
+        <Route path='/love' component={love} />
+        <Route path='/exclusiveswimsuits' component={exclusiveswimsuits} />
+        <Route path='/womensproductpage' component={womensproductpage} />
+        <Route path='/womensbodysuits' component={womensbodysuits} />
+        <Route path='/mensproductpage' component={mensproductpage} />
         {/* <Route path='/locations' component={Locations} /> */}
         {/* <Route path='/locations/:slug' component={Location} /> */}
       </Route>

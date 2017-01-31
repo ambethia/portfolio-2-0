@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-
+import { Link } from 'react-router'
 class MusicTech extends Component {
 
   constructor () {
@@ -24,18 +24,32 @@ class MusicTech extends Component {
           <li onMouseOver={() => this.showCategory('Collections')} onMouseOut={() => this.hideCategory()}>
             <a className='ay'>Collections</a>
             <ul className={this.state.visibleCategory === 'Collections' ? 'visible' : 'hidden'}>
-              <li className='funk'>Valentines Day Shop</li>
-              <li className='funk'>For The Record Music Newsletter</li>
-              <li className='funk'>UO Exclusives</li>
-              <li className='funk'>LookBook</li>
-              <li className='funk'>View All LookBook</li>
+              <Link to='/love' >
+                <li className='funk'>Valentines Day Shop</li>
+              </Link>
+              <Link to='/blog' >
+                <li className='funk'>For The Record Music Newsletter</li>
+              </Link>
+              <Link to='/blog' >
+                <li className='funk'>UO Exclusives</li>
+              </Link>
+              <Link to='/blog' >
+                <li className='funk'>LookBook</li>
+              </Link>
+              <Link to='/blog' >
+                <li className='funk'>View All LookBook</li>
+              </Link>
             </ul>
           </li>
           <li onMouseOver={() => this.showCategory('New')} onMouseOut={() => this.hideCategory()}>
             <a className='ay'>New</a>
             <ul className={this.state.visibleCategory === 'New' ? 'visible' : 'hidden'}>
-              <li className='funk'>Valentines Day Shop</li>
-              <li className='funk'>For The Record Music Newsletter</li>
+              <Link to='/love' >
+                <li className='funk'>Valentines Day Shop</li>
+              </Link>
+              <Link to='/' >
+                <li className='funk'>For The Record Music Newsletter</li>
+              </Link>
               <li className='funk'>UO Exclusives</li>
               <li className='funk'>LookBook</li>
               <li className='funk'>View All LookBook</li>
