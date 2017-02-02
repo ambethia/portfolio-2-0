@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-
+import { Link } from 'react-router'
 class Beauty extends Component {
 
   constructor () {
@@ -22,172 +22,341 @@ class Beauty extends Component {
       <nav className='subnavbar'>
         <ul className='beautysecondnav'>
           <li onMouseOver={() => this.showCategory('Collections')} onMouseOut={() => this.hideCategory()}>
-            <a className='ay'>Collections</a>
+            <Link to='/BeautyCollections' >
+              <a className='ay'>Collections</a>
+            </Link>
             <ul className={this.state.visibleCategory === 'Collections' ? 'visible' : 'hidden'}>
-              <li className='funk'>Valentines Day Shop</li>
-              <li className='funk'>For The Record Music Newsletter</li>
-              <li className='funk'>UO Exclusives</li>
-              <li className='funk'>LookBook</li>
-              <li className='funk'>View All LookBook</li>
+              <Link to='/love' >
+                <li className='funk'>Valentines Day Shop</li>
+              </Link>
+              <Link to='/TheSunShop' >
+                <li className='funk'>The Sun Shop</li>
+              </Link>
+              <Link to='/BeautyTopRated' >
+                <li className='funk'>Top Rated</li>
+              </Link>
+              <Link to='/BeautyBackInStock' >
+                <li className='funk'>Back In Stock</li>
+              </Link>
             </ul>
           </li>
           <li onMouseOver={() => this.showCategory('New')} onMouseOut={() => this.hideCategory()}>
-            <a className='ay'>New</a>
+            <Link to='/BeautyNew' >
+              <a className='ay'>New</a>
+            </Link>
             <ul className={this.state.visibleCategory === 'New' ? 'visible' : 'hidden'}>
-              <li className='funk'>Valentines Day Shop</li>
-              <li className='funk'>For The Record Music Newsletter</li>
-              <li className='funk'>UO Exclusives</li>
-              <li className='funk'>LookBook</li>
-              <li className='funk'>View All LookBook</li>
+              <Link to='/BeautyNewMakeup' >
+                <li className='funk'>Makeup</li>
+              </Link>
+              <Link to='/BeautyNewSkinCare' >
+                <li className='funk'>Skin Care</li>
+              </Link>
+              <Link to='/BeautyNewBath+Body' >
+                <li className='funk'>Bath + Body</li>
+              </Link>
+              <Link to='/BeautyNewHair+Nails' >
+                <li className='funk'>Hair+Nails</li>
+              </Link>
             </ul>
           </li>
           <li onMouseOver={() => this.showCategory('Makeup')} onMouseOut={() => this.hideCategory()}>
-            <a className='ay'>Makeup</a>
+            <Link to='/BeautyMakeup' >
+              <a className='ay'>Makeup</a>
+            </Link>
             <ul className={this.state.visibleCategory === 'Makeup' ? 'visible' : 'hidden'}>
-              <li className='funk'>Valentines Day Shop</li>
-              <li className='funk'>For The Record Music Newsletter</li>
-              <li className='funk'>UO Exclusives</li>
-              <li className='funk'>LookBook</li>
-              <li className='funk'>View All LookBook</li>
+              <Link to='/BeautyLipMakeup' >
+                <li className='funk'>Lip</li>
+              </Link>
+              <Link to='/BeautyEyeMakeup' >
+                <li className='funk'>Eye</li>
+              </Link>
+              <Link to='/BeautyFaceMakeup' >
+                <li className='funk'>Face</li>
+              </Link>
+              <Link to='/BeautyBrowMakeup' >
+                <li className='funk'>Brow</li>
+              </Link>
+              <Link to='/BeautyPalettes+Sets' >
+                <li className='funk'>Palettes + Sets</li>
+              </Link>
+              <Link to='/BeautyBrushes+Applicators' >
+                <li className='funk'>Brushes + Applicators</li>
+              </Link>
             </ul>
           </li>
           <li onMouseOver={() => this.showCategory('Skin Care')} onMouseOut={() => this.hideCategory()}>
-            <a className='ay'>Skin Care</a>
+            <Link to='/BeautySkinCare' >
+              <a className='ay'>Skin Care</a>
+            </Link>
             <ul className={this.state.visibleCategory === 'Skin Care' ? 'visible' : 'hidden'}>
-              <li className='funk'>Valentines Day Shop</li>
-              <li className='funk'>For The Record Music Newsletter</li>
-              <li className='funk'>UO Exclusives</li>
-              <li className='funk'>LookBook</li>
-              <li className='funk'>View All LookBook</li>
+              <Link to='/Masks' >
+                <li className='funk'>Masks</li>
+              </Link>
+              <Link to='/Cleansers' >
+                <li className='funk'>Cleansers</li>
+              </Link>
+              <Link to='/Toner+Mist' >
+                <li className='funk'>Toner + Mist</li>
+              </Link>
+              <Link to='/Moisturizer+Cream' >
+                <li className='funk'>Moisturizer + Cream</li>
+              </Link>
+              <Link to='/Acne + Blemish' >
+                <li className='funk'>Acne + Blemish</li>
+              </Link>
+              <Link to='/Oil+Serum' >
+                <li className='funk'>Oil + Serum</li>
+              </Link>
+              <Link to='/Natural+Organic' >
+                <li className='funk'>Natural + Organic</li>
+              </Link>
             </ul>
           </li>
           <li onMouseOver={() => this.showCategory('Bath + Body')} onMouseOut={() => this.hideCategory()}>
-            <a className='ay'>Bath + Body</a>
+            <Link to='/BeautyBath+Body' >
+              <a className='ay'>Bath + Body</a>
+            </Link>
             <ul className={this.state.visibleCategory === 'Bath + Body' ? 'visible' : 'hidden'}>
-              <li className='funk'>Valentines Day Shop</li>
-              <li className='funk'>For The Record Music Newsletter</li>
-              <li className='funk'>UO Exclusives</li>
-              <li className='funk'>LookBook</li>
-              <li className='funk'>View All LookBook</li>
+              <Link to='/Cream+Oil' >
+                <li className='funk'>Cream + Oil</li>
+              </Link>
+              <Link to='/Shower+Bath' >
+                <li className='funk'>Shower + Bath</li>
+              </Link>
+              <Link to='/Scrubs+SunCare' >
+                <li className='funk'>Scrubs + Sun Care</li>
+              </Link>
+              <Link to='/PersonalCare' >
+                <li className='funk'>Personal Care</li>
+              </Link>
+              <Link to='/Natural+Organic' >
+                <li className='funk'>Natural + Organic</li>
+              </Link>
             </ul>
           </li>
           <li onMouseOver={() => this.showCategory('Hair')} onMouseOut={() => this.hideCategory()}>
-            <a className='ay'>Hair</a>
+            <Link to='/Hair' >
+              <a className='ay'>Hair</a>
+            </Link>
             <ul className={this.state.visibleCategory === 'Hair' ? 'visible' : 'hidden'}>
-              <li className='funk'>Valentines Day Shop</li>
-              <li className='funk'>For The Record Music Newsletter</li>
-              <li className='funk'>UO Exclusives</li>
-              <li className='funk'>LookBook</li>
-              <li className='funk'>View All LookBook</li>
+              <Link to='/Shampoo' >
+                <li className='funk'>Shampoo</li>
+              </Link>
+              <Link to='/Conditioner+Treatment' >
+                <li className='funk'>Conditioner + Treatment</li>
+              </Link>
+              <Link to='/StylingProduct' >
+                <li className='funk'>Styling Product</li>
+              </Link>
+              <Link to='/Tools+Brushes' >
+                <li className='funk'>Tools + Brushes</li>
+              </Link>
+              <Link to='/HairAccessories' >
+                <li className='funk'>Accessories</li>
+              </Link>
             </ul>
           </li>
           <li onMouseOver={() => this.showCategory('Nails')} onMouseOut={() => this.hideCategory()}>
-            <a className='ay'>Nails</a>
+            <Link to='/BeautyNails' >
+              <a className='ay'>Nails</a>
+            </Link>
             <ul className={this.state.visibleCategory === 'Nails' ? 'visible' : 'hidden'}>
-              <li className='funk'>Valentines Day Shop</li>
-              <li className='funk'>For The Record Music Newsletter</li>
-              <li className='funk'>UO Exclusives</li>
-              <li className='funk'>LookBook</li>
-              <li className='funk'>View All LookBook</li>
+              <Link to='/NailPolish' >
+                <li className='funk'>Nail Polish</li>
+              </Link>
+              <Link to='/NailCare+Tools' >
+                <li className='funk'>Nail Care + Tools</li>
+              </Link>
             </ul>
           </li>
           <li onMouseOver={() => this.showCategory('Fragrance')} onMouseOut={() => this.hideCategory()}>
-            <a className='ay'>Fragrance</a>
+            <Link to='/BeautyFragrance' >
+              <a className='ay'>Fragrance</a>
+            </Link>
             <ul className={this.state.visibleCategory === 'Fragrance' ? 'visible' : 'hidden'}>
-              <li className='funk'>Valentines Day Shop</li>
-              <li className='funk'>For The Record Music Newsletter</li>
-              <li className='funk'>UO Exclusives</li>
-              <li className='funk'>LookBook</li>
-              <li className='funk'>View All LookBook</li>
+              <Link to='/Spray' >
+                <li className='funk'>Spray</li>
+              </Link>
+              <Link to='/RollOn+Oil' >
+                <li className='funk'>Roll On + Oil</li>
+              </Link>
+              <Link to='/Multi-Use' >
+                <li className='funk'>Multi-Use</li>
+              </Link>
             </ul>
           </li>
           <li onMouseOver={() => this.showCategory('Wellness')} onMouseOut={() => this.hideCategory()}>
-            <a className='ay'>Wellness</a>
+            <Link to='/BeautyWellness' >
+              <a className='ay'>Wellness</a>
+            </Link>
             <ul className={this.state.visibleCategory === 'Wellness' ? 'visible' : 'hidden'}>
-              <li className='funk'>Valentines Day Shop</li>
-              <li className='funk'>For The Record Music Newsletter</li>
-              <li className='funk'>UO Exclusives</li>
-              <li className='funk'>LookBook</li>
-              <li className='funk'>View All LookBook</li>
+              <Link to='/Vitamins+Supplements' >
+                <li className='funk'>Vitamins + Supplements</li>
+              </Link>
+              <Link to='/SuperFoods+Teas' >
+                <li className='funk'>SuperFoods + Teas</li>
+              </Link>
+              <Link to='/OralCare' >
+                <li className='funk'>Oral Care</li>
+              </Link>
+              <Link to='/AromaTherapy' >
+                <li className='funk'>AromaTherapy</li>
+              </Link>
             </ul>
           </li>
           <li onMouseOver={() => this.showCategory('Accessories')} onMouseOut={() => this.hideCategory()}>
-            <a className='ay'>Accessories</a>
+            <Link to='/BeautyAccessories' >
+              <a className='ay'>Accessories</a>
+            </Link>
             <ul className={this.state.visibleCategory === 'Accessories' ? 'visible' : 'hidden'}>
-              <li className='funk'>Valentines Day Shop</li>
-              <li className='funk'>For The Record Music Newsletter</li>
-              <li className='funk'>UO Exclusives</li>
-              <li className='funk'>LookBook</li>
-              <li className='funk'>View All LookBook</li>
+              <Link to='/BeautyAccessoriesBags' >
+                <li className='funk'>Bags + Cases</li>
+              </Link>
+              <Link to='/BeautyBrushes+Applicators' >
+                <li className='funk'>Brushes + Applicators</li>
+              </Link>
+              <Link to='/BeautyBath+Vanity' >
+                <li className='funk'>Bath + Vanity</li>
+              </Link>
+              <Link to='/BeautyAccessoriesHair' >
+                <li className='funk'>Hair</li>
+              </Link>
+              <Link to='/BeautyAccessoriesBodyArt' >
+                <li className='funk'>Body Art</li>
+              </Link>
             </ul>
           </li>
           <li onMouseOver={() => this.showCategory('Mens Grooming')} onMouseOut={() => this.hideCategory()}>
-            <a className='ay'>Mens Grooming</a>
+            <Link to='/BeautyMensGrooming' >
+              <a className='ay'>Mens Grooming</a>
+            </Link>
             <ul className={this.state.visibleCategory === 'Mens Grooming' ? 'visible' : 'hidden'}>
-              <li className='funk'>Valentines Day Shop</li>
-              <li className='funk'>For The Record Music Newsletter</li>
-              <li className='funk'>UO Exclusives</li>
-              <li className='funk'>LookBook</li>
-              <li className='funk'>View All LookBook</li>
+              <Link to='/MensBeard+Shave' >
+                <li className='funk'>Beard + Shave</li>
+              </Link>
+              <Link to='/BeautyMensHair' >
+                <li className='funk'>Hair</li>
+              </Link>
+              <Link to='/BeautyMensSkin' >
+                <li className='funk'>Skin</li>
+              </Link>
+              <Link to='/BeautyMensCologne' >
+                <li className='funk'>Cologne</li>
+              </Link>
             </ul>
           </li>
           <li onMouseOver={() => this.showCategory('Gift Sets')} onMouseOut={() => this.hideCategory()}>
-            <a className='ay'>Gift Sets</a>
+            <Link to='/BeautyGiftSets' >
+              <a className='ay'>Gift Sets</a>
+            </Link>
             <ul className={this.state.visibleCategory === 'Gift Sets' ? 'visible' : 'hidden'}>
-              <li className='funk'>Valentines Day Shop</li>
-              <li className='funk'>For The Record Music Newsletter</li>
-              <li className='funk'>UO Exclusives</li>
-              <li className='funk'>LookBook</li>
-              <li className='funk'>View All LookBook</li>
+              <Link to='/ForHer' >
+                <li className='funk'>For Her</li>
+              </Link>
+              <Link to='/ForHim' >
+                <li className='funk'>For Him</li>
+              </Link>
             </ul>
           </li>
           <li onMouseOver={() => this.showCategory('Brands')} onMouseOut={() => this.hideCategory()}>
-            <a className='ay'>Brands</a>
+            <Link to='/BeautyBrands' >
+              <a className='ay'>Brands</a>
+            </Link>
             <ul className={this.state.visibleCategory === 'Brands' ? 'visible' : 'hidden'}>
-              <li className='funk'>Valentines Day Shop</li>
-              <li className='funk'>For The Record Music Newsletter</li>
-              <li className='funk'>UO Exclusives</li>
-              <li className='funk'>LookBook</li>
-              <li className='funk'>View All LookBook</li>
+              <Link to='/BeautyAnastasiaHills' >
+                <li className='funk'>Anastasia Beverley Hills</li>
+              </Link>
+              <Link to='/bhcosmetics' >
+                <li className='funk'>bh cosmetics</li>
+              </Link>
+              <Link to='/HerbivoreBotanicals' >
+                <li className='funk'>Herbivore Botanicals</li>
+              </Link>
+              <Link to='/LimeCrime' >
+                <li className='funk'>Lime Crime</li>
+              </Link>
+              <Link to='/MarioBadescu' >
+                <li className='funk'>Mario Badescu</li>
+              </Link>
+              <Link to='/MilkMakeUp' >
+                <li className='funk'>Milk MakeUp</li>
+              </Link>
+              <Link to='/ObsessiveCosmetics' >
+                <li className='funk'>Obsessive Cosmetics</li>
+              </Link>
+              <Link to='/SigmaBeauty' >
+                <li className='funk'>Sigma Beauty</li>
+              </Link>
+              <Link to='/Stila' >
+                <li className='funk'>Stila</li>
+              </Link>
+              <Link to='/TONYMOLY' >
+                <li className='funk'>TONYMOLY</li>
+              </Link>
+              <Link to='/AllBeautyBrands' >
+                <li className='funk'>Brands A-Z</li>
+              </Link>
             </ul>
           </li>
           <li onMouseOver={() => this.showCategory('Sale')} onMouseOut={() => this.hideCategory()}>
-            <a className='ay'>Sale</a>
-            <ul className={this.state.visibleCategory === 'Sale' ? 'visible' : 'hidden'}>
-              <li className='funk'>Valentines Day Shop</li>
-              <li className='funk'>For The Record Music Newsletter</li>
-              <li className='funk'>UO Exclusives</li>
-              <li className='funk'>LookBook</li>
-              <li className='funk'>View All LookBook</li>
-            </ul>
+            <Link to='/BeautySale' >
+              <a className='ay'>Sale</a>
+            </Link>
+            <ul className={this.state.visibleCategory === 'Sale' ? 'visible' : 'hidden'} />
           </li>
         </ul>
       </nav>
       <main id='apartmentlayout'>
         <div id='apartmentimg1'>
-          <img src='http://images.urbanoutfitters.com/is/image/UrbanOutfitters/170116_bgw_us_1?scl=1&qlt=92' alt='updatedutility' height='708px' width='565px' />
-          <img src='http://images.urbanoutfitters.com/is/image/UrbanOutfitters/170116_bgw_us_2?scl=1&qlt=92' alt='updatedutility' height='708px' width='565px' />
+          <Link to='/HairAccessories' >
+            <img src='http://images.urbanoutfitters.com/is/image/UrbanOutfitters/170116_bgw_us_1?scl=1&qlt=92' alt='updatedutility' height='708px' width='565px' />
+          </Link>
+          <Link to='/MakeUp' >
+            <img src='http://images.urbanoutfitters.com/is/image/UrbanOutfitters/170116_bgw_us_2?scl=1&qlt=92' alt='updatedutility' height='708px' width='565px' />
+          </Link>
         </div>
         <div id='apartmentimg2'>
-          <img src='http://images.urbanoutfitters.com/is/image/UrbanOutfitters/170116_bgw_us_3?scl=1&qlt=92' alt='glow' height='528px' width='381px' />
-          <img src='http://images.urbanoutfitters.com/is/image/UrbanOutfitters/170116_bgw_us_4?scl=1&qlt=92' alt='glow' height='528px' width='381px' />
-          <img src='http://images.urbanoutfitters.com/is/image/UrbanOutfitters/170116_bgw_us_5?scl=1&qlt=92' alt='glow' height='528px' width='381px' />
+          <Link to='/BeautyNew' >
+            <img src='http://images.urbanoutfitters.com/is/image/UrbanOutfitters/170116_bgw_us_3?scl=1&qlt=92' alt='glow' height='528px' width='381px' />
+          </Link>
+          <Link to='/BeautyNew' >
+            <img src='http://images.urbanoutfitters.com/is/image/UrbanOutfitters/170116_bgw_us_4?scl=1&qlt=92' alt='glow' height='528px' width='381px' />
+          </Link>
+          <Link to='/BeautyNew' >
+            <img src='http://images.urbanoutfitters.com/is/image/UrbanOutfitters/170116_bgw_us_5?scl=1&qlt=92' alt='glow' height='528px' width='381px' />
+          </Link>
         </div>
         <section id='apartmentarrivalswrapper'>
           <div id='apartmentnewarrival1'>
-            <img src='http://images.urbanoutfitters.com/is/image/UrbanOutfitters/40812091_000_b' alt='newarrival1' height='279px' width='179px' />
-            <img src='http://images.urbanoutfitters.com/is/image/UrbanOutfitters/40942955_038_b' alt='newarrival2' height='279px' width='179px' />
-            <img src='http://images.urbanoutfitters.com/is/image/UrbanOutfitters/40821829_045_b' alt='newarrival3' height='279px' width='179px' />
-            <img src='http://images.urbanoutfitters.com/is/image/UrbanOutfitters/40888190_086_b' alt='newarrival4' height='279px' width='179px' />
-            <img src='http://images.urbanoutfitters.com/is/image/UrbanOutfitters/40892119_000_b' alt='newarrival5' height='279px' width='179px' />
-            <img src='http://images.urbanoutfitters.com/is/image/UrbanOutfitters/42040170_000_b' alt='newarrival6' height='279px' width='179px' />
+            <Link to='/BeautySale' >
+              <img src='http://images.urbanoutfitters.com/is/image/UrbanOutfitters/40812091_000_b' alt='newarrival1' height='279px' width='179px' />
+            </Link>
+            <Link to='/BeautyNew' >
+              <img src='http://images.urbanoutfitters.com/is/image/UrbanOutfitters/40942955_038_b' alt='newarrival2' height='279px' width='179px' />
+            </Link>
+            <Link to='/BeautySale' >
+              <img src='http://images.urbanoutfitters.com/is/image/UrbanOutfitters/40821829_045_b' alt='newarrival3' height='279px' width='179px' />
+            </Link>
+            <Link to='/BeautyNew' >
+              <img src='http://images.urbanoutfitters.com/is/image/UrbanOutfitters/40888190_086_b' alt='newarrival4' height='279px' width='179px' />
+            </Link>
+            <Link to='/BeautyNew' >
+              <img src='http://images.urbanoutfitters.com/is/image/UrbanOutfitters/40892119_000_b' alt='newarrival5' height='279px' width='179px' />
+            </Link>
+            <Link to='/BeautySale' >
+              <img src='http://images.urbanoutfitters.com/is/image/UrbanOutfitters/42040170_000_b' alt='newarrival6' height='279px' width='179px' />
+            </Link>
           </div>
         </section>
         <section id='apartmentstories'>
           <div id='apartmentstoriesrow'>
             <article id='apartmentstoriesitems'>
-              <img src='http://images.urbanoutfitters.com/is/image/UrbanOutfitters/170116_bgw_us_6?scl=1&qlt=92' alt='item1' height='708px' width='565px' />
-              <img src='http://images.urbanoutfitters.com/is/image/UrbanOutfitters/170116_bgw_us_7?scl=1&qlt=92' alt='item2' height='708px' width='565px' />
+              <Link to='/BeautyNew' >
+                <img src='http://images.urbanoutfitters.com/is/image/UrbanOutfitters/170116_bgw_us_6?scl=1&qlt=92' alt='item1' height='708px' width='565px' />
+              </Link>
+              <Link to='/BeautyTopRated' >
+                <img src='http://images.urbanoutfitters.com/is/image/UrbanOutfitters/170116_bgw_us_7?scl=1&qlt=92' alt='item2' height='708px' width='565px' />
+              </Link>
             </article>
           </div>
         </section>
@@ -218,9 +387,15 @@ class Beauty extends Component {
         <section id='fromtheblog'>
           <div id='blogwrapper'>
             <div id='blogitem1'>
-              <img src='http://images.urbanoutfitters.com/is/image/UrbanOutfitters/170116_bgw_us_b_1?scl=1&qlt=92' alt='blogitem1' height='240px' width='360px' />
-              <img src='http://images.urbanoutfitters.com/is/image/UrbanOutfitters/170116_bgw_us_b_2?scl=1&qlt=92' alt='blogitem2' height='240px' width='360px' />
-              <img src='http://images.urbanoutfitters.com/is/image/UrbanOutfitters/170116_bgw_us_b_3?scl=1&qlt=92' alt='blogitem3' height='240px' width='360px' />
+              <Link to='/blog' >
+                <img src='http://images.urbanoutfitters.com/is/image/UrbanOutfitters/170116_bgw_us_b_1?scl=1&qlt=92' alt='blogitem1' height='240px' width='360px' />
+              </Link>
+              <Link to='/blog' >
+                <img src='http://images.urbanoutfitters.com/is/image/UrbanOutfitters/170116_bgw_us_b_2?scl=1&qlt=92' alt='blogitem2' height='240px' width='360px' />
+              </Link>
+              <Link to='/blog' >
+                <img src='http://images.urbanoutfitters.com/is/image/UrbanOutfitters/170116_bgw_us_b_3?scl=1&qlt=92' alt='blogitem3' height='240px' width='360px' />
+              </Link>
             </div>
             <article id='daos'>
               <div id='yourcommunity'>

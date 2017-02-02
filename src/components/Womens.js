@@ -23,7 +23,9 @@ class Womens extends Component {
       <nav className='womenssubnavbar'>
         <ul className='womenssecondnav'>
           <li onMouseOver={() => this.showCategory('collections')} onMouseOut={() => this.hideCategory()}>
-            <a className='ay'>Collections</a>
+            <Link to='/WomensCollections'>
+              <a className='ay'>Collections</a>
+            </Link>
             <ul className={this.state.visibleCategory === 'collections' ? 'visible' : 'hidden'}>
               <Link to='/love' >
                 <li className='funk'> Valentine's Day Shop</li>
@@ -49,7 +51,9 @@ class Womens extends Component {
             </ul>
           </li>
           <li onMouseOver={() => this.showCategory('new')} onMouseOut={() => this.hideCategory()}>
-            <a className='ay'>New</a>
+            <Link to='/WomensNew' >
+              <a className='ay'>New</a>
+            </Link>
             <ul className={this.state.visibleCategory === 'new' ? 'visible' : 'hidden'}>
               <Link to='/Dresses+Rompers' >
                 <li className='funk'>Dresses + Rompers</li>
@@ -82,7 +86,9 @@ class Womens extends Component {
           </li>
 
           <li onMouseOver={() => this.showCategory('Dresses + Rompers')} onMouseOut={() => this.hideCategory()}>
-            <a className='ay'>Dresses + Rompers</a>
+            <Link to='/WomensDresses+Rompers' >
+              <a className='ay'>Dresses + Rompers</a>
+            </Link>
             <ul className={this.state.visibleCategory === 'Dresses + Rompers' ? 'visible' : 'hidden'}>
               <Link to='/WomensCasual' >
                 <li className='funk'>Casual</li>
@@ -105,7 +111,9 @@ class Womens extends Component {
             </ul>
           </li>
           <li onMouseOver={() => this.showCategory('Tops')} onMouseOut={() => this.hideCategory()}>
-            <a className='ay'>Tops</a>
+            <Link to='/WomensTops' >
+              <a className='ay'>Tops</a>
+            </Link>
             <ul className={this.state.visibleCategory === 'Tops' ? 'visible' : 'hidden'}>
               <Link to='/WomensSweatshirts+Pullovers' >
                 <li className='funk'>Sweatshirts + Pullovers</li>
@@ -134,7 +142,9 @@ class Womens extends Component {
             </ul>
           </li>
           <li onMouseOver={() => this.showCategory('Womens Jackets')} onMouseOut={() => this.hideCategory()}>
-            <a className='ay'>Womens Jackets</a>
+            <Link to='/WomensJackets' >
+              <a className='ay'>Womens Jackets</a>
+            </Link>
             <ul className={this.state.visibleCategory === 'Womens Jackets' ? 'visible' : 'hidden'}>
               <Link to='/WomensBombers' >
                 <li className='funk'>Bombers</li>
@@ -154,7 +164,9 @@ class Womens extends Component {
             </ul>
           </li>
           <li onMouseOver={() => this.showCategory('Bottoms')} onMouseOut={() => this.hideCategory()}>
-            <a className='ay'>Bottoms</a>
+            <Link to='/WomensBottoms' >
+              <a className='ay'>Bottoms</a>
+            </Link>
             <ul className={this.state.visibleCategory === 'Bottoms' ? 'visible' : 'hidden'}>
               <Link to='/WomensJeans' >
                 <li className='funk'>Jeans</li>
@@ -177,7 +189,9 @@ class Womens extends Component {
             </ul>
           </li>
           <li onMouseOver={() => this.showCategory('Intimates')} onMouseOut={() => this.hideCategory()}>
-            <a className='ay'>Intimates</a>
+            <Link to='/Intimates' >
+              <a className='ay'>Intimates</a>
+            </Link>
             <ul className={this.state.visibleCategory === 'Intimates' ? 'visible' : 'hidden'}>
               <Link to='/WomensLingerieSets' >
                 <li className='funk'>Lingerie Sets</li>
@@ -209,7 +223,9 @@ class Womens extends Component {
             </ul>
           </li>
           <li onMouseOver={() => this.showCategory('Swim')} onMouseOut={() => this.hideCategory()}>
-            <a className='ay'>Swim</a>
+            <Link to='/WomensSwim' >
+              <a className='ay'>Swim</a>
+            </Link>
             <ul className={this.state.visibleCategory === 'Swim' ? 'visible' : 'hidden'}>
               <Link to='/WomensMix+Match' >
                 <li className='funk'>Mix + Match</li>
@@ -229,7 +245,9 @@ class Womens extends Component {
             </ul>
           </li>
           <li onMouseOver={() => this.showCategory('Vintage')} onMouseOut={() => this.hideCategory()}>
-            <a className='ay'>Vintage</a>
+            <Link to='/WomensVintage' >
+              <a className='ay'>Vintage</a>
+            </Link>
             <ul className={this.state.visibleCategory === 'Vintage' ? 'visible' : 'hidden'}>
               <Link to='/WomensVintageDresses+Rompers' >
                 <li className='funk'>Dresses + Rompers</li>
@@ -243,7 +261,9 @@ class Womens extends Component {
             </ul>
           </li>
           <li onMouseOver={() => this.showCategory('Beauty')} onMouseOut={() => this.hideCategory()}>
-            <a className='ay'>Beauty</a>
+            <Link to='/Beauty' >
+              <a className='ay'>Beauty</a>
+            </Link>
             <ul className={this.state.visibleCategory === 'Beauty' ? 'visible' : 'hidden'}>
               <Link to='/BeautyMakeup'>
                 <li className='funk'>Makeup</li>
@@ -275,12 +295,14 @@ class Womens extends Component {
             </ul>
           </li>
           <li onMouseOver={() => this.showCategory('Accessories')} onMouseOut={() => this.hideCategory()}>
-            <a className='ay'>Accessories</a>
+            <Link to='/WomensAccessories' >
+              <a className='ay'>Accessories</a>
+            </Link>
             <ul className={this.state.visibleCategory === 'Accessories' ? 'visible' : 'hidden'}>
               <Link to='/WomensBags+Wallets' >
                 <li className='funk'>Bags + Wallets</li>
               </Link>
-              <Link tp='/WomensJewelery+Watches' >
+              <Link to='/WomensJewelery+Watches' >
                 <li className='funk'>Jewelery + Watches </li>
               </Link>
               <Link to='/WomensScarves' >
@@ -310,7 +332,9 @@ class Womens extends Component {
             </ul>
           </li>
           <li onMouseOver={() => this.showCategory('Shoes')} onMouseOut={() => this.hideCategory()}>
-            <a className='ay'>Shoes</a>
+            <Link to='/WomensShoes' >
+              <a className='ay'>Shoes</a>
+            </Link>
             <ul className={this.state.visibleCategory === 'Shoes' ? 'visible' : 'hidden'}>
               <Link to='/WomensSneakers' >
                 <li className='funk'>Sneakers</li>
@@ -336,24 +360,26 @@ class Womens extends Component {
             </ul>
           </li>
           <li onMouseOver={() => this.showCategory('Brands')} onMouseOut={() => this.hideCategory()}>
-            <a className='ay'>Brands</a>
+            <Link to='/WomensBrands' >
+              <a className='ay'>Brands</a>
+            </Link>
             <ul className={this.state.visibleCategory === 'Brands' ? 'visible' : 'hidden'}>
-              <Link to='/BrandsAdidas' >
+              <Link to='/BrandsWomensAdidas' >
                 <li className='funk'>adidas</li>
               </Link>
-              <Link to='/BrandsCalvinKlein' >
+              <Link to='/BrandsWomensCalvinKlein' >
                 <li className='funk'>Calvin Klein</li>
               </Link>
-              <Link to='/BrandsChampion' >
+              <Link to='/BrandsWomensChampion' >
                 <li className='funk'>Champion</li>
               </Link>
-              <Link to='/BrandsFILA' >
+              <Link to='/BrandsWomensFILA' >
                 <li className='funk'>FILA</li>
               </Link>
-              <Link to='/BrandsStussy' >
+              <Link to='/BrandsWomensStussy' >
                 <li className='funk'>Stussy</li>
               </Link>
-              <Link to='/TommyJeans' >
+              <Link to='/BrandsWomensTommyJeans' >
                 <li className='funk'>Tommy Jeans</li>
               </Link>
               <Link to='/AllBrands' >
@@ -362,7 +388,9 @@ class Womens extends Component {
             </ul>
           </li>
           <li onMouseOver={() => this.showCategory('Sale')} onMouseOut={() => this.hideCategory()}>
-            <a className='ay'>Sale</a>
+            <Link to='/WomensSale' >
+              <a className='ay'>Sale</a>
+            </Link>
             <ul className={this.state.visibleCategory === 'Sale' ? 'visible' : 'hidden'}>
               <Link to='/WomensSaleJustAdded' >
                 <li className='funk'>Just Added</li>

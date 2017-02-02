@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { Link } from 'react-router'
 
 class Sale extends Component {
 
@@ -22,80 +23,187 @@ class Sale extends Component {
       <nav className='subnavbar'>
         <ul className='salesecondnav'>
           <li onMouseOver={() => this.showCategory('Womens Sale')} onMouseOut={() => this.hideCategory()}>
-            <a className='ay'>Womens Sale</a>
+            <Link to='/WomensSale' >
+              <a className='ay'>Womens Sale</a>
+            </Link>
             <ul className={this.state.visibleCategory === 'Womens Sale' ? 'visible' : 'hidden'}>
-              <li className='funk'>Valentines Day Shop</li>
-              <li className='funk'>For The Record Music Newsletter</li>
-              <li className='funk'>UO Exclusives</li>
-              <li className='funk'>LookBook</li>
-              <li className='funk'>View All LookBook</li>
+              <Link to='/WomensSaleJustAdded' >
+                <li className='funk'>Just Added</li>
+              </Link>
+              <Link to='/WomensSaleDresses' >
+                <li className='funk'>Dresses+Rompers</li>
+              </Link>
+              <Link to='/WomensSaleSweaters' >
+                <li className='funk'>Sweaters+Sweatshirts</li>
+              </Link>
+              <Link to='/WomensSaleTops' >
+                <li className='funk'>Tops + Tees</li>
+              </Link>
+              <Link to='/WomensSaleGraphicTees' >
+                <li className='funk'>Graphic Tees</li>
+              </Link>
+              <Link to='/WomensSaleCoats' >
+                <li className='funk'>Coats + Jackets</li>
+              </Link>
+              <Link to='/WomensSaleJeansPants' >
+                <li className='funk'>Jeans, Pants+Leggings</li>
+              </Link>
+              <Link to='/WomensSaleShorts' >
+                <li className='funk'>Shorts + Skirts</li>
+              </Link>
+              <Link to='/WomensSaleIntimates' >
+                <li className='funk'>Intimates</li>
+              </Link>
+              <Link to='/WomensSaleLounge' >
+                <li className='funk'>Lounge + Activewear</li>
+              </Link>
+              <Link to='/WomensSaleSwim' >
+                <li className='funk'>Swim</li>
+              </Link>
+              <Link to='/WomensSaleShoes' >
+                <li className='funk'>Shoes</li>
+              </Link>
+              <Link to='/WomensSaleBags' >
+                <li className='funk'>Bags + Wallets</li>
+              </Link>
+              <Link to='/WomensSaleAccessories' >
+                <li className='funk'>Accessories</li>
+              </Link>
+              <Link to='/WomensSaleBeauty' >
+                <li className='funk'>Beauty</li>
+              </Link>
             </ul>
           </li>
           <li onMouseOver={() => this.showCategory('Mens Sale')} onMouseOut={() => this.hideCategory()}>
-            <a className='ay'>Collections</a>
+            <Link to='/MensSale' >
+              <a className='ay'>Mens Sale</a>
+            </Link>
             <ul className={this.state.visibleCategory === 'Mens Sale' ? 'visible' : 'hidden'}>
-              <li className='funk'>Valentines Day Shop</li>
-              <li className='funk'>For The Record Music Newsletter</li>
-              <li className='funk'>UO Exclusives</li>
-              <li className='funk'>LookBook</li>
-              <li className='funk'>View All LookBook</li>
+              <Link to='/MensSaleJustAdded' >
+                <li className='funk'>Just Added</li>
+              </Link>
+              <Link to='/MensSaleGraphicTees' >
+                <li className='funk'>Graphic Tees</li>
+              </Link>
+              <Link to='/MensSaleTees' >
+                <li className='funk'>Tees + Tanks</li>
+              </Link>
+              <Link to='/MensSaleShirts' >
+                <li className='funk'>Shirts</li>
+              </Link>
+              <Link to='/MensSaleSweaters' >
+                <li className='funk'>Sweaters+Sweatshirts</li>
+              </Link>
+              <Link to='/MensSaleCoats' >
+                <li className='funk'>Coats + Jackets</li>
+              </Link>
+              <Link to='/MensSaleJeans' >
+                <li className='funk'>Jeans+Pants</li>
+              </Link>
+              <Link to='/MensSaleShoes' >
+                <li className='funk'>Shoes</li>
+              </Link>
+              <Link to='/MensSaleHats' >
+                <li className='funk'>Hats+Beanies</li>
+              </Link>
+              <Link to='/MensSaleAccessories' >
+                <li className='funk'>Accessories</li>
+              </Link>
             </ul>
           </li>
           <li onMouseOver={() => this.showCategory('Apartment Sale')} onMouseOut={() => this.hideCategory()}>
-            <a className='ay'>Apartment Sale</a>
+            <Link to='/ApartmentSale' >
+              <a className='ay'>Apartment Sale</a>
+            </Link>
             <ul className={this.state.visibleCategory === 'Apartment Sale' ? 'visible' : 'hidden'}>
-              <li className='funk'>Valentines Day Shop</li>
-              <li className='funk'>For The Record Music Newsletter</li>
-              <li className='funk'>UO Exclusives</li>
-              <li className='funk'>LookBook</li>
-              <li className='funk'>View All LookBook</li>
+              <Link to='/ApartmentSaleJustAdded' >
+                <li className='funk'>Just Added</li>
+              </Link>
+              <Link to='/ApartmentSaleBedding' >
+                <li className='funk'>Bedding</li>
+              </Link>
+              <Link to='/ApartmentSaleRugs' >
+                <li className='funk'>Rugs + Curtains</li>
+              </Link>
+              <Link to='/ApartmentSalePillows' >
+                <li className='funk'>Pillows, Tapestries + Throws</li>
+              </Link>
+              <Link to='/ApartmentSaleFurniture' >
+                <li className='funk'>Furniture</li>
+              </Link>
+              <Link to='/ApartmentSaleRoomDecor' >
+                <li className='funk'>Room Decor</li>
+              </Link>
+              <Link to='/ApartmentSaleKitchen' >
+                <li className='funk'>Kitchen + Bar</li>
+              </Link>
+              <Link to='/ApartmentSaleBath' >
+                <li className='funk'>Bath</li>
+              </Link>
+              <Link to='/ApartmentSaleBooks' >
+                <li className='funk'>Books + Stationery</li>
+              </Link>
+              <Link to='/ApartmentSaleParty' >
+                <li className='funk'>Party+Fun</li>
+              </Link>
+              <Link to='/ApartmentSaleMusicTech' >
+                <li className='funk'>Music+Tech</li>
+              </Link>
             </ul>
           </li>
           <li onMouseOver={() => this.showCategory('Music + Tech Sale')} onMouseOut={() => this.hideCategory()}>
-            <a className='ay'>Music + Tech Sale</a>
+            <Link to='/MusicTechSale' >
+              <a className='ay'>Music + Tech Sale</a>
+            </Link>
             <ul className={this.state.visibleCategory === 'Music + Tech Sale' ? 'visible' : 'hidden'}>
-              <li className='funk'>Valentines Day Shop</li>
-              <li className='funk'>For The Record Music Newsletter</li>
-              <li className='funk'>UO Exclusives</li>
-              <li className='funk'>LookBook</li>
-              <li className='funk'>View All LookBook</li>
+              <Link to='/MusicTechSaleVinyl' >
+                <li className='funk'>Vinyl + Cassettes</li>
+              </Link>
+              <Link to='/MusicTechSalePhoto' >
+                <li className='funk'>Photo, Music + Tech Accessories</li>
+              </Link>
             </ul>
           </li>
           <li onMouseOver={() => this.showCategory('Beauty Sale')} onMouseOut={() => this.hideCategory()}>
-            <a className='ay'>Beauty Sale</a>
-            <ul className={this.state.visibleCategory === 'Beauty Sale' ? 'visible' : 'hidden'}>
-              <li className='funk'>Valentines Day Shop</li>
-              <li className='funk'>For The Record Music Newsletter</li>
-              <li className='funk'>UO Exclusives</li>
-              <li className='funk'>LookBook</li>
-              <li className='funk'>View All LookBook</li>
-            </ul>
+            <Link to='/BeautySale' >
+              <a className='ay'>Beauty Sale</a>
+            </Link>
+            <ul className={this.state.visibleCategory === 'Beauty Sale' ? 'visible' : 'hidden'} />
           </li>
           <li onMouseOver={() => this.showCategory('Intimate Sale')} onMouseOut={() => this.hideCategory()}>
-            <a className='ay'>Intimate Sale</a>
+            <Link to='/IntimatesSale' >
+              <a className='ay'>Intimate Sale</a>
+            </Link>
             <ul className={this.state.visibleCategory === 'Intimate Sale' ? 'visible' : 'hidden'}>
-              <li className='funk'>Valentines Day Shop</li>
-              <li className='funk'>For The Record Music Newsletter</li>
-              <li className='funk'>UO Exclusives</li>
-              <li className='funk'>LookBook</li>
-              <li className='funk'>View All LookBook</li>
+              <Link to='/IntimatesSaleLounge' >
+                <li className='funk'>Lounge + Activewear</li>
+              </Link>
+              <Link to='/IntimatesSaleBras' >
+                <li className='funk'>Bras + Undies</li>
+              </Link>
+              <Link to='/IntimatesSaleSwim' >
+                <li className='funk'>Swim</li>
+              </Link>
+              <Link to='/IntimatesSaleSocks' >
+                <li className='funk'>Socks + Tights</li>
+              </Link>
             </ul>
           </li>
         </ul>
       </nav>
       <main id='apartmentlayout'>
         <div id='apartmentimg1'>
-          <img src='http://images.urbanoutfitters.com/is/image/UrbanOutfitters/170116_HomeSale_us_sgw_ET?scl=1&qlt=92' alt='updatedutility' height='334px' width='1200px' />
+          <img src='http://images.urbanoutfitters.com/is/image/UrbanOutfitters/170130_sgw_us_hero?scl=1&qlt=92' alt='updatedutility' height='334px' width='1200px' />
         </div>
         <div id='womenssale'>
-          <img src='http://images.urbanoutfitters.com/is/image/UrbanOutfitters/170123_sgw_us_1?scl=1&qlt=92' alt='thejumpsuit' height='404px' width='269px' />
-          <img src='http://images.urbanoutfitters.com/is/image/UrbanOutfitters/170123_sgw_us_2?scl=1&qlt=92' alt='thejumpsuit' height='404px' width='269px' />
-          <img src='http://images.urbanoutfitters.com/is/image/UrbanOutfitters/170123_sgw_us_3?scl=1&qlt=92' alt='thejumpsuit' height='404px' width='269px' />
+          <img src='http://images.urbanoutfitters.com/is/image/UrbanOutfitters/170123_sgw_us_1?scl=1&qlt=92' alt='thejumpsuit' height='499px' width='378px' />
+          <img src='http://images.urbanoutfitters.com/is/image/UrbanOutfitters/170123_sgw_us_2?scl=1&qlt=92' alt='thejumpsuit' height='499px' width='378px' />
+          <img src='http://images.urbanoutfitters.com/is/image/UrbanOutfitters/170123_sgw_us_3?scl=1&qlt=92' alt='thejumpsuit' height='499px' width='378px' />
         </div>
         <div id='menssale'>
-          <img src='http://images.urbanoutfitters.com/is/image/UrbanOutfitters/170123_sgw_us_4?scl=1&qlt=92' alt='thejumpsuit' height='404px' width='269px' />
-          <img src='http://images.urbanoutfitters.com/is/image/UrbanOutfitters/170123_sgw_us_5?scl=1&qlt=92' alt='thejumpsuit' height='404px' width='269px' />
-          <img src='http://images.urbanoutfitters.com/is/image/UrbanOutfitters/170123_sgw_us_6?scl=1&qlt=92' alt='thejumpsuit' height='404px' width='269px' />
+          <img src='http://images.urbanoutfitters.com/is/image/UrbanOutfitters/170123_sgw_us_4?scl=1&qlt=92' alt='thejumpsuit' height='499px' width='378px' />
+          <img src='http://images.urbanoutfitters.com/is/image/UrbanOutfitters/170123_sgw_us_5?scl=1&qlt=92' alt='thejumpsuit' height='499px' width='378px' />
+          <img src='http://images.urbanoutfitters.com/is/image/UrbanOutfitters/170123_sgw_us_6?scl=1&qlt=92' alt='thejumpsuit' height='499px' width='378px' />
         </div>
         <div id='apartmentsale'>
           <img src='http://images.urbanoutfitters.com/is/image/UrbanOutfitters/34913509_011_b' alt='thejumpsuit' height='404px' width='269px' />
