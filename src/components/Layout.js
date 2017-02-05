@@ -20,8 +20,8 @@ class Layout extends Component {
           <li><Link to='/Intimates'>Intimates</Link></li>
           <li><Link to='/Sale'>Sale</Link></li>
           <li><Link to='/Blog'>Blog</Link></li>
-          <li><i className='material-icons'>search</i> </li>
-          <i className='material-icons'>work</i>
+          {/* <li><i className='material-icons'>search</i> </li> */}
+          <Link to='/Cart' ><i className='material-icons'>work</i></Link>
         </ul>
       </nav>
       {this.props.children}
