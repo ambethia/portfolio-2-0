@@ -2,7 +2,9 @@ import React, { Component } from 'react'
 import { Router, Route, browserHistory } from 'react-router'
 import Home from './Home'
 import Cart from './Cart'
+import Cartitems from './Cartitems'
 import Womens from './Womens/Womens'
+// import cart from './cart.json'
 // Womens Collections
 // import WomensCollections from './Womens/WomensCollections'
 // WomensAccessories
@@ -262,6 +264,122 @@ import WomensSaleSweaters from './Sale/WomensSale/WomensSaleSweaters'
 import WomensSaleTops from './Sale/WomensSale/WomensSaleTops'
 // End of Womens Sale
 // Apartment
+// ApartmentArtDecor
+import ArtDecor from './Apartment/ApartmentArtDecor/ArtDecor'
+import Accessories from './Apartment/ApartmentArtDecor/Accessories'
+import Candles from './Apartment/ApartmentArtDecor/Candles'
+import Frames from './Apartment/ApartmentArtDecor/Frames'
+import Mirrors from './Apartment/ApartmentArtDecor/Mirrors'
+import PillowsThrows from './Apartment/ApartmentArtDecor/PillowsThrows'
+import PlantersTerrariums from './Apartment/ApartmentArtDecor/PlantersTerrariums'
+import Rugs from './Apartment/ApartmentArtDecor/Rugs'
+import Tapestries from './Apartment/ApartmentArtDecor/Tapestries'
+import Wallart from './Apartment/ApartmentArtDecor/Wallart'
+import Window from './Apartment/ApartmentArtDecor/Window'
+// End of ApartmentArtDecor
+// ApartmentBath
+import ApartmentBath from './Apartment/ApartmentBath/ApartmentBath'
+import BathAccessories from './Apartment/ApartmentBath/BathAccessories'
+import BathMats from './Apartment/ApartmentBath/BathMats'
+import Laundry from './Apartment/ApartmentBath/Laundry'
+import ShowerCurtains from './Apartment/ApartmentBath/ShowerCurtains'
+import Towels from './Apartment/ApartmentBath/Towels'
+// End of ApartmentBath
+// Apartment Bedding
+import ApartmentBedding from './Apartment/ApartmentBedding/ApartmentBedding'
+import BeddingBasics from './Apartment/ApartmentBedding/BeddingBasics'
+import ComfortersQuiltsBlankets from './Apartment/ApartmentBedding/ComfortersQuiltsBlankets'
+import DuvetCovers from './Apartment/ApartmentBedding/DuvetCovers'
+import Pillowcases from './Apartment/ApartmentBedding/Pillowcases'
+// import PillowsThrows from './Apartment/ApartmentBedding/PillowsThrows'
+import Sheets from './Apartment/ApartmentBedding/Sheets'
+import SnoozeSets from './Apartment/ApartmentBedding/SnoozeSets'
+// import Tapestries from './Apartment/ApartmentBedding/Tapestries'
+// End of ApartmentBedding
+// Apartment Books Stationery
+import ApartmentBooksStationery from './Apartment/ApartmentBooksStationery/ApartmentBooksStationery'
+import Books from './Apartment/ApartmentBooksStationery/Books'
+import ColoringActivites from './Apartment/ApartmentBooksStationery/ColoringActivites'
+import DeskAccessories from './Apartment/ApartmentBooksStationery/DeskAccessories'
+import GreetingCards from './Apartment/ApartmentBooksStationery/GreetingCards'
+import JournalsNotebooks from './Apartment/ApartmentBooksStationery/JournalsNotebooks'
+import PhotoAlbums from './Apartment/ApartmentBooksStationery/PhotoAlbums'
+// End of Apartment Books Stationery
+// ApartmentCollections
+import ApartmentCollections from './Apartment/ApartmentCollections/ApartmentCollections'
+import BackOnCampus from './Apartment/ApartmentCollections/BackOnCampus'
+import OneOfAKind from './Apartment/ApartmentCollections/OneOfAKind'
+import TheBeddingShop from './Apartment/ApartmentCollections/TheBeddingShop'
+import ThePrintShop from './Apartment/ApartmentCollections/ThePrintShop'
+// End of ApartmentCollections
+// Apartment Furniture
+import BedsHeadboards from './Apartment/ApartmentFurniture/BedsHeadboards'
+import ApartmentFurniture from './Apartment/ApartmentFurniture/ApartmentFurniture'
+import Chairs from './Apartment/ApartmentFurniture/Chairs'
+import DressesWardrobes from './Apartment/ApartmentFurniture/DressesWardrobes'
+import Sofas from './Apartment/ApartmentFurniture/Sofas'
+import StorageShelving from './Apartment/ApartmentFurniture/StorageShelving'
+import Tables from './Apartment/ApartmentFurniture/Tables'
+// End of Apartment Furniture
+// Apartment Kitchen Bar
+import ApartmentKitchenBar from './Apartment/ApartmentKitchenBar/ApartmentKitchenBar'
+import Appliances from './Apartment/ApartmentKitchenBar/Appliances'
+import BarwareSupplies from './Apartment/ApartmentKitchenBar/BarwareSupplies'
+// import Cookbooks from './Apartment/ApartmentKitchenBar/Cookbooks'
+import Cookwear from './Apartment/ApartmentKitchenBar/Cookwear'
+import Dinnerware from './Apartment/ApartmentKitchenBar/Dinnerware'
+import Drinkware from './Apartment/ApartmentKitchenBar/Drinkware'
+import StorageAccessories from './Apartment/ApartmentKitchenBar/StorageAccessories'
+//  End of Apartment Kitchen Bar
+// Apartment Lighting
+import ApartmentLighting from './Apartment/ApartmentLighting/ApartmentLighting'
+import BulbsCordKits from './Apartment/ApartmentLighting/BulbsCordKits'
+import FloorLamps from './Apartment/ApartmentLighting/FloorLamps'
+import NoveltyStringLighting from './Apartment/ApartmentLighting/NoveltyStringLighting'
+import PendantsSconces from './Apartment/ApartmentLighting/PendantsSconces'
+import TableDeskLamps from './Apartment/ApartmentLighting/TableDeskLamps'
+// End of Apartment Lighting
+// ApartmentNew
+import ApartmentNew from './Apartment/ApartmentNew/ApartmentNew'
+import ApartmentNewBooks from './Apartment/ApartmentNew/ApartmentNewBooks'
+import ApartmentNewFurniture from './Apartment/ApartmentNew/ApartmentNewFurniture'
+import ApartmentNewKitchenBar from './Apartment/ApartmentNew/ApartmentNewKitchenBar'
+import ApartmentNewPartyFun from './Apartment/ApartmentNew/ApartmentNewPartyFun'
+import ApartmentNewTextiles from './Apartment/ApartmentNew/ApartmentNewTextiles'
+// End of Apartment New
+// Apartment Party Fun
+import ApartmentParty from './Apartment/ApartmentPartyFun/ApartmentParty'
+import Favors from './Apartment/ApartmentPartyFun/Favors'
+import Games from './Apartment/ApartmentPartyFun/Games'
+import Novelty from './Apartment/ApartmentPartyFun/Novelty'
+import PartySuppliesDecoration from './Apartment/ApartmentPartyFun/PartySuppliesDecoration'
+import PoolFloats from './Apartment/ApartmentPartyFun/PoolFloats'
+// End Of Apartment Party Fun
+// Apartment Sale
+// import ApartmentSale from './Apartment/ApartmentSale/ApartmentSale'
+// import ApartmentSaleBath from './Apartment/ApartmentSale/ApartmentSaleBath'
+// import ApartmentSaleBedding from './Apartment/ApartmentSale/ApartmentSaleBedding'
+// import ApartmentSaleBooks from './Apartment/ApartmentSale/ApartmentSaleBooks'
+// import ApartmentSaleFurniture from './Apartment/ApartmentSale/ApartmentSaleFurniture'
+// import ApartmentSaleJustAdded from './Apartment/ApartmentSale/ApartmentSaleJustAdded'
+import ApartmentSaleKitchenBar from './Apartment/ApartmentSale/ApartmentSaleKitchenBar'
+// import ApartmentSaleMusicTech from './Apartment/ApartmentSale/ApartmentSaleMusicTech'
+import ApartmentSalePartyFun from './Apartment/ApartmentSale/ApartmentSalePartyFun'
+import ApartmentSalePillowsTapestries from './Apartment/ApartmentSale/ApartmentSalePillowsTapestries'
+// import ApartmentSaleRoomDecor from './Apartment/ApartmentSale/ApartmentSaleRoomDecor'
+import ApartmentSaleRugCurtains from './Apartment/ApartmentSale/ApartmentSaleRugCurtains'
+// End of Apartment Sale
+// ApartmentStorage
+import ApartmentStorage from './Apartment/ApartmentStorage/ApartmentStorage'
+import BasketsBinsBoxes from './Apartment/ApartmentStorage/BasketsBinsBoxes'
+import Bathroom from './Apartment/ApartmentStorage/Bathroom'
+import Closet from './Apartment/ApartmentStorage/Closet'
+import Desk from './Apartment/ApartmentStorage/Desk'
+import HooksKnobs from './Apartment/ApartmentStorage/HooksKnobs'
+import Jewelery from './Apartment/ApartmentStorage/Jewelery'
+import Kitchen from './Apartment/ApartmentStorage/Kitchen'
+import Shelving from './Apartment/ApartmentStorage/Shelving'
+// End of ApartmentStorage
 // End Of Apartment
 import Layout from './Layout'
 import Apartment from './Apartment/Apartment'
@@ -317,6 +435,8 @@ class App extends Component {
         <Route path='/Blog' component={Blog} />
         <Route path='/BeautySale' component={BeautySale} />
         <Route path='/Cart' component={Cart} />
+        <Route path='/cart' component={Cart} />
+        <Route path='/Cartitems' component={Cartitems} />
         <Route path='/love' component={love} />
         {/* <Route path='/WomensCollections' component={WomensCollections} /> */}
         {/* Womens/WomensAccessories */}
@@ -588,7 +708,7 @@ class App extends Component {
         <Route path='/WomensSaleTops' component={WomensSaleTops} />
         {/* End of Womens Sale */}
         {/* Apartment ARTDECOR */}
-        <Route path='/ApartmentArtDecor' component={ApartmentArtDecor} />
+        <Route path='/ArtDecor' component={ArtDecor} />
         <Route path='/Accessories' component={Accessories} />
         <Route path='/ArtDecor' component={ArtDecor} />
         <Route path='/Candles' component={Candles} />
@@ -597,7 +717,7 @@ class App extends Component {
         <Route path='/PillowsThrows' component={PillowsThrows} />
         <Route path='/PlantersTerrariums' component={PlantersTerrariums} />
         <Route path='/Rugs' component={Rugs} />
-        <Route path='/WallArt' component={WallArt} />
+        <Route path='/WallArt' component={Wallart} />
         <Route path='/Window' component={Window} />
         {/* End of APARTMENT ART DECOR */}
         {/* Apartment Bath */}
@@ -609,6 +729,7 @@ class App extends Component {
         <Route path='/Towels' component={Towels} />
         {/* End of ApartmentBath */}
         {/* ApartmentBedding */}
+        <Route path='/ApartmentBedding' component={ApartmentBedding} />
         <Route path='/BeddingBasics' component={BeddingBasics} />
         <Route path='/ComfortersQuiltsBlankets' component={ComfortersQuiltsBlankets} />
         <Route path='/DuvetCovers' component={DuvetCovers} />
@@ -621,15 +742,12 @@ class App extends Component {
         {/* ApartmentBooksStationery */}
         <Route path='/ApartmentBooksStationery' component={ApartmentBooksStationery} />
         <Route path='/Books' component={Books} />
-        <Route path='/ColoringActivities' component={ColoringActivities} />
+        <Route path='/ColoringActivites' component={ColoringActivites} />
         <Route path='/DeskAccessories' component={DeskAccessories} />
         <Route path='/GreetingCards' component={GreetingCards} />
         <Route path='/JournalsNotebooks' component={JournalsNotebooks} />
         <Route path='/PhotoAlbums' component={PhotoAlbums} />
         {/* ENDOF ApartmentBooksStationery */}
-        <Route path='/SnoozeSets' component={ApartmentSale} />
-        <Route path='/SnoozeSets' component={ApartmentSale} />
-        <Route path='/SnoozeSets' component={ApartmentSale} />
         {/* Apartment Collections */}
         <Route path='/ApartmentCollections' component={ApartmentCollections} />
         <Route path='/TheBeddingShop' component={TheBeddingShop} />
@@ -639,6 +757,7 @@ class App extends Component {
         {/* End of Apartment Collections */}
         {/* ApartmentFurniture */}
         <Route path='/BedsHeadboards' component={BedsHeadboards} />
+        <Route path='/ApartmentFurniture' component={ApartmentFurniture} />
         <Route path='/Chairs' component={Chairs} />
         <Route path='/DressesWardrobes' component={DressesWardrobes} />
         <Route path='/Sofas' component={Sofas} />
@@ -649,7 +768,7 @@ class App extends Component {
         <Route path='/ApartmentKitchenBar' component={ApartmentKitchenBar} />
         <Route path='/Appliances' component={Appliances} />
         <Route path='/BarwareSupplies' component={BarwareSupplies} />
-        <Route path='/CookBooks' component={CookBooks} />
+        {/* <Route path='/Cookbooks' component={Cookbooks} /> */}
         <Route path='/Cookwear' component={Cookwear} />
         <Route path='/Dinnerware' component={Dinnerware} />
         <Route path='/Drinkware' component={Drinkware} />
@@ -657,10 +776,11 @@ class App extends Component {
         {/* End of ApartmentKitchenBar */}
         {/* Apartment Lighting */}
         <Route path='/BulbsCordKits' component={BulbsCordKits} />
-        <Route path='/SnoozeSets' component={FloorLamps} />
-        <Route path='/SnoozeSets' component={NoveltyStringLighting} />
-        <Route path='/SnoozeSets' component={PendantsSconces} />
-        <Route path='/SnoozeSets' component={TableDeskLamps} />
+        <Route path='/FloorLamps' component={FloorLamps} />
+        <Route path='/NoveltyStringLighting' component={NoveltyStringLighting} />
+        <Route path='/ApartmentLighting' component={ApartmentLighting} />
+        <Route path='/PendantsSconces' component={PendantsSconces} />
+        <Route path='/TableDeskLamps' component={TableDeskLamps} />
         {/* End of ApartmentLighting */}
         {/* ApartmentNew */}
         <Route path='/ApartmentNewFurniture' component={ApartmentNewFurniture} />

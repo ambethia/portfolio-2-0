@@ -49,7 +49,7 @@ class Apartment extends Component {
               <a className='ay'>New</a>
             </Link>
             <ul className={this.state.visibleCategory === 'New' ? 'visible' : 'hidden'}>
-              <Link to='/ApartmentNewFurnitureRoomDecor' >
+              <Link to='/ApartmentNewFurniture' >
                 <li className='funk'>Furniture + Room Decor</li>
               </Link>
               <Link to='ApartmentNewTextiles' >
@@ -61,7 +61,7 @@ class Apartment extends Component {
               <Link to='/ApartmentNewPartyFun' >
                 <li className='funk'>Party + Fun</li>
               </Link>
-              <Link to='/ApartmentNewBooksStationery' >
+              <Link to='/ApartmentNewBooks' >
                 <li className='funk'>Books + Stationery</li>
               </Link>
             </ul>
@@ -80,7 +80,7 @@ class Apartment extends Component {
               <Link to='/SnoozeSets'>
                 <li className='funk'>Snooze Sets</li>
               </Link>
-              <Link to='/PillowcasesShams' >
+              <Link to='/Pillowcases' >
                 <li className='funk'>Pillowcases + Shams</li>
               </Link>
               <Link to='/PillowsThrows' >
@@ -167,16 +167,16 @@ class Apartment extends Component {
               <Link to='/Jewelery' >
                 <li className='funk'>Jewelery</li>
               </Link>
-              <Link to='/BasketsBins+Boxes' >
+              <Link to='/BasketsBinsBoxes' >
                 <li className='funk'>Baskets, Bins + Boxes</li>
               </Link>
-              <Link to='/Hooks+Knobs' >
+              <Link to='/HooksKnobs' >
                 <li className='funk'>Hooks + Knobs</li>
               </Link>
             </ul>
           </li>
           <li onMouseOver={() => this.showCategory('Art + Decor')} onMouseOut={() => this.hideCategory()}>
-            <Link to='/ApartmentArtDecor' >
+            <Link to='/ArtDecor' >
               <a className='ay'>Art + Decor</a>
             </Link>
             <ul className={this.state.visibleCategory === 'Art + Decor' ? 'visible' : 'hidden'}>
@@ -235,9 +235,6 @@ class Apartment extends Component {
               <Link to='/StorageAccessories' >
                 <li className='funk'>Storage + Accessories</li>
               </Link>
-              <Link to='/CookBooks' >
-                <li className='funk'>Cookbooks</li>
-              </Link>
             </ul>
           </li>
           <li onMouseOver={() => this.showCategory('Bath')} onMouseOut={() => this.hideCategory()}>
@@ -270,9 +267,6 @@ class Apartment extends Component {
               <Link to='/Books' >
                 <li className='funk'>Books</li>
               </Link>
-              <Link to='/ColoringActivities' >
-                <li className='funk'>Coloring Activities</li>
-              </Link>
               <Link to='/JournalsNotebooks' >
                 <li className='funk'>Journals + Notebooks</li>
               </Link>
@@ -288,7 +282,7 @@ class Apartment extends Component {
             </ul>
           </li>
           <li onMouseOver={() => this.showCategory('Party + Fun')} onMouseOut={() => this.hideCategory()}>
-            <Link to='/ApartmentPartyFun' >
+            <Link to='/ApartmentParty' >
               <a className='ay'>Party + Fun</a>
             </Link>
             <ul className={this.state.visibleCategory === 'Party + Fun' ? 'visible' : 'hidden'}>
