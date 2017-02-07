@@ -8,15 +8,15 @@ class Home extends Component {
       <div id='snow' />
       <main className='content'>
         <article className='box'>
-          <Link to='/Sale' >
+          {/* <Link to='/Sale' >
             <img src='http://images.urbanoutfitters.com/is/image/UrbanOutfitters/170116_HomeSale_us_ET?scl=1&qlt=92' alt='box' height='468px' width='1165px' />
-          </Link>
-          <p> *Discounts only apply if you Purchase in the next 24 hours! </p>
+          </Link> */}
         </article>
         <article className='discount'>
           <Link to='/Apartment' >
             <img src='http://images.urbanoutfitters.com/is/image/UrbanOutfitters/170123_hpgw_us_4?scl=1&qlt=92' alt='discounts' height='468px' width='1165px' />
           </Link>
+          <p className='p'> *Discounts only apply if you Purchase in the next 24 hours! </p>
         </article>
         <div className='model'>
           <Link to='/Womens' >
@@ -48,6 +48,27 @@ class Home extends Component {
           </Link>
           <Link to='/Intimates' >
             <img src='http://images.urbanoutfitters.com/is/image/UrbanOutfitters/170123_hpgw_us_7?scl=1&qlt=92' alt='blog' height='561px' width='380px' />
+          </Link>
+        </div>
+        <h2>New Arrivals</h2>
+        <div className='apartment'>
+          <Link to='/' >
+            <img src='http://images.urbanoutfitters.com/is/image/UrbanOutfitters/41501958_015_b?$medium$' alt='newarrivals' height='275px' width='183px' />
+          </Link>
+          <Link to='/' >
+            <img src='http://images.urbanoutfitters.com/is/image/UrbanOutfitters/40967259_001_b?$medium$' alt='newarrivals' height='275px' width='183px' />
+          </Link>
+          <Link to='/' >
+            <img src='http://images.urbanoutfitters.com/is/image/UrbanOutfitters/41325507_011_b?$medium$' alt='newarrivals' height='275px' width='183px' />
+          </Link>
+          <Link to='/' >
+            <img src='http://images.urbanoutfitters.com/is/image/UrbanOutfitters/41111428_066_b?$medium$' alt='newarrivals' height='275px' width='183px' />
+          </Link>
+          <Link to='/' >
+            <img src='http://images.urbanoutfitters.com/is/image/UrbanOutfitters/40219743_001_b?$medium$' alt='newarrivals' height='275px' width='183px' />
+          </Link>
+          <Link to='/' >
+            <img src='http://images.urbanoutfitters.com/is/image/UrbanOutfitters/40770281_010_b?$medium$' alt='newarrivals' height='275px' width='183px' />
           </Link>
         </div>
         <div className='rewards'>
@@ -120,29 +141,29 @@ class Home extends Component {
                 <li className='b4'><p className='b1'>By entering your email address, <br /> you agree to receive Kramer's offers,<br /> promotions, and other commercial messages. <br /> You may unsubscribe at any time.</p></li>
               </form>
             </ul>
+            <ul className='apps'>
+              <li className='b3'><img src='http://www.urbanoutfitters.com/urban/images/apple-app-store.jpg' height='27px' width='90px' /></li>
+              <br />
+              <li className='b3'><img src='http://www.urbanoutfitters.com/urban/images/google-app-store.png' height='27px' width='90px' /> </li>
+              <br />
+              <li className='b3'><img src='http://www.urbanoutfitters.com/urban/images/amazon-app-store.png' height='27px' width='90px' /> </li>
+              <br />
+            </ul>
           </article>
         </ul>
-        <ul className='connect'>
+        {/* <ul className='connect'>
           <li>2</li>
           <li>1</li>
           <li>2</li>
           <li>1</li>
           <li>2</li>
           <li>1</li>
-        </ul>
+        </ul> */}
         <ul className='find'>
           <b id='ak'>Find A Store</b>
           <br />
           <p>Store Locator</p>
           <p>UO Spaces</p>
-        </ul>
-        <ul className='apps'>
-          <li className='b3'><img src='http://www.urbanoutfitters.com/urban/images/apple-app-store.jpg' height='27px' width='90px' /></li>
-          <br />
-          <li className='b3'><img src='http://www.urbanoutfitters.com/urban/images/google-app-store.png' height='27px' width='90px' /> </li>
-          <br />
-          <li className='b3'><img src='http://www.urbanoutfitters.com/urban/images/amazon-app-store.png' height='27px' width='90px' /> </li>
-          <br />
         </ul>
       </footer>
     </div>

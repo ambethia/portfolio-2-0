@@ -209,7 +209,7 @@ class Sale extends Component {
             </ul>
           </li>
           <li onMouseOver={() => this.showCategory('Beauty')} onMouseOut={() => this.hideCategory()}>
-            <Link to='/Beauty' >
+            <Link to='/WomensBeauty' >
               <a className='ay'>Beauty</a>
             </Link>
             <ul className={this.state.visibleCategory === 'Beauty' ? 'visible' : 'hidden'}>
@@ -391,8 +391,9 @@ class Sale extends Component {
       </nav>
       <main id='apartmentlayout'>
         <div id='apartmentimg1'>
-          <img src='http://images.urbanoutfitters.com/is/image/UrbanOutfitters/170130_sgw_us_hero?scl=1&qlt=92' alt='updatedutility' height='334px' width='1200px' />
+          <img src='http://images.urbanoutfitters.com/is/image/UrbanOutfitters/170130_sgw_us_hero?scl=1&qlt=92' alt='updatedutility' height='468px' width='1165px' />
         </div>
+        <h2>Womens New Arrivals</h2>
         <div id='apartmentsale'>
           <img src='http://images.urbanoutfitters.com/is/image/UrbanOutfitters/41808114_010_b?$medium$' alt='thejumpsuit' height='404px' width='269px' />
           <img src='http://images.urbanoutfitters.com/is/image/UrbanOutfitters/41673039_001_b?$medium$' alt='thejumpsuit' height='404px' width='269px' />
@@ -427,7 +428,7 @@ class Sale extends Component {
           <img src='http://images.urbanoutfitters.com/is/image/UrbanOutfitters/41946732_010_b?$medium$' alt='thejumpsuit' height='404px' width='269px' />
           <img src='http://images.urbanoutfitters.com/is/image/UrbanOutfitters/40527897_004_b?$medium$' alt='thejumpsuit' height='404px' width='269px' />
           <img src='http://images.urbanoutfitters.com/is/image/UrbanOutfitters/38792354_066_b?$medium$' alt='thejumpsuit' height='404px' width='269px' />
-          <img src='hhttp://images.urbanoutfitters.com/is/image/UrbanOutfitters/38792354_065_b?$medium$' alt='thejumpsuit' height='404px' width='269px' />
+          <img src='http://images.urbanoutfitters.com/is/image/UrbanOutfitters/38792354_065_b?$medium$' alt='thejumpsuit' height='404px' width='269px' />
         </div>
         <div id='apartmentsale'>
           <img src='http://images.urbanoutfitters.com/is/image/UrbanOutfitters/37270188_002_b?$medium$' alt='thejumpsuit' height='404px' width='269px' />
@@ -449,10 +450,10 @@ class Sale extends Component {
         </div>
         <article id='daos'>
           <div id='yourcommunity'>
-            <img src='http://images.urbanoutfitters.com/is/image/UrbanOutfitters/a_gw_en?scl=1&qlt=92' alt='community' height='75px' width='1200px' />
+            <img src='http://images.urbanoutfitters.com/is/image/UrbanOutfitters/a_gw_en?scl=1&qlt=92' alt='community' height='75px' width='1165px' />
           </div>
           <div id='communitytwo'>
-            <img src='http://images.urbanoutfitters.com/is/image/UrbanOutfitters/170116_agw_us_ig?scl=1&qlt=92' alt='num2' height='598px' width='1200px' />
+            <img src='http://images.urbanoutfitters.com/is/image/UrbanOutfitters/170116_agw_us_ig?scl=1&qlt=92' alt='num2' height='598px' width='1165px' />
           </div>
         </article>
       </main>

@@ -209,7 +209,7 @@ class Sale extends Component {
             </ul>
           </li>
           <li onMouseOver={() => this.showCategory('Beauty')} onMouseOut={() => this.hideCategory()}>
-            <Link to='/WomensBeauty' >
+            <Link to='/Beauty' >
               <a className='ay'>Beauty</a>
             </Link>
             <ul className={this.state.visibleCategory === 'Beauty' ? 'visible' : 'hidden'}>
@@ -393,60 +393,60 @@ class Sale extends Component {
         <div id='apartmentimg1'>
           <img src='http://images.urbanoutfitters.com/is/image/UrbanOutfitters/170203_25dress_ca_banner_A?scl=1&qlt=100' alt='updatedutility' height='404px' width='1165px' />
         </div>
-        <h2>Womens Dresses</h2>
+        <h2>Womens Beauty Accessories</h2>
         <div id='apartmentsale'>
-          <img src='http://images.urbanoutfitters.com/is/image/UrbanOutfitters/39837984_066_d?$medium$' alt='thejumpsuit' height='404px' width='269px' />
-          <img src='http://images.urbanoutfitters.com/is/image/UrbanOutfitters/41332362_049_d?$medium$' alt='thejumpsuit' height='404px' width='269px' />
-          <img src='http://images.urbanoutfitters.com/is/image/UrbanOutfitters/41332362_007_d?$medium$' alt='thejumpsuit' height='404px' width='269px' />
-          <img src='http://images.urbanoutfitters.com/is/image/UrbanOutfitters/41332362_066_d?$medium$' alt='thejumpsuit' height='404px' width='269px' />
+          <img src='http://images.urbanoutfitters.com/is/image/UrbanOutfitters/42266536_030_b?$medium$' alt='thejumpsuit' height='404px' width='269px' />
+          <img src='http://images.urbanoutfitters.com/is/image/UrbanOutfitters/40543159_070_b?$medium$' alt='thejumpsuit' height='404px' width='269px' />
+          <img src='http://images.urbanoutfitters.com/is/image/UrbanOutfitters/39714134_003_b?$medium$' alt='thejumpsuit' height='404px' width='269px' />
+          <img src='http://images.urbanoutfitters.com/is/image/UrbanOutfitters/38727806_000_b?$medium$' alt='thejumpsuit' height='404px' width='269px' />
         </div>
         <div id='apartmentsale'>
-          <img src='http://images.urbanoutfitters.com/is/image/UrbanOutfitters/41332362_050_d?$medium$' alt='thejumpsuit' height='404px' width='269px' />
-          <img src='http://images.urbanoutfitters.com/is/image/UrbanOutfitters/41332362_009_d?$medium$' alt='thejumpsuit' height='404px' width='269px' />
-          <img src='http://images.urbanoutfitters.com/is/image/UrbanOutfitters/41417544_040_d?$medium$' alt='thejumpsuit' height='404px' width='269px' />
-          <img src='http://images.urbanoutfitters.com/is/image/UrbanOutfitters/41417544_068_d?$medium$' alt='thejumpsuit' height='404px' width='269px' />
+          <img src='http://images.urbanoutfitters.com/is/image/UrbanOutfitters/38727715_000_b?$medium$' alt='thejumpsuit' height='404px' width='269px' />
+          <img src='http://images.urbanoutfitters.com/is/image/UrbanOutfitters/38727590_002_b?$medium$' alt='thejumpsuit' height='404px' width='269px' />
+          <img src='http://images.urbanoutfitters.com/is/image/UrbanOutfitters/41695834_000_b?$medium$' alt='thejumpsuit' height='404px' width='269px' />
+          <img src='http://images.urbanoutfitters.com/is/image/UrbanOutfitters/34108324_000_b?$medium$' alt='thejumpsuit' height='404px' width='269px' />
         </div>
         <div id='apartmentsale'>
-          <img src='http://images.urbanoutfitters.com/is/image/UrbanOutfitters/41064775_018_d?$medium$' alt='thejumpsuit' height='404px' width='269px' />
-          <img src='http://images.urbanoutfitters.com/is/image/UrbanOutfitters/41064775_060_d?$medium$' alt='thejumpsuit' height='404px' width='269px' />
-          <img src='http://images.urbanoutfitters.com/is/image/UrbanOutfitters/41064775_050_d?$medium$' alt='thejumpsuit' height='404px' width='269px' />
-          <img src='http://images.urbanoutfitters.com/is/image/UrbanOutfitters/41064775_002_d?$medium$' alt='thejumpsuit' height='404px' width='269px' />
+          <img src='http://images.urbanoutfitters.com/is/image/UrbanOutfitters/40934127_000_b?$medium$' alt='thejumpsuit' height='404px' width='269px' />
+          <img src='http://images.urbanoutfitters.com/is/image/UrbanOutfitters/40931974_000_b?$medium$' alt='thejumpsuit' height='404px' width='269px' />
+          <img src='http://images.urbanoutfitters.com/is/image/UrbanOutfitters/40931644_000_b?$medium$' alt='thejumpsuit' height='404px' width='269px' />
+          <img src='http://images.urbanoutfitters.com/is/image/UrbanOutfitters/40931578_000_b?$medium$' alt='thejumpsuit' height='404px' width='269px' />
         </div>
         <div id='apartmentsale'>
-          <img src='http://images.urbanoutfitters.com/is/image/UrbanOutfitters/41149014_065_d?$medium$' alt='thejumpsuit' height='404px' width='269px' />
-          <img src='http://images.urbanoutfitters.com/is/image/UrbanOutfitters/41583006_001_d?$medium$' alt='thejumpsuit' height='404px' width='269px' />
-          <img src='http://images.urbanoutfitters.com/is/image/UrbanOutfitters/41294430_008_d?$medium$' alt='thejumpsuit' height='404px' width='269px' />
-          <img src='http://images.urbanoutfitters.com/is/image/UrbanOutfitters/41294430_009_d?$medium$' alt='thejumpsuit' height='404px' width='269px' />
+          <img src='http://images.urbanoutfitters.com/is/image/UrbanOutfitters/39731682_000_b?$medium$' alt='thejumpsuit' height='404px' width='269px' />
+          <img src='http://images.urbanoutfitters.com/is/image/UrbanOutfitters/37591971_065_d?$medium$' alt='thejumpsuit' height='404px' width='269px' />
+          <img src='http://images.urbanoutfitters.com/is/image/UrbanOutfitters/37916863_000_b?$medium$' alt='thejumpsuit' height='404px' width='269px' />
+          <img src='http://images.urbanoutfitters.com/is/image/UrbanOutfitters/37916590_000_b?$medium$' alt='thejumpsuit' height='404px' width='269px' />
         </div>
         <div id='apartmentsale'>
-          <img src='http://images.urbanoutfitters.com/is/image/UrbanOutfitters/41109323_066_d?$medium$' alt='thejumpsuit' height='404px' width='269px' />
-          <img src='http://images.urbanoutfitters.com/is/image/UrbanOutfitters/39549076_049_d?$medium$' alt='thejumpsuit' height='404px' width='269px' />
-          <img src='http://images.urbanoutfitters.com/is/image/UrbanOutfitters/39549076_069_d?$medium$' alt='thejumpsuit' height='404px' width='269px' />
-          <img src='http://images.urbanoutfitters.com/is/image/UrbanOutfitters/40049470_030_d?$medium$' alt='thejumpsuit' height='404px' width='269px' />
+          <img src='http://images.urbanoutfitters.com/is/image/UrbanOutfitters/37916095_000_b?$medium$' alt='thejumpsuit' height='404px' width='269px' />
+          <img src='http://images.urbanoutfitters.com/is/image/UrbanOutfitters/37914322_000_b?$medium$' alt='thejumpsuit' height='404px' width='269px' />
+          <img src='http://images.urbanoutfitters.com/is/image/UrbanOutfitters/36712610_000_b?$medium$' alt='thejumpsuit' height='404px' width='269px' />
+          <img src='http://images.urbanoutfitters.com/is/image/UrbanOutfitters/36712602_000_b?$medium$' alt='thejumpsuit' height='404px' width='269px' />
         </div>
         <div id='apartmentsale'>
-          <img src='http://images.urbanoutfitters.com/is/image/UrbanOutfitters/40049470_059_d?$medium$' alt='thejumpsuit' height='404px' width='269px' />
-          <img src='http://images.urbanoutfitters.com/is/image/UrbanOutfitters/40049470_029_d?$medium$' alt='thejumpsuit' height='404px' width='269px' />
-          <img src='http://images.urbanoutfitters.com/is/image/UrbanOutfitters/40049470_015_d?$medium$' alt='thejumpsuit' height='404px' width='269px' />
-          <img src='http://images.urbanoutfitters.com/is/image/UrbanOutfitters/41314477_015_d?$medium$' alt='thejumpsuit' height='404px' width='269px' />
+          <img src='http://images.urbanoutfitters.com/is/image/UrbanOutfitters/36712511_000_b?$medium$' alt='thejumpsuit' height='404px' width='269px' />
+          <img src='http://images.urbanoutfitters.com/is/image/UrbanOutfitters/36712503_000_b?$medium$' alt='thejumpsuit' height='404px' width='269px' />
+          <img src='http://images.urbanoutfitters.com/is/image/UrbanOutfitters/36712495_000_b?$medium$' alt='thejumpsuit' height='404px' width='269px' />
+          <img src='http://images.urbanoutfitters.com/is/image/UrbanOutfitters/36712479_000_b?$medium$' alt='thejumpsuit' height='404px' width='269px' />
         </div>
         <div id='apartmentsale'>
-          <img src='http://images.urbanoutfitters.com/is/image/UrbanOutfitters/41314477_009_d?$medium$' alt='thejumpsuit' height='404px' width='269px' />
-          <img src='http://images.urbanoutfitters.com/is/image/UrbanOutfitters/41314477_069_d?$medium$' alt='thejumpsuit' height='404px' width='269px' />
-          <img src='http://images.urbanoutfitters.com/is/image/UrbanOutfitters/41301177_018_d?$medium$' alt='thejumpsuit' height='404px' width='269px' />
-          <img src='http://images.urbanoutfitters.com/is/image/UrbanOutfitters/41301177_065_d?$medium$' alt='thejumpsuit' height='404px' width='269px' />
+          <img src='http://images.urbanoutfitters.com/is/image/UrbanOutfitters/34830299_000_b?$medium$' alt='thejumpsuit' height='404px' width='269px' />
+          <img src='http://images.urbanoutfitters.com/is/image/UrbanOutfitters/34830034_000_b?$medium$' alt='thejumpsuit' height='404px' width='269px' />
+          <img src='http://images.urbanoutfitters.com/is/image/UrbanOutfitters/34108381_001_b?$medium$' alt='thejumpsuit' height='404px' width='269px' />
+          <img src='http://images.urbanoutfitters.com/is/image/UrbanOutfitters/34107706_000_b?$medium$' alt='thejumpsuit' height='404px' width='269px' />
         </div>
         <div id='apartmentsale'>
-          <img src='http://images.urbanoutfitters.com/is/image/UrbanOutfitters/41301177_001_d?$medium$' alt='thejumpsuit' height='404px' width='269px' />
-          <img src='http://images.urbanoutfitters.com/is/image/UrbanOutfitters/41301177_004_d?$medium$' alt='thejumpsuit' height='404px' width='269px' />
-          <img src='http://images.urbanoutfitters.com/is/image/UrbanOutfitters/41085762_066_d?$medium$' alt='thejumpsuit' height='404px' width='269px' />
-          <img src='http://images.urbanoutfitters.com/is/image/UrbanOutfitters/41315714_032_d?$medium$' alt='thejumpsuit' height='404px' width='269px' />
+          <img src='http://images.urbanoutfitters.com/is/image/UrbanOutfitters/34107243_000_b?$medium$' alt='thejumpsuit' height='404px' width='269px' />
+          <img src='http://images.urbanoutfitters.com/is/image/UrbanOutfitters/34107078_000_b?$medium$' alt='thejumpsuit' height='404px' width='269px' />
+          <img src='http://images.urbanoutfitters.com/is/image/UrbanOutfitters/40935736_066_b?$medium$' alt='thejumpsuit' height='404px' width='269px' />
+          <img src='http://images.urbanoutfitters.com/is/image/UrbanOutfitters/40861312_000_b?$medium$' alt='thejumpsuit' height='404px' width='269px' />
         </div>
         <div id='apartmentsale'>
-          <img src='http://images.urbanoutfitters.com/is/image/UrbanOutfitters/41315714_067_d?$medium$' alt='thejumpsuit' height='404px' width='269px' />
-          <img src='http://images.urbanoutfitters.com/is/image/UrbanOutfitters/41315714_092_d?$medium$' alt='thejumpsuit' height='404px' width='269px' />
-          <img src='http://images.urbanoutfitters.com/is/image/UrbanOutfitters/41104811_030_d?$medium$' alt='thejumpsuit' height='404px' width='269px' />
-          <img src='http://images.urbanoutfitters.com/is/image/UrbanOutfitters/41082710_092_d?$medium$' alt='thejumpsuit' height='404px' width='269px' />
+          <img src='http://images.urbanoutfitters.com/is/image/UrbanOutfitters/41135591_007_b?$medium$' alt='thejumpsuit' height='404px' width='269px' />
+          <img src='http://images.urbanoutfitters.com/is/image/UrbanOutfitters/40634081_067_b?$medium$' alt='thejumpsuit' height='404px' width='269px' />
+          <img src='http://images.urbanoutfitters.com/is/image/UrbanOutfitters/42249532_001_b?$medium$' alt='thejumpsuit' height='404px' width='269px' />
+          <img src='http://images.urbanoutfitters.com/is/image/UrbanOutfitters/41702606_070_b?$medium$' alt='thejumpsuit' height='404px' width='269px' />
         </div>
         <article id='daos'>
           <div id='yourcommunity'>
@@ -520,10 +520,6 @@ class Sale extends Component {
           <br />
           <p>Store Locator</p>
           <p>UO Spaces</p>
-        </ul>
-        <ul className='volunteer'>
-          <b className='b7'>Volunteer</b>
-          <p className='b6'>Click Here.</p>
         </ul>
         <ul className='apps'>
           <li className='b3'><img src='http://www.urbanoutfitters.com/urban/images/apple-app-store.jpg' height='27px' width='90px' /></li>

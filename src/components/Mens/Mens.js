@@ -3,6 +3,9 @@ import { Link } from 'react-router'
 
 class Mens extends Component {
 
+  enlarge () {
+  }
+
   constructor () {
     super()
     this.state = {
@@ -22,285 +25,285 @@ class Mens extends Component {
     return <div className='mens'>
       <nav className='menssubnavbar'>
         <ul className='menssecondnav'>
-          <li onMouseOver={() => this.showCategory('Collections')} onMouseOut={() => this.hideCategory()}>
-            <Link to='/MensCollections' >
-              <a className='ay'>Collections</a>
+          {/* <li onMouseOver={() => this.showCategory('Collections')} onMouseOut={() => this.hideCategory()}> */}
+          <Link to='/MensCollections' >
+            <a className='ay'>Collections</a>
+          </Link>
+          <ul className={this.state.visibleCategory === 'Collections' ? 'visible' : 'hidden'}>
+            <Link to='/love' >
+              <li className='funk'>Valentine's Day Shop</li>
             </Link>
-            <ul className={this.state.visibleCategory === 'Collections' ? 'visible' : 'hidden'}>
-              <Link to='/love' >
-                <li className='funk'>Valentine's Day Shop</li>
-              </Link>
-            </ul>
-          </li>
-          <li onMouseOver={() => this.showCategory('New')} onMouseOut={() => this.hideCategory()}>
-            <Link to='/MensNew' >
-              <a className='ay'>New</a>
+          </ul>
+          {/* </li> */}
+          {/* <li onMouseOver={() => this.showCategory('New')} onMouseOut={() => this.hideCategory()}> */}
+          <Link to='/MensNew' >
+            <a className='ay'>New</a>
+          </Link>
+          <ul className={this.state.visibleCategory === 'New' ? 'visible' : 'hidden'}>
+            <Link to='/MensNewJacketsCoats' >
+              <li className='funk'>Jackets + Coats</li>
             </Link>
-            <ul className={this.state.visibleCategory === 'New' ? 'visible' : 'hidden'}>
-              <Link to='/MensNewJacketsCoats' >
-                <li className='funk'>Jackets + Coats</li>
-              </Link>
-              <Link to='/MensNewGraphics' >
-                <li className='funk'>Graphics</li>
-              </Link>
-              <Link to='/MensNewTops' >
-                <li className='funk'>Tops</li>
-              </Link>
-              <Link to='/MensNewBottoms' >
-                <li className='funk'>Bottoms</li>
-              </Link>
-              <Link to='/MensNewShoes' >
-                <li className='funk'>Shoes</li>
-              </Link>
-              <Link to='/MensNewAccessories' >
-                <li className='funk'>Accessories</li>
-              </Link>
-              <Link to='/MensNewGrooming' >
-                <li className='funk'>Grooming</li>
-              </Link>
-            </ul>
-          </li>
-          <li onMouseOver={() => this.showCategory('Graphic Tees')} onMouseOut={() => this.hideCategory()}>
+            <Link to='/MensNewGraphics' >
+              <li className='funk'>Graphics</li>
+            </Link>
+            <Link to='/MensNewTops' >
+              <li className='funk'>Tops</li>
+            </Link>
+            <Link to='/MensNewBottoms' >
+              <li className='funk'>Bottoms</li>
+            </Link>
+            <Link to='/MensNewShoes' >
+              <li className='funk'>Shoes</li>
+            </Link>
+            <Link to='/MensNewAccessories' >
+              <li className='funk'>Accessories</li>
+            </Link>
+            <Link to='/MensNewGrooming' >
+              <li className='funk'>Grooming</li>
+            </Link>
+          </ul>
+          {/* </li> */}
+          {/* <li onMouseOver={() => this.showCategory('Graphic Tees')} onMouseOut={() => this.hideCategory()}> */}
+          <Link to='/MensGraphicTees' >
+            <a className='ay'>Graphic Tees</a>
+          </Link>
+          <ul className={this.state.visibleCategory === 'Graphic Tees' ? 'visible' : 'hidden'}>
+            <Link to='/MensGraphicBrandLogos' >
+              <li className='funk'>Brand + Logos</li>
+            </Link>
+            <Link to='/MensGraphicMusic' >
+              <li className='funk'>Music</li>
+            </Link>
+            <Link to='/MensSportAthletic' >
+              <li className='funk'>Sport + Athletic</li>
+            </Link>
+            <Link to='/MensPopCulture' >
+              <li className='funk'>Pop Culture</li>
+            </Link>
+            <Link to='/MensArtDesign' >
+              <li className='funk'>Art + Design</li>
+            </Link>
+          </ul>
+          {/* </li> */}
+          {/* <li onMouseOver={() => this.showCategory('Tops')} onMouseOut={() => this.hideCategory()}> */}
+          <Link to='/MensTops' >
+            <a className='ay'>Tops</a>
+          </Link>
+          <ul className={this.state.visibleCategory === 'Tops' ? 'visible' : 'hidden'}>
+            <Link to='/MensHoodies' >
+              <li className='funk'>Hoodies + Sweatshirts</li>
+            </Link>
+            <Link to='/MensTees' >
+              <li className='funk'>Tees</li>
+            </Link>
+            <Link to='/MensShirts' >
+              <li className='funk'>Shirts</li>
+            </Link>
+            <Link to='/MensSweaters' >
+              <li className='funk'>Sweaters</li>
+            </Link>
             <Link to='/MensGraphicTees' >
-              <a className='ay'>Graphic Tees</a>
+              <li className='funk'>Graphic Tees</li>
             </Link>
-            <ul className={this.state.visibleCategory === 'Graphic Tees' ? 'visible' : 'hidden'}>
-              <Link to='/MensGraphicBrandLogos' >
-                <li className='funk'>Brand + Logos</li>
-              </Link>
-              <Link to='/MensGraphicMusic' >
-                <li className='funk'>Music</li>
-              </Link>
-              <Link to='/MensSportAthletic' >
-                <li className='funk'>Sport + Athletic</li>
-              </Link>
-              <Link to='/MensPopCulture' >
-                <li className='funk'>Pop Culture</li>
-              </Link>
-              <Link to='/MensArtDesign' >
-                <li className='funk'>Art + Design</li>
-              </Link>
-            </ul>
-          </li>
-          <li onMouseOver={() => this.showCategory('Tops')} onMouseOut={() => this.hideCategory()}>
-            <Link to='/MensTops' >
-              <a className='ay'>Tops</a>
+          </ul>
+          {/* </li> */}
+          {/* <li onMouseOver={() => this.showCategory('Jackets')} onMouseOut={() => this.hideCategory()}> */}
+          <Link to='/MensJackets' >
+            <a className='ay'>Jackets</a>
+          </Link>
+          <ul className={this.state.visibleCategory === 'Jackets' ? 'visible' : 'hidden'}>
+            <Link to='/MensBomber' >
+              <li className='funk'>Bomber</li>
             </Link>
-            <ul className={this.state.visibleCategory === 'Tops' ? 'visible' : 'hidden'}>
-              <Link to='/MensHoodies' >
-                <li className='funk'>Hoodies + Sweatshirts</li>
-              </Link>
-              <Link to='/MensTees' >
-                <li className='funk'>Tees</li>
-              </Link>
-              <Link to='/MensShirts' >
-                <li className='funk'>Shirts</li>
-              </Link>
-              <Link to='/MensSweaters' >
-                <li className='funk'>Sweaters</li>
-              </Link>
-              <Link to='/MensGraphicTees' >
-                <li className='funk'>Graphic Tees</li>
-              </Link>
-            </ul>
-          </li>
-          <li onMouseOver={() => this.showCategory('Jackets')} onMouseOut={() => this.hideCategory()}>
-            <Link to='/MensJackets' >
-              <a className='ay'>Jackets</a>
+            <Link to='/MensDenimTrucker' >
+              <li className='funk'>Denim + Trucker</li>
             </Link>
-            <ul className={this.state.visibleCategory === 'Jackets' ? 'visible' : 'hidden'}>
-              <Link to='/MensBomber' >
-                <li className='funk'>Bomber</li>
-              </Link>
-              <Link to='/MensDenimTrucker' >
-                <li className='funk'>Denim + Trucker</li>
-              </Link>
-              <Link to='/MensWindbreaker' >
-                <li className='funk'>Windbreaker</li>
-              </Link>
-              <Link to='/MensLeatherSuede' >
-                <li className='funk'>Leather + Suede</li>
-              </Link>
-              <Link to='/MensCoats' >
-                <li className='funk'>Coats</li>
-              </Link>
-            </ul>
-          </li>
-          <li onMouseOver={() => this.showCategory('Bottoms')} onMouseOut={() => this.hideCategory()}>
-            <Link to='/MensBottoms' >
-              <a className='ay'>Bottoms</a>
+            <Link to='/MensWindbreaker' >
+              <li className='funk'>Windbreaker</li>
             </Link>
-            <ul className={this.state.visibleCategory === 'Bottoms' ? 'visible' : 'hidden'}>
-              <Link to='/MensPants' >
-                <li className='funk'>Pants</li>
-              </Link>
-              <Link to='/MensJeans' >
-                <li className='funk'>Jeans</li>
-              </Link>
-              <Link to='/MensOverallsCoveralls' >
-                <li className='funk'>Overalls + Coveralls</li>
-              </Link>
-              <Link to='/MensAthletic' >
-                <li className='funk'>Athletic</li>
-              </Link>
-              <Link to='/MensShorts' >
-                <li className='funk'>Shorts</li>
-              </Link>
-            </ul>
-          </li>
-          <li onMouseOver={() => this.showCategory('Shoes')} onMouseOut={() => this.hideCategory()}>
-            <Link to='/MensShoes' >
-              <a className='ay'>Shoes</a>
+            <Link to='/MensLeatherSuede' >
+              <li className='funk'>Leather + Suede</li>
             </Link>
-            <ul className={this.state.visibleCategory === 'Shoes' ? 'visible' : 'hidden'}>
-              <Link to='/MensSneakers' >
-                <li className='funk'>Sneakers</li>
-              </Link>
-              <Link to='/MensBoots' >
-                <li className='funk'>Boots</li>
-              </Link>
-              <Link to='/MensDressShoes' >
-                <li className='funk'>Dress Shoes</li>
-              </Link>
-              <Link to='/MensSlippersSandals' >
-                <li className='funk'>Slippers + Sandals</li>
-              </Link>
-            </ul>
-          </li>
-          <li onMouseOver={() => this.showCategory('Accessories')} onMouseOut={() => this.hideCategory()}>
-            <Link to='/MensAccessories' >
-              <a className='ay'>Accessories</a>
+            <Link to='/MensCoats' >
+              <li className='funk'>Coats</li>
             </Link>
-            <ul className={this.state.visibleCategory === 'Accessories' ? 'visible' : 'hidden'}>
-              <Link to='/MensHatsBeanies' >
-                <li className='funk'>Hats + Beanies</li>
-              </Link>
-              <Link to='/MensBagsWallets' >
-                <li className='funk'>Bags + Wallets</li>
-              </Link>
-              <Link to='/MensPinsPatches' >
-                <li className='funk'>Pins + Patches</li>
-              </Link>
-              <Link to='/MensSunglassesReaders' >
-                <li className='funk'>Sunglasses + Readers</li>
-              </Link>
-              <Link to='/MensWatchesJewelery' >
-                <li className='funk'>Watches + Jewelery</li>
-              </Link>
-              <Link to='/MensBandanas' >
-                <li className='funk'>Bandanas</li>
-              </Link>
-              <Link to='/MensBelts' >
-                <li className='funk'>Belts</li>
-              </Link>
-            </ul>
-          </li>
-          <li onMouseOver={() => this.showCategory('Sock + Underwear')} onMouseOut={() => this.hideCategory()}>
-            <Link to='/MensSocksUnderwear' >
-              <a className='ay'>Socks + Underwear</a>
+          </ul>
+          {/* </li> */}
+          {/* <li onMouseOver={() => this.showCategory('Bottoms')} onMouseOut={() => this.hideCategory()}> */}
+          <Link to='/MensBottoms' >
+            <a className='ay'>Bottoms</a>
+          </Link>
+          <ul className={this.state.visibleCategory === 'Bottoms' ? 'visible' : 'hidden'}>
+            <Link to='/MensPants' >
+              <li className='funk'>Pants</li>
             </Link>
-            <ul className={this.state.visibleCategory === 'Sock + Underwear' ? 'visible' : 'hidden'}>
-              <Link to='/MensSocks' >
-                <li className='funk'>Socks</li>
-              </Link>
-              <Link to='/MensUnderwear' >
-                <li className='funk'>Underwear</li>
-              </Link>
-            </ul>
-          </li>
-          <li onMouseOver={() => this.showCategory('Grooming')} onMouseOut={() => this.hideCategory()}>
-            <Link to='/MensGrooming' >
-              <a className='ay'>Grooming</a>
+            <Link to='/MensJeans' >
+              <li className='funk'>Jeans</li>
             </Link>
-            <ul className={this.state.visibleCategory === 'Grooming' ? 'visible' : 'hidden'}>
-              <Link to='/MensBeardShave' >
-                <li className='funk'>Beard + Shave</li>
-              </Link>
-              <Link to='/MensHair' >
-                <li className='funk'>Hair</li>
-              </Link>
-              <Link to='/MensSkin' >
-                <li className='funk'>Skin</li>
-              </Link>
-              <Link to='/MensCologone' >
-                <li className='funk'>Cologone</li>
-              </Link>
-            </ul>
-          </li>
-          <li onMouseOver={() => this.showCategory('Brands')} onMouseOut={() => this.hideCategory()}>
-            <Link to='/MensBrands' >
-              <a className='ay'>Brands</a>
+            <Link to='/MensOverallsCoveralls' >
+              <li className='funk'>Overalls + Coveralls</li>
             </Link>
-            <ul className={this.state.visibleCategory === 'Brands' ? 'visible' : 'hidden'}>
-              <Link to='/MensAdidas' >
-                <li className='funk'>adidas</li>
-              </Link>
-              <Link to='/MensAlphaIndustries' >
-                <li className='funk'>Alpha Industries</li>
-              </Link>
-              <Link to='/MensStussy' >
-                <li className='funk'>Stussy</li>
-              </Link>
-              <Link to='/MensPatagonia' >
-                <li className='funk'>Patagonia</li>
-              </Link>
-              <Link to='/MensCalvinKlein' >
-                <li className='funk'>Calvin Klein</li>
-              </Link>
-              <Link to='/MensBDG' >
-                <li className='funk'>BDG</li>
-              </Link>
-              <Link to='/MensReebok' >
-                <li className='funk'>Reebok</li>
-              </Link>
-              <Link to='/MensFILA' >
-                <li className='funk'>FILA</li>
-              </Link>
-              <Link to='/' >
-                <li className='funk'>UrbanOutfitters</li>
-              </Link>
-              <Link to='/AllBrands' >
-                <li className='funk'>Brands A-Z</li>
-              </Link>
-            </ul>
-          </li>
-          <li onMouseOver={() => this.showCategory('Sale')} onMouseOut={() => this.hideCategory()}>
-            <Link to='/MensSale' >
-              <a className='ay'>Sale</a>
+            <Link to='/MensAthletic' >
+              <li className='funk'>Athletic</li>
             </Link>
-            <ul className={this.state.visibleCategory === 'Sale' ? 'visible' : 'hidden'}>
-              <Link to='/MensSaleJustAdded' >
-                <li className='funk'>Just Added</li>
-              </Link>
-              <Link to='/MensSaleGraphicTees' >
-                <li className='funk'>Graphic Tees</li>
-              </Link>
-              <Link to='/MensSaleTeesTanks' >
-                <li className='funk'>Tees + Tanks</li>
-              </Link>
-              <Link to='/MensSaleShirts' >
-                <li className='funk'>Shirts</li>
-              </Link>
-              <Link to='/MensSaleSweatersSweatshirts' >
-                <li className='funk'>Sweaters + Sweatshirts</li>
-              </Link>
-              <Link to='/MensSaleCoatsJackets' >
-                <li className='funk'>Coats + Jackets</li>
-              </Link>
-              <Link to='/MensSaleJeansPants' >
-                <li className='funk'>Jeans + Pants</li>
-              </Link>
-              <Link to='/MensSaleShoes' >
-                <li className='funk'>Shoes</li>
-              </Link>
-              <Link to='/MensSaleHatsBeanies' >
-                <li className='funk'>Hats + Beanies</li>
-              </Link>
-              <Link to='/MensSaleAccessories' >
-                <li className='funk'>Accessories</li>
-              </Link>
-            </ul>
-          </li>
+            <Link to='/MensShorts' >
+              <li className='funk'>Shorts</li>
+            </Link>
+          </ul>
+          {/* </li> */}
+          {/* <li onMouseOver={() => this.showCategory('Shoes')} onMouseOut={() => this.hideCategory()}> */}
+          <Link to='/MensShoes' >
+            <a className='ay'>Shoes</a>
+          </Link>
+          <ul className={this.state.visibleCategory === 'Shoes' ? 'visible' : 'hidden'}>
+            <Link to='/MensSneakers' >
+              <li className='funk'>Sneakers</li>
+            </Link>
+            <Link to='/MensBoots' >
+              <li className='funk'>Boots</li>
+            </Link>
+            <Link to='/MensDressShoes' >
+              <li className='funk'>Dress Shoes</li>
+            </Link>
+            <Link to='/MensSlippersSandals' >
+              <li className='funk'>Slippers + Sandals</li>
+            </Link>
+          </ul>
+          {/* </li> */}
+          {/* <li onMouseOver={() => this.showCategory('Accessories')} onMouseOut={() => this.hideCategory()}> */}
+          <Link to='/MensAccessories' >
+            <a className='ay'>Accessories</a>
+          </Link>
+          <ul className={this.state.visibleCategory === 'Accessories' ? 'visible' : 'hidden'}>
+            <Link to='/MensHatsBeanies' >
+              <li className='funk'>Hats + Beanies</li>
+            </Link>
+            <Link to='/MensBagsWallets' >
+              <li className='funk'>Bags + Wallets</li>
+            </Link>
+            <Link to='/MensPinsPatches' >
+              <li className='funk'>Pins + Patches</li>
+            </Link>
+            <Link to='/MensSunglassesReaders' >
+              <li className='funk'>Sunglasses + Readers</li>
+            </Link>
+            <Link to='/MensWatchesJewelery' >
+              <li className='funk'>Watches + Jewelery</li>
+            </Link>
+            <Link to='/MensBandanas' >
+              <li className='funk'>Bandanas</li>
+            </Link>
+            <Link to='/MensBelts' >
+              <li className='funk'>Belts</li>
+            </Link>
+          </ul>
+          {/* </li> */}
+          {/* <li onMouseOver={() => this.showCategory('Sock + Underwear')} onMouseOut={() => this.hideCategory()}> */}
+          <Link to='/MensSocksUnderwear' >
+            <a className='ay'>Socks + Underwear</a>
+          </Link>
+          <ul className={this.state.visibleCategory === 'Sock + Underwear' ? 'visible' : 'hidden'}>
+            <Link to='/MensSocks' >
+              <li className='funk'>Socks</li>
+            </Link>
+            <Link to='/MensUnderwear' >
+              <li className='funk'>Underwear</li>
+            </Link>
+          </ul>
+          {/* </li> */}
+          {/* <li onMouseOver={() => this.showCategory('Grooming')} onMouseOut={() => this.hideCategory()}> */}
+          <Link to='/MensGrooming' >
+            <a className='ay'>Grooming</a>
+          </Link>
+          <ul className={this.state.visibleCategory === 'Grooming' ? 'visible' : 'hidden'}>
+            <Link to='/MensBeardShave' >
+              <li className='funk'>Beard + Shave</li>
+            </Link>
+            <Link to='/MensHair' >
+              <li className='funk'>Hair</li>
+            </Link>
+            <Link to='/MensSkin' >
+              <li className='funk'>Skin</li>
+            </Link>
+            <Link to='/MensCologone' >
+              <li className='funk'>Cologone</li>
+            </Link>
+          </ul>
+          {/* </li> */}
+          {/* <li onMouseOver={() => this.showCategory('Brands')} onMouseOut={() => this.hideCategory()}> */}
+          <Link to='/MensBrands' >
+            <a className='ay'>Brands</a>
+          </Link>
+          <ul className={this.state.visibleCategory === 'Brands' ? 'visible' : 'hidden'}>
+            <Link to='/MensAdidas' >
+              <li className='funk'>adidas</li>
+            </Link>
+            <Link to='/MensAlphaIndustries' >
+              <li className='funk'>Alpha Industries</li>
+            </Link>
+            <Link to='/MensStussy' >
+              <li className='funk'>Stussy</li>
+            </Link>
+            <Link to='/MensPatagonia' >
+              <li className='funk'>Patagonia</li>
+            </Link>
+            <Link to='/MensCalvinKlein' >
+              <li className='funk'>Calvin Klein</li>
+            </Link>
+            <Link to='/MensBDG' >
+              <li className='funk'>BDG</li>
+            </Link>
+            <Link to='/MensReebok' >
+              <li className='funk'>Reebok</li>
+            </Link>
+            <Link to='/MensFILA' >
+              <li className='funk'>FILA</li>
+            </Link>
+            <Link to='/' >
+              <li className='funk'>UrbanOutfitters</li>
+            </Link>
+            <Link to='/AllBrands' >
+              <li className='funk'>Brands A-Z</li>
+            </Link>
+          </ul>
+          {/* </li> */}
+          {/* <li onMouseOver={() => this.showCategory('Sale')} onMouseOut={() => this.hideCategory()}> */}
+          <Link to='/MensSale' >
+            <a className='ay'>Sale</a>
+          </Link>
+          <ul className={this.state.visibleCategory === 'Sale' ? 'visible' : 'hidden'}>
+            <Link to='/MensSaleJustAdded' >
+              <li className='funk'>Just Added</li>
+            </Link>
+            <Link to='/MensSaleGraphicTees' >
+              <li className='funk'>Graphic Tees</li>
+            </Link>
+            <Link to='/MensSaleTeesTanks' >
+              <li className='funk'>Tees + Tanks</li>
+            </Link>
+            <Link to='/MensSaleShirts' >
+              <li className='funk'>Shirts</li>
+            </Link>
+            <Link to='/MensSaleSweatersSweatshirts' >
+              <li className='funk'>Sweaters + Sweatshirts</li>
+            </Link>
+            <Link to='/MensSaleCoatsJackets' >
+              <li className='funk'>Coats + Jackets</li>
+            </Link>
+            <Link to='/MensSaleJeansPants' >
+              <li className='funk'>Jeans + Pants</li>
+            </Link>
+            <Link to='/MensSaleShoes' >
+              <li className='funk'>Shoes</li>
+            </Link>
+            <Link to='/MensSaleHatsBeanies' >
+              <li className='funk'>Hats + Beanies</li>
+            </Link>
+            <Link to='/MensSaleAccessories' >
+              <li className='funk'>Accessories</li>
+            </Link>
+          </ul>
+          {/* </li> */}
         </ul>
       </nav>
       <main className='menslayout'>
@@ -377,6 +380,28 @@ class Mens extends Component {
               <li>Levi's</li>
               <li>Patagonia</li>
             </ul>
+          </div>
+        </section>
+        <section id='newarrivalswrapper'>
+          <div id='newarrival1'>
+            <Link to='/MensNewJackets' >
+              <img src='http://images.urbanoutfitters.com/is/image/UrbanOutfitters/41139395_092_b' alt='newarrival1' height='279px' width='179px' />
+            </Link>
+            <Link to='/MensNewGraphics' >
+              <img src='http://images.urbanoutfitters.com/is/image/UrbanOutfitters/41891920_010_b' alt='newarrival2' height='279px' width='179px' />
+            </Link>
+            <Link to='/MensNewShoes' >
+              <img src='http://images.urbanoutfitters.com/is/image/UrbanOutfitters/40315293_016_b' alt='newarrival3' height='279px' width='179px' />
+            </Link>
+            <Link to='/MensNewBottoms' >
+              <img src='http://images.urbanoutfitters.com/is/image/UrbanOutfitters/40722191_106_b' alt='newarrival4' height='279px' width='179px' />
+            </Link>
+            <Link to='/MensNewAccessories' >
+              <img src='http://images.urbanoutfitters.com/is/image/UrbanOutfitters/41377227_072_b' alt='newarrival5' height='279px' width='179px' />
+            </Link>
+            <Link to='/MensNewJackets' >
+              <img src='http://images.urbanoutfitters.com/is/image/UrbanOutfitters/41460627_060_b' alt='newarrival6' height='279px' width='179px' />
+            </Link>
           </div>
         </section>
         <section id='fromtheblog'>

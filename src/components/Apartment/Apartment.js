@@ -26,7 +26,7 @@ class Apartment extends Component {
             <Link to='/ApartmentCollections' >
               <a className='ay'>Collections</a>
             </Link>
-            <ul className={this.state.visibleCategory === 'Collections' ? 'visible' : 'hidden'}>
+            <ul className={this.state.visibleCategory === 'Collections' ? 'null' : 'hidden'}>
               <Link to='/TheBeddingShop' >
                 <li className='funk'>The Bedding Shop</li>
               </Link>
@@ -48,7 +48,7 @@ class Apartment extends Component {
             <Link to='/ApartmentNew' >
               <a className='ay'>New</a>
             </Link>
-            <ul className={this.state.visibleCategory === 'New' ? 'visible' : 'hidden'}>
+            <ul className={this.state.visibleCategory === 'New' ? 'null' : 'hidden'}>
               <Link to='/ApartmentNewFurniture' >
                 <li className='funk'>Furniture + Room Decor</li>
               </Link>

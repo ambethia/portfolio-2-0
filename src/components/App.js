@@ -1,12 +1,13 @@
 import React, { Component } from 'react'
 import { Router, Route, browserHistory } from 'react-router'
 import Home from './Home'
-import Cart from './Cart'
+import Orders from './Orders'
 import Cartitems from './Cartitems'
 import Womens from './Womens/Womens'
-// import cart from './cart.json'
+import WomensBeauty from './Womens/WomensAccessories/WomensBeauty'
+// import data from '/data/json'
 // Womens Collections
-// import WomensCollections from './Womens/WomensCollections'
+import WomensCollections from './Womens/WomensCollections/WomensCollections'
 // WomensAccessories
 import TechAccessories from './Womens/WomensAccessories/TechAccessories'
 import WomensAccessories from './Womens/WomensAccessories/WomensAccessories'
@@ -389,6 +390,9 @@ import Beauty from './Beauty/Beauty'
 import Intimates from './Intimates/Intimates'
 import Blog from './Blog'
 import love from './love'
+// Shoe productsPage
+import AdidasShoesone from './Mens/ProductPages/AdidasShoesone'
+// End of Shoe productsPage
 // import exclusiveswimsuits from './exclusiveswimsuits'
 // import womensbodysuits from './womensbodysuits'
 // import womensproductpage from './womensproductpage'
@@ -422,6 +426,7 @@ class App extends Component {
 
   render () {
     return <Router history={browserHistory}>
+      {/* <Route component={data} /> */}
       <Route component={Layout}>
         <Route path='/' component={Home} />
         <Route path='/Mens' component={Mens} />
@@ -431,14 +436,14 @@ class App extends Component {
         <Route path='/Gifts' component={Gifts} />
         <Route path='/MusicTech' component={MusicTech} />
         <Route path='/Beauty' component={Beauty} />
+        <Route path='/WomensBeauty' component={WomensBeauty} />
         <Route path='/Intimates' component={Intimates} />
         <Route path='/Blog' component={Blog} />
         <Route path='/BeautySale' component={BeautySale} />
-        <Route path='/Cart' component={Cart} />
-        <Route path='/cart' component={Cart} />
+        <Route path='/Orders' component={Orders} />
         <Route path='/Cartitems' component={Cartitems} />
         <Route path='/love' component={love} />
-        {/* <Route path='/WomensCollections' component={WomensCollections} /> */}
+        <Route path='/WomensCollections' component={WomensCollections} />
         {/* Womens/WomensAccessories */}
         <Route path='/TechAccessories' component={TechAccessories} />
         <Route path='/WomensAccessories' component={WomensAccessories} />
@@ -825,6 +830,9 @@ class App extends Component {
         <Route path='/Shelving' component={Shelving} />
         {/* End of Apartment Storage */}
         {/* End of Apartment */}
+        {/* ProductPages */}
+        <Route path='/AdidasShoesone' component={AdidasShoesone} />
+        {/* End of ProductPages */}
         {/* <Route path='/exclusiveswimsuits' component={exclusiveswimsuits} />
         <Route path='/womensproductpage' component={womensproductpage} />
         <Route path='/womensbodysuits' component={womensbodysuits} />
