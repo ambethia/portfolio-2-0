@@ -19,291 +19,50 @@ class Beauty extends Component {
 
   render () {
     return <div className='beauty'>
-      <nav className='subnavbar'>
-        <ul className='beautysecondnav'>
-          <li onMouseOver={() => this.showCategory('Collections')} onMouseOut={() => this.hideCategory()}>
-            <Link to='/BeautyCollections' >
-              <a className='ay'>Collections</a>
-            </Link>
-            <ul className={this.state.visibleCategory === 'Collections' ? 'visible' : 'hidden'}>
-              <Link to='/love' >
-                <li className='funk'>Valentines Day Shop</li>
-              </Link>
-              <Link to='/TheSunShop' >
-                <li className='funk'>The Sun Shop</li>
-              </Link>
-              <Link to='/BeautyTopRated' >
-                <li className='funk'>Top Rated</li>
-              </Link>
-              <Link to='/BeautyBackInStock' >
-                <li className='funk'>Back In Stock</li>
-              </Link>
-            </ul>
-          </li>
-          <li onMouseOver={() => this.showCategory('New')} onMouseOut={() => this.hideCategory()}>
-            <Link to='/BeautyNew' >
-              <a className='ay'>New</a>
-            </Link>
-            <ul className={this.state.visibleCategory === 'New' ? 'visible' : 'hidden'}>
-              <Link to='/BeautyNewMakeup' >
-                <li className='funk'>Makeup</li>
-              </Link>
-              <Link to='/BeautyNewSkinCare' >
-                <li className='funk'>Skin Care</li>
-              </Link>
-              <Link to='/BeautyNewBathBody' >
-                <li className='funk'>Bath + Body</li>
-              </Link>
-              <Link to='/BeautyNewHairNails' >
-                <li className='funk'>Hair+Nails</li>
-              </Link>
-            </ul>
-          </li>
-          <li onMouseOver={() => this.showCategory('Makeup')} onMouseOut={() => this.hideCategory()}>
-            <Link to='/BeautyMakeup' >
-              <a className='ay'>Makeup</a>
-            </Link>
-            <ul className={this.state.visibleCategory === 'Makeup' ? 'visible' : 'hidden'}>
-              <Link to='/BeautyLipMakeup' >
-                <li className='funk'>Lip</li>
-              </Link>
-              <Link to='/BeautyEyeMakeup' >
-                <li className='funk'>Eye</li>
-              </Link>
-              <Link to='/BeautyFaceMakeup' >
-                <li className='funk'>Face</li>
-              </Link>
-              <Link to='/BeautyBrowMakeup' >
-                <li className='funk'>Brow</li>
-              </Link>
-              <Link to='/BeautyPalettesSets' >
-                <li className='funk'>Palettes + Sets</li>
-              </Link>
-              <Link to='/BeautyBrushesApplicators' >
-                <li className='funk'>Brushes + Applicators</li>
-              </Link>
-            </ul>
-          </li>
-          <li onMouseOver={() => this.showCategory('Skin Care')} onMouseOut={() => this.hideCategory()}>
-            <Link to='/BeautySkinCare' >
-              <a className='ay'>Skin Care</a>
-            </Link>
-            <ul className={this.state.visibleCategory === 'Skin Care' ? 'visible' : 'hidden'}>
-              <Link to='/Masks' >
-                <li className='funk'>Masks</li>
-              </Link>
-              <Link to='/Cleansers' >
-                <li className='funk'>Cleansers</li>
-              </Link>
-              <Link to='/Toner+Mist' >
-                <li className='funk'>Toner + Mist</li>
-              </Link>
-              <Link to='/MoisturizerCream' >
-                <li className='funk'>Moisturizer + Cream</li>
-              </Link>
-              <Link to='/AcneBlemish' >
-                <li className='funk'>Acne + Blemish</li>
-              </Link>
-              <Link to='/OilSerum' >
-                <li className='funk'>Oil + Serum</li>
-              </Link>
-              <Link to='/NaturalOrganic' >
-                <li className='funk'>Natural + Organic</li>
-              </Link>
-            </ul>
-          </li>
-          <li onMouseOver={() => this.showCategory('Bath + Body')} onMouseOut={() => this.hideCategory()}>
-            <Link to='/BeautyBathBody' >
-              <a className='ay'>Bath + Body</a>
-            </Link>
-            <ul className={this.state.visibleCategory === 'Bath + Body' ? 'visible' : 'hidden'}>
-              <Link to='/CreamOil' >
-                <li className='funk'>Cream + Oil</li>
-              </Link>
-              <Link to='/ShowerBath' >
-                <li className='funk'>Shower + Bath</li>
-              </Link>
-              <Link to='/ScrubsSunCare' >
-                <li className='funk'>Scrubs + Sun Care</li>
-              </Link>
-              <Link to='/PersonalCare' >
-                <li className='funk'>Personal Care</li>
-              </Link>
-              <Link to='/NaturalOrganic' >
-                <li className='funk'>Natural + Organic</li>
-              </Link>
-            </ul>
-          </li>
-          <li onMouseOver={() => this.showCategory('Hair')} onMouseOut={() => this.hideCategory()}>
-            <Link to='/BeautyHair' >
-              <a className='ay'>Hair</a>
-            </Link>
-            <ul className={this.state.visibleCategory === 'Hair' ? 'visible' : 'hidden'}>
-              <Link to='/Shampoo' >
-                <li className='funk'>Shampoo</li>
-              </Link>
-              <Link to='/ConditionerTreatment' >
-                <li className='funk'>Conditioner + Treatment</li>
-              </Link>
-              <Link to='/StylingProduct' >
-                <li className='funk'>Styling Product</li>
-              </Link>
-              <Link to='/ToolsBrushes' >
-                <li className='funk'>Tools + Brushes</li>
-              </Link>
-              <Link to='/HairAccessories' >
-                <li className='funk'>Accessories</li>
-              </Link>
-            </ul>
-          </li>
-          <li onMouseOver={() => this.showCategory('Nails')} onMouseOut={() => this.hideCategory()}>
-            <Link to='/BeautyNails' >
-              <a className='ay'>Nails</a>
-            </Link>
-            <ul className={this.state.visibleCategory === 'Nails' ? 'visible' : 'hidden'}>
-              <Link to='/NailPolish' >
-                <li className='funk'>Nail Polish</li>
-              </Link>
-              <Link to='/NailCareTools' >
-                <li className='funk'>Nail Care + Tools</li>
-              </Link>
-            </ul>
-          </li>
-          <li onMouseOver={() => this.showCategory('Fragrance')} onMouseOut={() => this.hideCategory()}>
-            <Link to='/BeautyFragrance' >
-              <a className='ay'>Fragrance</a>
-            </Link>
-            <ul className={this.state.visibleCategory === 'Fragrance' ? 'visible' : 'hidden'}>
-              <Link to='/Spray' >
-                <li className='funk'>Spray</li>
-              </Link>
-              <Link to='/RollOnOil' >
-                <li className='funk'>Roll On + Oil</li>
-              </Link>
-              <Link to='/MultiUse' >
-                <li className='funk'>Multi-Use</li>
-              </Link>
-            </ul>
-          </li>
-          <li onMouseOver={() => this.showCategory('Wellness')} onMouseOut={() => this.hideCategory()}>
-            <Link to='/BeautyWellness' >
-              <a className='ay'>Wellness</a>
-            </Link>
-            <ul className={this.state.visibleCategory === 'Wellness' ? 'visible' : 'hidden'}>
-              <Link to='/VitaminsSupplements' >
-                <li className='funk'>Vitamins + Supplements</li>
-              </Link>
-              <Link to='/SuperFoodsTeas' >
-                <li className='funk'>SuperFoods + Teas</li>
-              </Link>
-              <Link to='/OralCare' >
-                <li className='funk'>Oral Care</li>
-              </Link>
-              <Link to='/AromaTherapy' >
-                <li className='funk'>AromaTherapy</li>
-              </Link>
-            </ul>
-          </li>
-          <li onMouseOver={() => this.showCategory('Accessories')} onMouseOut={() => this.hideCategory()}>
-            <Link to='/BeautyAccessories' >
-              <a className='ay'>Accessories</a>
-            </Link>
-            <ul className={this.state.visibleCategory === 'Accessories' ? 'visible' : 'hidden'}>
-              <Link to='/BeautyAccessoriesBags' >
-                <li className='funk'>Bags + Cases</li>
-              </Link>
-              <Link to='/BeautyBrushesApplicators' >
-                <li className='funk'>Brushes + Applicators</li>
-              </Link>
-              <Link to='/BeautyBathVanity' >
-                <li className='funk'>Bath + Vanity</li>
-              </Link>
-              <Link to='/BeautyAccessoriesHair' >
-                <li className='funk'>Hair</li>
-              </Link>
-              <Link to='/BeautyAccessoriesBodyArt' >
-                <li className='funk'>Body Art</li>
-              </Link>
-            </ul>
-          </li>
-          <li onMouseOver={() => this.showCategory('Mens Grooming')} onMouseOut={() => this.hideCategory()}>
-            <Link to='/BeautyMensGrooming' >
-              <a className='ay'>Mens Grooming</a>
-            </Link>
-            <ul className={this.state.visibleCategory === 'Mens Grooming' ? 'visible' : 'hidden'}>
-              <Link to='/MensBeardShave' >
-                <li className='funk'>Beard + Shave</li>
-              </Link>
-              <Link to='/BeautyMensHair' >
-                <li className='funk'>Hair</li>
-              </Link>
-              <Link to='/BeautyMensSkin' >
-                <li className='funk'>Skin</li>
-              </Link>
-              <Link to='/BeautyMensCologne' >
-                <li className='funk'>Cologne</li>
-              </Link>
-            </ul>
-          </li>
-          <li onMouseOver={() => this.showCategory('Gift Sets')} onMouseOut={() => this.hideCategory()}>
-            <Link to='/BeautyGiftSets' >
-              <a className='ay'>Gift Sets</a>
-            </Link>
-            <ul className={this.state.visibleCategory === 'Gift Sets' ? 'visible' : 'hidden'}>
-              <Link to='/ForHer' >
-                <li className='funk'>For Her</li>
-              </Link>
-              <Link to='/ForHim' >
-                <li className='funk'>For Him</li>
-              </Link>
-            </ul>
-          </li>
-          <li onMouseOver={() => this.showCategory('Brands')} onMouseOut={() => this.hideCategory()}>
-            <Link to='/BeautyBrands' >
-              <a className='ay'>Brands</a>
-            </Link>
-            <ul className={this.state.visibleCategory === 'Brands' ? 'visible' : 'hidden'}>
-              <Link to='/BeautyAnastasiaHills' >
-                <li className='funk'>Anastasia Beverley Hills</li>
-              </Link>
-              <Link to='/bhcosmetics' >
-                <li className='funk'>bh cosmetics</li>
-              </Link>
-              <Link to='/HerbivoreBotanicals' >
-                <li className='funk'>Herbivore Botanicals</li>
-              </Link>
-              <Link to='/LimeCrime' >
-                <li className='funk'>Lime Crime</li>
-              </Link>
-              <Link to='/MarioBadescu' >
-                <li className='funk'>Mario Badescu</li>
-              </Link>
-              <Link to='/MilkMakeUp' >
-                <li className='funk'>Milk MakeUp</li>
-              </Link>
-              <Link to='/ObsessiveCosmetics' >
-                <li className='funk'>Obsessive Cosmetics</li>
-              </Link>
-              <Link to='/SigmaBeauty' >
-                <li className='funk'>Sigma Beauty</li>
-              </Link>
-              <Link to='/Stila' >
-                <li className='funk'>Stila</li>
-              </Link>
-              <Link to='/TONYMOLY' >
-                <li className='funk'>TONYMOLY</li>
-              </Link>
-              <Link to='/AllBeautyBrands' >
-                <li className='funk'>Brands A-Z</li>
-              </Link>
-            </ul>
-          </li>
-          <li onMouseOver={() => this.showCategory('Sale')} onMouseOut={() => this.hideCategory()}>
-            <Link to='/BeautySale' >
-              <a className='ay'>Sale</a>
-            </Link>
-            <ul className={this.state.visibleCategory === 'Sale' ? 'visible' : 'hidden'} />
-          </li>
+      <nav className='pleasework'>
+        <ul className='pleasework'>
+          <Link to='/WomensCollections' >
+            <li>Collections</li>
+          </Link>
+          <Link to='/WomensNew' >
+            <li>New</li>
+          </Link>
+          <Link to='/WomensDressesRompers' >
+            <li>Dresses + Rompers</li>
+          </Link>
+          <Link to='/WomensTops' >
+            <li>Tops</li>
+          </Link>
+          <Link to='/WomensJackets' >
+            <li>Jackets</li>
+          </Link>
+          <Link to='/WomensBottoms' >
+            <li>Bottoms</li>
+          </Link>
+          <Link to='/Intimates' >
+            <li>Intimates</li>
+          </Link>
+          <Link to='/WomensSwim' >
+            <li>Swim</li>
+          </Link>
+          <Link to='/WomensVintage' >
+            <li>Vintage</li>
+          </Link>
+          <Link to='/Beauty' >
+            <li>Beauty</li>
+          </Link>
+          <Link to='/WomensAccessories' >
+            <li>Accessories</li>
+          </Link>
+          <Link to='/WomensShoes' >
+            <li>Shoes</li>
+          </Link>
+          <Link to='/WomensBrands' >
+            <li>Brands</li>
+          </Link>
+          <Link to='/WomensSale' >
+            <li>Sale</li>
+          </Link>
         </ul>
       </nav>
       <main id='apartmentlayout'>

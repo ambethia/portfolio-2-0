@@ -20,10 +20,10 @@ class Home extends Component {
         </article>
         <div className='model'>
           <Link to='/Womens' >
-            <img src='http://images.urbanoutfitters.com/is/image/UrbanOutfitters/170123_hpgw_us_1?scl=1&qlt=92' alt='cloth' height='708px' width='565px' />
+            <img src='http://images.urbanoutfitters.com/is/image/UrbanOutfitters/170206_hpgw_us_1?scl=1&qlt=92' alt='cloth' height='708px' width='565px' />
           </Link>
           <Link to='/Mens' >
-            <img src='http://images.urbanoutfitters.com/is/image/UrbanOutfitters/170123_hpgw_us_2?scl=1&qlt=92' alt='model' height='708px' width='565px' />
+            <img src='http://images.urbanoutfitters.com/is/image/UrbanOutfitters/170206_hpgw_us_2?scl=1&qlt=92' alt='model' height='708px' width='565px' />
           </Link>
         </div>
         <div className='gift'>

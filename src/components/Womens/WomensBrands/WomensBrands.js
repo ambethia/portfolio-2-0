@@ -20,175 +20,50 @@ class Sale extends Component {
 
   render () {
     return <div id='sale'>
-      <nav className='subnavbar'>
-        <ul className='salesecondnav'>
-          <li onMouseOver={() => this.showCategory('Womens Sale')} onMouseOut={() => this.hideCategory()}>
-            <Link to='/WomensSale' >
-              <a className='ay'>Womens Sale</a>
-            </Link>
-            <ul className={this.state.visibleCategory === 'Womens Sale' ? 'visible' : 'hidden'}>
-              <Link to='/WomensSaleJustAdded' >
-                <li className='funk'>Just Added</li>
-              </Link>
-              <Link to='/WomensSaleDresses' >
-                <li className='funk'>Dresses+Rompers</li>
-              </Link>
-              <Link to='/WomensSaleSweaters' >
-                <li className='funk'>Sweaters+Sweatshirts</li>
-              </Link>
-              <Link to='/WomensSaleTops' >
-                <li className='funk'>Tops + Tees</li>
-              </Link>
-              <Link to='/WomensSaleGraphicTees' >
-                <li className='funk'>Graphic Tees</li>
-              </Link>
-              <Link to='/WomensSaleCoats' >
-                <li className='funk'>Coats + Jackets</li>
-              </Link>
-              <Link to='/WomensSaleJeansPants' >
-                <li className='funk'>Jeans, Pants+Leggings</li>
-              </Link>
-              <Link to='/WomensSaleShorts' >
-                <li className='funk'>Shorts + Skirts</li>
-              </Link>
-              <Link to='/WomensSaleIntimates' >
-                <li className='funk'>Intimates</li>
-              </Link>
-              <Link to='/WomensSaleLounge' >
-                <li className='funk'>Lounge + Activewear</li>
-              </Link>
-              <Link to='/WomensSaleSwim' >
-                <li className='funk'>Swim</li>
-              </Link>
-              <Link to='/WomensSaleShoes' >
-                <li className='funk'>Shoes</li>
-              </Link>
-              <Link to='/WomensSaleBags' >
-                <li className='funk'>Bags + Wallets</li>
-              </Link>
-              <Link to='/WomensSaleAccessories' >
-                <li className='funk'>Accessories</li>
-              </Link>
-              <Link to='/WomensSaleBeauty' >
-                <li className='funk'>Beauty</li>
-              </Link>
-            </ul>
-          </li>
-          <li onMouseOver={() => this.showCategory('Mens Sale')} onMouseOut={() => this.hideCategory()}>
-            <Link to='/MensSale' >
-              <a className='ay'>Mens Sale</a>
-            </Link>
-            <ul className={this.state.visibleCategory === 'Mens Sale' ? 'visible' : 'hidden'}>
-              <Link to='/MensSaleJustAdded' >
-                <li className='funk'>Just Added</li>
-              </Link>
-              <Link to='/MensSaleGraphicTees' >
-                <li className='funk'>Graphic Tees</li>
-              </Link>
-              <Link to='/MensSaleTees' >
-                <li className='funk'>Tees + Tanks</li>
-              </Link>
-              <Link to='/MensSaleShirts' >
-                <li className='funk'>Shirts</li>
-              </Link>
-              <Link to='/MensSaleSweaters' >
-                <li className='funk'>Sweaters+Sweatshirts</li>
-              </Link>
-              <Link to='/MensSaleCoats' >
-                <li className='funk'>Coats + Jackets</li>
-              </Link>
-              <Link to='/MensSaleJeans' >
-                <li className='funk'>Jeans+Pants</li>
-              </Link>
-              <Link to='/MensSaleShoes' >
-                <li className='funk'>Shoes</li>
-              </Link>
-              <Link to='/MensSaleHats' >
-                <li className='funk'>Hats+Beanies</li>
-              </Link>
-              <Link to='/MensSaleAccessories' >
-                <li className='funk'>Accessories</li>
-              </Link>
-            </ul>
-          </li>
-          <li onMouseOver={() => this.showCategory('Apartment Sale')} onMouseOut={() => this.hideCategory()}>
-            <Link to='/ApartmentSale' >
-              <a className='ay'>Apartment Sale</a>
-            </Link>
-            <ul className={this.state.visibleCategory === 'Apartment Sale' ? 'visible' : 'hidden'}>
-              <Link to='/ApartmentSaleJustAdded' >
-                <li className='funk'>Just Added</li>
-              </Link>
-              <Link to='/ApartmentSaleBedding' >
-                <li className='funk'>Bedding</li>
-              </Link>
-              <Link to='/ApartmentSaleRugs' >
-                <li className='funk'>Rugs + Curtains</li>
-              </Link>
-              <Link to='/ApartmentSalePillows' >
-                <li className='funk'>Pillows, Tapestries + Throws</li>
-              </Link>
-              <Link to='/ApartmentSaleFurniture' >
-                <li className='funk'>Furniture</li>
-              </Link>
-              <Link to='/ApartmentSaleRoomDecor' >
-                <li className='funk'>Room Decor</li>
-              </Link>
-              <Link to='/ApartmentSaleKitchen' >
-                <li className='funk'>Kitchen + Bar</li>
-              </Link>
-              <Link to='/ApartmentSaleBath' >
-                <li className='funk'>Bath</li>
-              </Link>
-              <Link to='/ApartmentSaleBooks' >
-                <li className='funk'>Books + Stationery</li>
-              </Link>
-              <Link to='/ApartmentSaleParty' >
-                <li className='funk'>Party+Fun</li>
-              </Link>
-              <Link to='/ApartmentSaleMusicTech' >
-                <li className='funk'>Music+Tech</li>
-              </Link>
-            </ul>
-          </li>
-          <li onMouseOver={() => this.showCategory('Music + Tech Sale')} onMouseOut={() => this.hideCategory()}>
-            <Link to='/MusicTechSale' >
-              <a className='ay'>Music + Tech Sale</a>
-            </Link>
-            <ul className={this.state.visibleCategory === 'Music + Tech Sale' ? 'visible' : 'hidden'}>
-              <Link to='/MusicTechSaleVinyl' >
-                <li className='funk'>Vinyl + Cassettes</li>
-              </Link>
-              <Link to='/MusicTechSalePhoto' >
-                <li className='funk'>Photo, Music + Tech Accessories</li>
-              </Link>
-            </ul>
-          </li>
-          <li onMouseOver={() => this.showCategory('Beauty Sale')} onMouseOut={() => this.hideCategory()}>
-            <Link to='/BeautySale' >
-              <a className='ay'>Beauty Sale</a>
-            </Link>
-            <ul className={this.state.visibleCategory === 'Beauty Sale' ? 'visible' : 'hidden'} />
-          </li>
-          <li onMouseOver={() => this.showCategory('Intimate Sale')} onMouseOut={() => this.hideCategory()}>
-            <Link to='/IntimatesSale' >
-              <a className='ay'>Intimate Sale</a>
-            </Link>
-            <ul className={this.state.visibleCategory === 'Intimate Sale' ? 'visible' : 'hidden'}>
-              <Link to='/IntimatesSaleLounge' >
-                <li className='funk'>Lounge + Activewear</li>
-              </Link>
-              <Link to='/IntimatesSaleBras' >
-                <li className='funk'>Bras + Undies</li>
-              </Link>
-              <Link to='/IntimatesSaleSwim' >
-                <li className='funk'>Swim</li>
-              </Link>
-              <Link to='/IntimatesSaleSocks' >
-                <li className='funk'>Socks + Tights</li>
-              </Link>
-            </ul>
-          </li>
+      <nav className='pleasework'>
+        <ul className='pleasework'>
+          <Link to='/WomensCollections' >
+            <li>Collections</li>
+          </Link>
+          <Link to='/WomensNew' >
+            <li>New</li>
+          </Link>
+          <Link to='/WomensDressesRompers' >
+            <li>Dresses + Rompers</li>
+          </Link>
+          <Link to='/WomensTops' >
+            <li>Tops</li>
+          </Link>
+          <Link to='/WomensJackets' >
+            <li>Jackets</li>
+          </Link>
+          <Link to='/WomensBottoms' >
+            <li>Bottoms</li>
+          </Link>
+          <Link to='/Intimates' >
+            <li>Intimates</li>
+          </Link>
+          <Link to='/WomensSwim' >
+            <li>Swim</li>
+          </Link>
+          <Link to='/WomensVintage' >
+            <li>Vintage</li>
+          </Link>
+          <Link to='/Beauty' >
+            <li>Beauty</li>
+          </Link>
+          <Link to='/WomensAccessories' >
+            <li>Accessories</li>
+          </Link>
+          <Link to='/WomensShoes' >
+            <li>Shoes</li>
+          </Link>
+          <Link to='/WomensBrands' >
+            <li>Brands</li>
+          </Link>
+          <Link to='/WomensSale' >
+            <li>Sale</li>
+          </Link>
         </ul>
       </nav>
       <main id='apartmentlayout'>

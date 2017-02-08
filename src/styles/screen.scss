@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700|Yesteryear');
+
 @import 'utility';
 @import 'mens';
 @import 'womens';
@@ -20,7 +22,7 @@
 @import 'MensAccessories';
 @import 'AdidasShoesone';
 $base-text-size: 16px;
-$base-font-family: sans-serif;
+$base-font-family: 'Open Sans', sans-serif;
 
 .content {
   align-items: center;
@@ -104,6 +106,9 @@ h2 {
 .firstnav {
   margin-bottom: 100px;
   border-bottom: 1px solid gray;
+  background-color: white;
+  font-family: 'Open Sans';
+  font-weight: bold;
 
   ul.first {
     display: flex;
@@ -117,9 +122,33 @@ h2 {
     list-style-type: none;
     width: 100%;
     height: 7%;
-    font-size: 11px;
+    font-size: 16px;
     justify-content: space-around;
+    background-color: white;
     // font-family: 'Montserrat', sans-serif;
+
+    li.first {
+      font-family: 'Yesteryear', cursive;
+      font-size: 42px;
+      line-height: 18px;
+      transform: rotateZ(-5deg);
+      z-index: 2000;
+      text-shadow: 3px 3px 0 #666;
+
+      a:link, a:visited {
+        color: #900;
+      }
+    }
+  }
+
+  a:link, a:visited {
+    text-decoration: none;
+    color: #333;
+  }
+
+  a:hover,
+  a.active {
+    color: #999;
   }
 }
 
@@ -148,6 +177,7 @@ nav.womenssubnavbar {
 .apartmentsecondnav, .musicsecondnav,
 .beautysecondnav, .salesecondnav, .blogsecondnav {
   flex-direction: row;
+  position: fixed;
   flex: 1;
   position: relative;
   margin-bottom: 50px;
@@ -409,7 +439,6 @@ b#u {
   flex: 1;
   display: flex;
   position: relative;
-  bottom: 625px;
   align-items: center;
 }
 
@@ -458,7 +487,7 @@ form {
 
 .b3 {
   left: 815px;
-  bottom: -75px;
+  bottom: 0px;
   padding: 12px;
   justify-content: space-between;
   position: relative;

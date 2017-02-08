@@ -392,7 +392,93 @@ import Blog from './Blog'
 import love from './love'
 // Shoe productsPage
 import AdidasShoesone from './Mens/ProductPages/AdidasShoesone'
+import AdidasShoestwo from './Mens/ProductPages/AdidasShoestwo'
+import AdidasShoesthree from './Mens/ProductPages/AdidasShoesthree'
+import AdidasShoesfour from './Mens/ProductPages/AdidasShoesfour'
+import AdidasShoesfive from './Mens/ProductPages/AdidasShoesfive'
+import AdidasShoessix from './Mens/ProductPages/AdidasShoessix'
+import AdidasShoesseven from './Mens/ProductPages/AdidasShoesseven'
+import AdidasShoeseight from './Mens/ProductPages/AdidasShoeseight'
+import AdidasShoesnine from './Mens/ProductPages/AdidasShoesnine'
+import AdidasShoesten from './Mens/ProductPages/AdidasShoesten'
+import AdidasShoeseleven from './Mens/ProductPages/AdidasShoeseleven'
+import AdidasShoestwelve from './Mens/ProductPages/AdidasShoestwelve'
+import AdidasShoesthirteen from './Mens/ProductPages/AdidasShoesthirteen'
+import AdidasShoesfourteen from './Mens/ProductPages/AdidasShoesfourteen'
+import AdidasShoesfifteen from './Mens/ProductPages/AdidasShoesfifteen'
+import AdidasShoessixteen from './Mens/ProductPages/AdidasShoessixteen'
+import AdidasShoesseventeen from './Mens/ProductPages/AdidasShoesseventeen'
+import AdidasShoeseighteen from './Mens/ProductPages/AdidasShoeseighteen'
+import AdidasShoesnineteen from './Mens/ProductPages/AdidasShoesnineteen'
+import AdidasShoestwenty from './Mens/ProductPages/AdidasShoestwenty'
+
 // End of Shoe productsPage
+// Mens New Arrivals PP
+import MensNewArrivalone from './Mens/ProductPages/MensNewArrivalone'
+import MensNewArrivaltwo from './Mens/ProductPages/MensNewArrivaltwo'
+import MensNewArrivalthree from './Mens/ProductPages/MensNewArrivalthree'
+import MensNewArrivalfour from './Mens/ProductPages/MensNewArrivalfour'
+import MensNewArrivalfive from './Mens/ProductPages/MensNewArrivalfive'
+import MensNewArrivalsix from './Mens/ProductPages/MensNewArrivalsix'
+import MensNewArrivalseven from './Mens/ProductPages/MensNewArrivalseven'
+import MensNewArrivaleight from './Mens/ProductPages/MensNewArrivaleight'
+import MensNewArrivalnine from './Mens/ProductPages/MensNewArrivalnine'
+import MensNewArrivalten from './Mens/ProductPages/MensNewArrivalten'
+import MensNewArrivaleleven from './Mens/ProductPages/MensNewArrivaleleven'
+import MensNewArrivaltwelve from './Mens/ProductPages/MensNewArrivaltwelve'
+import MensNewArrivalthirteen from './Mens/ProductPages/MensNewArrivalthirteen'
+import MensNewArrivalfourteen from './Mens/ProductPages/MensNewArrivalfourteen'
+import MensNewArrivalfifteen from './Mens/ProductPages/MensNewArrivalfifteen'
+import MensNewArrivalsixteen from './Mens/ProductPages/MensNewArrivalsixteen'
+import MensNewArrivalseventeen from './Mens/ProductPages/MensNewArrivalseventeen'
+import MensNewArrivaleighteen from './Mens/ProductPages/MensNewArrivaleighteen'
+import MensNewArrivalnineteen from './Mens/ProductPages/MensNewArrivalnineteen'
+import MensNewArrivaltwenty from './Mens/ProductPages/MensNewArrivaltwenty'
+// End of Mens New Arrivals PP
+// Mens Graphic Tees PP
+import MensGraphicTeesone from './Mens/ProductPages/MensGraphicTeesone'
+import MensGraphicTeestwo from './Mens/ProductPages/MensGraphicTeestwo'
+import MensGraphicTeesthree from './Mens/ProductPages/MensGraphicTeesthree'
+import MensGraphicTeesfour from './Mens/ProductPages/MensGraphicTeesfour'
+import MensGraphicTeesfive from './Mens/ProductPages/MensGraphicTeesfive'
+import MensGraphicTeessix from './Mens/ProductPages/MensGraphicTeessix'
+import MensGraphicTeesseven from './Mens/ProductPages/MensGraphicTeesseven'
+import MensGraphicTeeseight from './Mens/ProductPages/MensGraphicTeeseight'
+import MensGraphicTeesnine from './Mens/ProductPages/MensGraphicTeesnine'
+import MensGraphicTeesten from './Mens/ProductPages/MensGraphicTeesten'
+import MensGraphicTeeseleven from './Mens/ProductPages/MensGraphicTeeseleven'
+import MensGraphicTeestwelve from './Mens/ProductPages/MensGraphicTeestwelve'
+import MensGraphicTeesthirteen from './Mens/ProductPages/MensGraphicTeesthirteen'
+import MensGraphicTeesfourteen from './Mens/ProductPages/MensGraphicTeesfourteen'
+import MensGraphicTeesfifteen from './Mens/ProductPages/MensGraphicTeesfifteen'
+import MensGraphicTeessixteen from './Mens/ProductPages/MensGraphicTeessixteen'
+import MensGraphicTeesseventeen from './Mens/ProductPages/MensGraphicTeesseventeen'
+import MensGraphicTeeseighteen from './Mens/ProductPages/MensGraphicTeeseighteen'
+import MensGraphicTeesnineteen from './Mens/ProductPages/MensGraphicTeesnineteen'
+import MensGraphicTeestwenty from './Mens/ProductPages/MensGraphicTeestwenty'
+// End of Mens Graphic Tees PP
+// Mens Tops PP
+import MensTopsone from './Mens/ProductPages/MensTopsone'
+import MensTopstwo from './Mens/ProductPages/MensTopstwo'
+import MensTopsthree from './Mens/ProductPages/MensTopsthree'
+import MensTopsfour from './Mens/ProductPages/MensTopsfour'
+import MensTopsfive from './Mens/ProductPages/MensTopsfive'
+import MensTopssix from './Mens/ProductPages/MensTopssix'
+import MensTopsseven from './Mens/ProductPages/MensTopsseven'
+import MensTopseight from './Mens/ProductPages/MensTopseight'
+import MensTopsnine from './Mens/ProductPages/MensTopsnine'
+import MensTopsten from './Mens/ProductPages/MensTopsten'
+import MensTopseleven from './Mens/ProductPages/MensTopseleven'
+import MensTopstwelve from './Mens/ProductPages/MensTopstwelve'
+import MensTopsthirteen from './Mens/ProductPages/MensTopsthirteen'
+import MensTopsfourteen from './Mens/ProductPages/MensTopsfourteen'
+import MensTopsfifteen from './Mens/ProductPages/MensTopsfifteen'
+import MensTopssixteen from './Mens/ProductPages/MensTopssixteen'
+import MensTopsseventeen from './Mens/ProductPages/MensTopsseventeen'
+import MensTopseighteen from './Mens/ProductPages/MensTopseighteen'
+import MensTopsnineteen from './Mens/ProductPages/MensTopsnineteen'
+import MensTopstwenty from './Mens/ProductPages/MensTopstwenty'
+// End of Mens Tops PP
 // import exclusiveswimsuits from './exclusiveswimsuits'
 // import womensbodysuits from './womensbodysuits'
 // import womensproductpage from './womensproductpage'
@@ -832,7 +918,92 @@ class App extends Component {
         {/* End of Apartment */}
         {/* ProductPages */}
         <Route path='/AdidasShoesone' component={AdidasShoesone} />
+        <Route path='/AdidasShoestwo' component={AdidasShoestwo} />
+        <Route path='/AdidasShoesthree' component={AdidasShoesthree} />
+        <Route path='/AdidasShoesfour' component={AdidasShoesfour} />
+        <Route path='/AdidasShoesfive' component={AdidasShoesfive} />
+        <Route path='/AdidasShoessix' component={AdidasShoessix} />
+        <Route path='/AdidasShoesseven' component={AdidasShoesseven} />
+        <Route path='/AdidasShoeseight' component={AdidasShoeseight} />
+        <Route path='/AdidasShoesnine' component={AdidasShoesnine} />
+        <Route path='/AdidasShoesten' component={AdidasShoesten} />
+        <Route path='/AdidasShoeseleven' component={AdidasShoeseleven} />
+        <Route path='/AdidasShoestwelve' component={AdidasShoestwelve} />
+        <Route path='/AdidasShoesthirteen' component={AdidasShoesthirteen} />
+        <Route path='/AdidasShoesfourteen' component={AdidasShoesfourteen} />
+        <Route path='/AdidasShoesfifteen' component={AdidasShoesfifteen} />
+        <Route path='/AdidasShoessixteen' component={AdidasShoessixteen} />
+        <Route path='/AdidasShoesseventeen' component={AdidasShoesseventeen} />
+        <Route path='/AdidasShoeseighteen' component={AdidasShoeseighteen} />
+        <Route path='/AdidasShoesnineteen' component={AdidasShoesnineteen} />
+        <Route path='/AdidasShoestwenty' component={AdidasShoestwenty} />
         {/* End of ProductPages */}
+        {/* Mens New Arrivals ProductPages */}
+        <Route path='/MensNewArrivalone' component={MensNewArrivalone} />
+        <Route path='/MensNewArrivaltwo' component={MensNewArrivaltwo} />
+        <Route path='/MensNewArrivalthree' component={MensNewArrivalthree} />
+        <Route path='/MensNewArrivalfour' component={MensNewArrivalfour} />
+        <Route path='/MensNewArrivalfive' component={MensNewArrivalfive} />
+        <Route path='/MensNewArrivalsix' component={MensNewArrivalsix} />
+        <Route path='/MensNewArrivalseven' component={MensNewArrivalseven} />
+        <Route path='/MensNewArrivaleight' component={MensNewArrivaleight} />
+        <Route path='/MensNewArrivalnine' component={MensNewArrivalnine} />
+        <Route path='/MensNewArrivalten' component={MensNewArrivalten} />
+        <Route path='/MensNewArrivaleleven' component={MensNewArrivaleleven} />
+        <Route path='/MensNewArrivaltwelve' component={MensNewArrivaltwelve} />
+        <Route path='/MensNewArrivalthirteen' component={MensNewArrivalthirteen} />
+        <Route path='/MensNewArrivalfourteen' component={MensNewArrivalfourteen} />
+        <Route path='/MensNewArrivalfifteen' component={MensNewArrivalfifteen} />
+        <Route path='/MensNewArrivalsixteen' component={MensNewArrivalsixteen} />
+        <Route path='/MensNewArrivalseventeen' component={MensNewArrivalseventeen} />
+        <Route path='/MensNewArrivaleighteen' component={MensNewArrivaleighteen} />
+        <Route path='/MensNewArrivalnineteen' component={MensNewArrivalnineteen} />
+        <Route path='/MensNewArrivaltwenty' component={MensNewArrivaltwenty} />
+        {/* End of Mens New Arrivals PP */}
+        {/* Mens Graphic Tees PP */}
+        <Route path='/MensGraphicTeesone' component={MensGraphicTeesone} />
+        <Route path='/MensGraphicTeestwo' component={MensGraphicTeestwo} />
+        <Route path='/MensGraphicTeesthree' component={MensGraphicTeesthree} />
+        <Route path='/MensGraphicTeesfour' component={MensGraphicTeesfour} />
+        <Route path='/MensGraphicTeesfive' component={MensGraphicTeesfive} />
+        <Route path='/MensGraphicTeessix' component={MensGraphicTeessix} />
+        <Route path='/MensGraphicTeesseven' component={MensGraphicTeesseven} />
+        <Route path='/MensGraphicTeeseight' component={MensGraphicTeeseight} />
+        <Route path='/MensGraphicTeesnine' component={MensGraphicTeesnine} />
+        <Route path='/MensGraphicTeesten' component={MensGraphicTeesten} />
+        <Route path='/MensGraphicTeeseleven' component={MensGraphicTeeseleven} />
+        <Route path='/MensGraphicTeestwelve' component={MensGraphicTeestwelve} />
+        <Route path='/MensGraphicTeesthirteen' component={MensGraphicTeesthirteen} />
+        <Route path='/MensGraphicTeesfourteen' component={MensGraphicTeesfourteen} />
+        <Route path='/MensGraphicTeesfifteen' component={MensGraphicTeesfifteen} />
+        <Route path='/MensGraphicTeessixteen' component={MensGraphicTeessixteen} />
+        <Route path='/MensGraphicTeesseventeen' component={MensGraphicTeesseventeen} />
+        <Route path='/MensGraphicTeeseighteen' component={MensGraphicTeeseighteen} />
+        <Route path='/MensGraphicTeesnineteen' component={MensGraphicTeesnineteen} />
+        <Route path='/MensGraphicTeestwenty' component={MensGraphicTeestwenty} />
+        {/* End of Mens Graphic Tees PP */}
+        {/* Mens Tops PP */}
+        <Route path='/MensTopsone' component={MensTopsone} />
+        <Route path='/MensTopstwo' component={MensTopstwo} />
+        <Route path='/MensTopsthree' component={MensTopsthree} />
+        <Route path='/MensTopsfour' component={MensTopsfour} />
+        <Route path='/MensTopsfive' component={MensTopsfive} />
+        <Route path='/MensTopssix' component={MensTopssix} />
+        <Route path='/MensTopsseven' component={MensTopsseven} />
+        <Route path='/MensTopseight' component={MensTopseight} />
+        <Route path='/MensTopsnine' component={MensTopsnine} />
+        <Route path='/MensTopsten' component={MensTopsten} />
+        <Route path='/MensTopseleven' component={MensTopseleven} />
+        <Route path='/MensTopstwelve' component={MensTopstwelve} />
+        <Route path='/MensTopsthirteen' component={MensTopsthirteen} />
+        <Route path='/MensTopsfourteen' component={MensTopsfourteen} />
+        <Route path='/MensTopsfifteen' component={MensTopsfifteen} />
+        <Route path='/MensTopssixteen' component={MensTopssixteen} />
+        <Route path='/MensTopsseventeen' component={MensTopsseventeen} />
+        <Route path='/MensTopseighteen' component={MensTopseighteen} />
+        <Route path='/MensTopsnineteen' component={MensTopsnineteen} />
+        <Route path='/MensTopstwenty' component={MensTopstwenty} />
+        {/* End of Mens Tops PP */}
         {/* <Route path='/exclusiveswimsuits' component={exclusiveswimsuits} />
         <Route path='/womensproductpage' component={womensproductpage} />
         <Route path='/womensbodysuits' component={womensbodysuits} />

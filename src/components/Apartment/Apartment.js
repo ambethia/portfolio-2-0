@@ -20,7 +20,7 @@ class Apartment extends Component {
 
   render () {
     return <div className='Apartment'>
-      <nav className='apartmentsubnavbar'>
+      {/* <nav className='apartmentsubnavbar'>
         <ul className='apartmentsecondnav'>
           <li onMouseOver={() => this.showCategory('Collections')} onMouseOut={() => this.hideCategory()}>
             <Link to='/ApartmentCollections' >
@@ -344,7 +344,7 @@ class Apartment extends Component {
             </ul>
           </li>
         </ul>
-      </nav>
+      </nav> */}
       <main id='apartmentlayout'>
         <div id='apartmentimg1'>
           <Link to='/' >

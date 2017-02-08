@@ -2,6 +2,13 @@ import React, { Component } from 'react'
 // import { Link } from 'react-router'
 
 class productsPage extends Component {
+
+  addToBag = () => {
+    // save this item to cart, use `this.refs.quantity.value` to get the quantity
+
+    window.alert(`Added ${this.refs.quantity.value} of this product to the bag.`)
+  }
+
   render () {
     return <div id='productstyling' >
       <main id='productspage'>
@@ -37,10 +44,10 @@ class productsPage extends Component {
             <li id='sizes'>10.5</li>
           </ul>
           <div>
-            <button id='quantity'>How Many?</button>
+            <input ref='quantity' placeholder='How Many?' />
           </div>
           <div>
-            <button id='addtobag'>Add To Bag</button>
+            <button onClick={this.addToBag}>Add To Bag</button>
           </div>
           <div id='details'>
             <p id='p' />
@@ -55,6 +62,7 @@ class productsPage extends Component {
           <img src='http://images.urbanoutfitters.com/is/image/UrbanOutfitters/39793559_105_d?$medium$' alt='thejumpsuit' height='256px' width='171px' />
         </div>
       </main>
+      {/* Footer */}
       <footer>
         <div className='getitby'>
           <b>GET IT BY 12/31 - Choose EXPRESS Shipping By 1 PM ET on 12/29</b>

@@ -23,12 +23,48 @@ class Womens extends Component {
       <main className='womenslayout'>
         <nav className='pleasework'>
           <ul className='pleasework'>
-            <li>1</li>
-            <li>1</li>
-            <li>1</li>
-            <li>1</li>
-            <li>1</li>
-            <li>1</li>
+            <Link to='/WomensCollections' >
+              <li>Collections</li>
+            </Link>
+            <Link to='/WomensNew' >
+              <li>New</li>
+            </Link>
+            <Link to='/WomensDressesRompers' >
+              <li>Dresses + Rompers</li>
+            </Link>
+            <Link to='/WomensTops' >
+              <li>Tops</li>
+            </Link>
+            <Link to='/WomensJackets' >
+              <li>Jackets</li>
+            </Link>
+            <Link to='/WomensBottoms' >
+              <li>Bottoms</li>
+            </Link>
+            <Link to='/Intimates' >
+              <li>Intimates</li>
+            </Link>
+            <Link to='/WomensSwim' >
+              <li>Swim</li>
+            </Link>
+            <Link to='/WomensVintage' >
+              <li>Vintage</li>
+            </Link>
+            <Link to='/Beauty' >
+              <li>Beauty</li>
+            </Link>
+            <Link to='/WomensAccessories' >
+              <li>Accessories</li>
+            </Link>
+            <Link to='/WomensShoes' >
+              <li>Shoes</li>
+            </Link>
+            <Link to='/WomensBrands' >
+              <li>Brands</li>
+            </Link>
+            <Link to='/WomensSale' >
+              <li>Sale</li>
+            </Link>
           </ul>
         </nav>
         <div className='womensimg1'>
@@ -43,8 +79,8 @@ class Womens extends Component {
           <Link to='/WomensHeelsWedges' >
             <img src='http://images.urbanoutfitters.com/is/image/UrbanOutfitters/170123_wgw_us_3?scl=1&qlt=92' alt='thejumpsuit' height='535px' width='380px' />
           </Link>
-          <Link to='/beauty' >
-            <img src='http://images.urbanoutfitters.com/is/image/UrbanOutfitters/170123_wgw_us_4?scl=1&qlt=92' alt='thejumpsuit' height='535px' width='380px' />
+          <Link to='/Apartment' >
+            <img src='http://images.urbanoutfitters.com/is/image/UrbanOutfitters/170206_agw_us_3?scl=1&qlt=92' alt='thejumpsuit' height='535px' width='380px' />
           </Link>
           <Link to='/WomensDressesRompers' >
             <img src='http://images.urbanoutfitters.com/is/image/UrbanOutfitters/170123_wgw_us_5?scl=1&qlt=92' alt='thejumpsuit' height='535px' width='380px' />
